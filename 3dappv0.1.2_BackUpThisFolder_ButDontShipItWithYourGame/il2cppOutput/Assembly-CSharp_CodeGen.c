@@ -1,0 +1,72 @@
+﻿#include "pch-c.h"
+
+
+#include "codegen/il2cpp-codegen-metadata.h"
+
+
+
+
+
+extern void CameraOrbit_OnEnable_mE1E055D319C1A7170FB16962CEB059D834E74B0B (void);
+extern void CameraOrbit_OnDisable_m8A0AED52E5DA6215CA41563BBDD8F9A3B8100764 (void);
+extern void CameraOrbit_Update_m77C77A8FE991E12785DBDB356A57EAB02EA136A4 (void);
+extern void CameraOrbit__ctor_m1CBBAF6E05EE9097D7DC6AE562F8AF1117C9725F (void);
+extern void SplatActivator_Start_m2F4372D790E6379A5A88F7674CB2C89E264E68C0 (void);
+extern void SplatActivator__ctor_m74376474C3FF9FA5998EDF56B994B4EE646649C8 (void);
+extern void SplatLoader_Start_m18CBF1A8839787956783E15C5D7CB594156ED3E7 (void);
+extern void SplatLoader__ctor_m0463BF41C05D8D1E71A7C049C2BFAABC946E9B3E (void);
+extern void Readme__ctor_m69C325C4C171DCB0312B646A9034AA91EA8C39C6 (void);
+extern void Section__ctor_m5F732533E4DFC0167D965E5F5DB332E46055399B (void);
+extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
+extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (void);
+static Il2CppMethodPointer s_methodPointers[12] = 
+{
+	CameraOrbit_OnEnable_mE1E055D319C1A7170FB16962CEB059D834E74B0B,
+	CameraOrbit_OnDisable_m8A0AED52E5DA6215CA41563BBDD8F9A3B8100764,
+	CameraOrbit_Update_m77C77A8FE991E12785DBDB356A57EAB02EA136A4,
+	CameraOrbit__ctor_m1CBBAF6E05EE9097D7DC6AE562F8AF1117C9725F,
+	SplatActivator_Start_m2F4372D790E6379A5A88F7674CB2C89E264E68C0,
+	SplatActivator__ctor_m74376474C3FF9FA5998EDF56B994B4EE646649C8,
+	SplatLoader_Start_m18CBF1A8839787956783E15C5D7CB594156ED3E7,
+	SplatLoader__ctor_m0463BF41C05D8D1E71A7C049C2BFAABC946E9B3E,
+	Readme__ctor_m69C325C4C171DCB0312B646A9034AA91EA8C39C6,
+	Section__ctor_m5F732533E4DFC0167D965E5F5DB332E46055399B,
+	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033,
+	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
+};
+static const int32_t s_InvokerIndices[12] = 
+{
+	16343,
+	16343,
+	16343,
+	16343,
+	16343,
+	16343,
+	16343,
+	16343,
+	16343,
+	16343,
+	28299,
+	16343,
+};
+IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
+const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
+{
+	"Assembly-CSharp.dll",
+	12,
+	s_methodPointers,
+	0,
+	NULL,
+	s_InvokerIndices,
+	0,
+	NULL,
+	0,
+	NULL,
+	0,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+};

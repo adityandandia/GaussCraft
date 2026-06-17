@@ -1,5 +1,5 @@
 from fastapi import APIRouter, UploadFile, File, BackgroundTasks, HTTPException
-from fastapi.responses import FileResponse, HTMLResponse
+from fastapi.responses import FileResponse, RedirectResponse
 import uuid, shutil, os
 from pathlib import Path
 from backend.tasks import run_pipeline
@@ -7,7 +7,6 @@ from backend.tasks import run_pipeline
 router = APIRouter()
 WORKSPACE = Path("/home/cave/3dapp/workspace")
 BACKEND_URL = "https://glazing-chaperone-bazooka.ngrok-free.dev"
-
 jobs = {}
 
 @router.post("/upload")
@@ -30,11 +29,16 @@ async def get_status(job_id: str):
 
 @router.get("/download/{job_id}/ply")
 def download_ply(job_id: str):
-    ply_path = WORKSPACE / job_id / "output" / "point_cloud" / "iteration_7000" / "point_cloud_cleaned.ply"
-    if not ply_path.exists():
-        ply_path = WORKSPACE / job_id / "output" / "point_cloud" / "iteration_7000" / "point_cloud.ply"
+    if job_id not in jobs:
+        raise HTTPException(status_code=404, detail="Job not found")
+    if jobs[job_id] != "done":
+        raise HTTPException(status_code=400, detail="Job not complete yet")
+    
+    # cleaned ply is always written here by clean_splat()
+    ply_path = WORKSPACE / job_id / "point_cloud.ply"
     if not ply_path.exists():
         raise HTTPException(status_code=404, detail="PLY file not found")
+    
     return FileResponse(
         path=str(ply_path),
         media_type="application/octet-stream",
@@ -45,5 +49,4 @@ def download_ply(job_id: str):
 def view_splat(job_id: str):
     ply_url = f"{BACKEND_URL}/download/{job_id}/ply"
     redirect_url = f"https://playcanvas.com/supersplat/editor?load={ply_url}"
-    from fastapi.responses import RedirectResponse
     return RedirectResponse(url=redirect_url)
