@@ -1185,7 +1185,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void __JobReflectionRegistrationOutput__18748
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 79450
+// Method Definition Index: 81699
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RadeonRaysInstance__ctor_m096BB61A3345DD7D39A02B0A5E420D75CAD71006 (RadeonRaysInstance_t61B00802DF8AAF00280561B73E377D2D9E03E93B* __this, const RuntimeMethod* method) 
 {
 	{
@@ -1201,7 +1201,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RadeonRaysInstance__ctor_m096BB61A3345DD
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 79451
+// Method Definition Index: 81700
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MeshBlas_IncRef_mC4E56D0ED5C68E1188AC87D8BBD30DA27703308F (MeshBlas_tA944843D34F1D79DA6D31525E850F0D850EB4FF4* __this, const RuntimeMethod* method) 
 {
 	{
@@ -1212,7 +1212,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MeshBlas_IncRef_mC4E56D0ED5C68E1188AC87D
 		return;
 	}
 }
-// Method Definition Index: 79452
+// Method Definition Index: 81701
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MeshBlas_DecRef_mFBDCFD0C7AA295C7B13CB0D34E4D7243DA28181F (MeshBlas_tA944843D34F1D79DA6D31525E850F0D850EB4FF4* __this, const RuntimeMethod* method) 
 {
 	{
@@ -1223,7 +1223,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MeshBlas_DecRef_mFBDCFD0C7AA295C7B13CB0D
 		return;
 	}
 }
-// Method Definition Index: 79453
+// Method Definition Index: 81702
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MeshBlas_IsUnreferenced_m4394EF42DAC20276BBDE0B82BAB8404D1026C374 (MeshBlas_tA944843D34F1D79DA6D31525E850F0D850EB4FF4* __this, const RuntimeMethod* method) 
 {
 	{
@@ -1232,7 +1232,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MeshBlas_IsUnreferenced_m4394EF42DAC2027
 		return (bool)((((int32_t)L_0) == ((int32_t)0))? 1 : 0);
 	}
 }
-// Method Definition Index: 79454
+// Method Definition Index: 81703
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MeshBlas__ctor_m06028F878261C1576764AF885D03BFDE562A0641 (MeshBlas_tA944843D34F1D79DA6D31525E850F0D850EB4FF4* __this, const RuntimeMethod* method) 
 {
 	{
@@ -1248,7 +1248,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MeshBlas__ctor_m06028F878261C1576764AF88
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 79455
+// Method Definition Index: 81704
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ComputeRayTracingBackend__ctor_m46E4D9091113B7AF07AA79D62DF6B2F8532BDD3F (ComputeRayTracingBackend_t194DB41750FC0E0C171573F7FD10D255BE069903* __this, RayTracingResources_t4F2C2153F93648342EFFD0B9DC4CB5166A9533F5* ___0_resources, const RuntimeMethod* method) 
 {
 	{
@@ -1262,7 +1262,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ComputeRayTracingBackend__ctor_m46E4D909
 		return;
 	}
 }
-// Method Definition Index: 79456
+// Method Definition Index: 81705
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ComputeRayTracingBackend_CreateRayTracingShader_m60C73A7EDC1D317A95BEBB11332075682A9C646F (ComputeRayTracingBackend_t194DB41750FC0E0C171573F7FD10D255BE069903* __this, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_shader, String_t* ___1_kernelName, GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* ___2_dispatchBuffer, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1282,7 +1282,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ComputeRayTracingBackend_Creat
 		return L_3;
 	}
 }
-// Method Definition Index: 79457
+// Method Definition Index: 81706
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ComputeRayTracingBackend_CreateAccelerationStructure_mF4D77349EE1BC88F23874F391BF53ABB96AE1283 (ComputeRayTracingBackend_t194DB41750FC0E0C171573F7FD10D255BE069903* __this, AccelerationStructureOptions_t62404A77F410F289F5C5C9F80D4360966E5B40B8* ___0_options, ReferenceCounter_t4AB2EABD22AF71296CD91AB92C5C2021A8E3580C* ___1_counter, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1301,7 +1301,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ComputeRayTracingBackend_Creat
 		return L_3;
 	}
 }
-// Method Definition Index: 79458
+// Method Definition Index: 81707
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t ComputeRayTracingBackend_GetRequiredTraceScratchBufferSizeInBytes_m2671A79D3FF3BBFB78E8C4BA9E63350F8EF68F25 (ComputeRayTracingBackend_t194DB41750FC0E0C171573F7FD10D255BE069903* __this, uint32_t ___0_width, uint32_t ___1_height, uint32_t ___2_depth, const RuntimeMethod* method) 
 {
 	{
@@ -1325,7 +1325,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t ComputeRayTracingBackend_GetRequired
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 79459
+// Method Definition Index: 81708
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ComputeRayTracingShader__ctor_m4BCFBFBEE78AF447CF2B8569914FD5F9D226D2D6 (ComputeRayTracingShader_tA11AAA69825A7FF6807AED00024AED74E47C0B47* __this, ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* ___0_shader, String_t* ___1_dispatchFuncName, GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* ___2_dispatchBuffer, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1374,7 +1374,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ComputeRayTracingShader__ctor_m4BCFBFBEE
 		return;
 	}
 }
-// Method Definition Index: 79460
+// Method Definition Index: 81709
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint3_tC1C1C817DB46ED2E6A6C7390716FDDD565917F7B ComputeRayTracingShader_GetThreadGroupSizes_mA1A2D1436ADC15756268177DA79AB71814D648C7 (ComputeRayTracingShader_tA11AAA69825A7FF6807AED00024AED74E47C0B47* __this, const RuntimeMethod* method) 
 {
 	{
@@ -1383,7 +1383,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint3_tC1C1C817DB46ED2E6A6C7390716FDDD565917F
 		return L_0;
 	}
 }
-// Method Definition Index: 79461
+// Method Definition Index: 81710
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ComputeRayTracingShader_SetAccelerationStructure_mB39AA2A25849FB7EFC5ED03CC6463C8D56DBE599 (ComputeRayTracingShader_tA11AAA69825A7FF6807AED00024AED74E47C0B47* __this, CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* ___0_cmd, String_t* ___1_name, RuntimeObject* ___2_accelStruct, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1404,7 +1404,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ComputeRayTracingShader_SetAccelerationS
 		return;
 	}
 }
-// Method Definition Index: 79462
+// Method Definition Index: 81711
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ComputeRayTracingShader_SetIntParam_m70AA5DF206638B4827C03A99C451AC2D05C884E1 (ComputeRayTracingShader_tA11AAA69825A7FF6807AED00024AED74E47C0B47* __this, CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* ___0_cmd, int32_t ___1_nameID, int32_t ___2_val, const RuntimeMethod* method) 
 {
 	{
@@ -1419,7 +1419,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ComputeRayTracingShader_SetIntParam_m70A
 		return;
 	}
 }
-// Method Definition Index: 79463
+// Method Definition Index: 81712
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ComputeRayTracingShader_SetFloatParam_m0A31BE044504CAC70214C7C421E58FF0EFE5F1A3 (ComputeRayTracingShader_tA11AAA69825A7FF6807AED00024AED74E47C0B47* __this, CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* ___0_cmd, int32_t ___1_nameID, float ___2_val, const RuntimeMethod* method) 
 {
 	{
@@ -1434,7 +1434,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ComputeRayTracingShader_SetFloatParam_m0
 		return;
 	}
 }
-// Method Definition Index: 79464
+// Method Definition Index: 81713
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ComputeRayTracingShader_SetVectorParam_m4B9C6BA10322BDFCE468807D2B11F275B4D483CF (ComputeRayTracingShader_tA11AAA69825A7FF6807AED00024AED74E47C0B47* __this, CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* ___0_cmd, int32_t ___1_nameID, Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___2_val, const RuntimeMethod* method) 
 {
 	{
@@ -1449,7 +1449,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ComputeRayTracingShader_SetVectorParam_m
 		return;
 	}
 }
-// Method Definition Index: 79465
+// Method Definition Index: 81714
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ComputeRayTracingShader_SetMatrixParam_mAA472F7F4FA91D338ABC98DCAC48817CCF3498B2 (ComputeRayTracingShader_tA11AAA69825A7FF6807AED00024AED74E47C0B47* __this, CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* ___0_cmd, int32_t ___1_nameID, Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 ___2_val, const RuntimeMethod* method) 
 {
 	{
@@ -1464,7 +1464,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ComputeRayTracingShader_SetMatrixParam_m
 		return;
 	}
 }
-// Method Definition Index: 79466
+// Method Definition Index: 81715
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ComputeRayTracingShader_SetTextureParam_m26803D360D35ABCF98EB1FD897F706B3D160C7B8 (ComputeRayTracingShader_tA11AAA69825A7FF6807AED00024AED74E47C0B47* __this, CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* ___0_cmd, int32_t ___1_nameID, RenderTargetIdentifier_tA528663AC6EB3911D8E91AA40F7070FA5455442B ___2_rt, const RuntimeMethod* method) 
 {
 	{
@@ -1480,7 +1480,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ComputeRayTracingShader_SetTextureParam_
 		return;
 	}
 }
-// Method Definition Index: 79467
+// Method Definition Index: 81716
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ComputeRayTracingShader_SetBufferParam_m7AF86E3B279EFC38160FF7276E123E24DCDE9B51 (ComputeRayTracingShader_tA11AAA69825A7FF6807AED00024AED74E47C0B47* __this, CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* ___0_cmd, int32_t ___1_nameID, GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* ___2_buffer, const RuntimeMethod* method) 
 {
 	{
@@ -1496,7 +1496,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ComputeRayTracingShader_SetBufferParam_m
 		return;
 	}
 }
-// Method Definition Index: 79468
+// Method Definition Index: 81717
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ComputeRayTracingShader_SetBufferParam_mD367ABDF284FBFA54142BD3768B8F87FCDCAA171 (ComputeRayTracingShader_tA11AAA69825A7FF6807AED00024AED74E47C0B47* __this, CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* ___0_cmd, int32_t ___1_nameID, ComputeBuffer_t51EADA9015EBCC1B982C5584E9AB2734415A8233* ___2_buffer, const RuntimeMethod* method) 
 {
 	{
@@ -1512,7 +1512,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ComputeRayTracingShader_SetBufferParam_m
 		return;
 	}
 }
-// Method Definition Index: 79469
+// Method Definition Index: 81718
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ComputeRayTracingShader_SetConstantBufferParam_mCC5A715088AEE4043FCC69A91A4DE6A314B524AF (ComputeRayTracingShader_tA11AAA69825A7FF6807AED00024AED74E47C0B47* __this, CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* ___0_cmd, int32_t ___1_nameID, GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* ___2_buffer, int32_t ___3_offset, int32_t ___4_size, const RuntimeMethod* method) 
 {
 	{
@@ -1529,7 +1529,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ComputeRayTracingShader_SetConstantBuffe
 		return;
 	}
 }
-// Method Definition Index: 79470
+// Method Definition Index: 81719
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ComputeRayTracingShader_SetConstantBufferParam_mF6A92097ABCB8763DEB319CC997F274DCC1C29D2 (ComputeRayTracingShader_tA11AAA69825A7FF6807AED00024AED74E47C0B47* __this, CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* ___0_cmd, int32_t ___1_nameID, ComputeBuffer_t51EADA9015EBCC1B982C5584E9AB2734415A8233* ___2_buffer, int32_t ___3_offset, int32_t ___4_size, const RuntimeMethod* method) 
 {
 	{
@@ -1546,7 +1546,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ComputeRayTracingShader_SetConstantBuffe
 		return;
 	}
 }
-// Method Definition Index: 79471
+// Method Definition Index: 81720
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ComputeRayTracingShader_Dispatch_m6D79BC78AE2CB8D28AB1A752F5D3E1C69924CC04 (ComputeRayTracingShader_tA11AAA69825A7FF6807AED00024AED74E47C0B47* __this, CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* ___0_cmd, GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* ___1_scratchBuffer, uint32_t ___2_width, uint32_t ___3_height, uint32_t ___4_depth, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1633,7 +1633,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ComputeRayTracingShader_Dispatch_m6D79BC
 		return;
 	}
 }
-// Method Definition Index: 79472
+// Method Definition Index: 81721
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ComputeRayTracingShader_Dispatch_m196025D2E084F5CC026AA8CB8C10218872063022 (ComputeRayTracingShader_tA11AAA69825A7FF6807AED00024AED74E47C0B47* __this, CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* ___0_cmd, GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* ___1_scratchBuffer, GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* ___2_argsBuffer, const RuntimeMethod* method) 
 {
 	{
@@ -1650,7 +1650,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ComputeRayTracingShader_Dispatch_m196025
 		return;
 	}
 }
-// Method Definition Index: 79473
+// Method Definition Index: 81722
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ComputeRayTracingShader_SetIndirectDispatchDimensions_mE225000D69C950CDBF26EC557614384B3C76C6E4 (ComputeRayTracingShader_tA11AAA69825A7FF6807AED00024AED74E47C0B47* __this, CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* ___0_cmd, GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* ___1_argsBuffer, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1687,7 +1687,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ComputeRayTracingShader_SetIndirectDispa
 		return;
 	}
 }
-// Method Definition Index: 79474
+// Method Definition Index: 81723
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ComputeRayTracingShader_DispatchIndirect_m698CCE56012C97888AC7182EA6AE464777C22020 (ComputeRayTracingShader_tA11AAA69825A7FF6807AED00024AED74E47C0B47* __this, CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* ___0_cmd, GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* ___1_scratchBuffer, GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* ___2_argsBuffer, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1725,7 +1725,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ComputeRayTracingShader_DispatchIndirect
 		return;
 	}
 }
-// Method Definition Index: 79475
+// Method Definition Index: 81724
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t ComputeRayTracingShader_GetTraceScratchBufferRequiredSizeInBytes_m9BB45E11B6E313982A29828E6E5E4BC905DE37B7 (ComputeRayTracingShader_tA11AAA69825A7FF6807AED00024AED74E47C0B47* __this, uint32_t ___0_width, uint32_t ___1_height, uint32_t ___2_depth, const RuntimeMethod* method) 
 {
 	{
@@ -1747,7 +1747,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t ComputeRayTracingShader_GetTraceScra
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 79476
+// Method Definition Index: 81725
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RayTracingAccelerationStructure_tA2CDD2FA1D6A5A8D4BBA504ECCBB0208A3C7919D* HardwareRayTracingAccelStruct_get_accelStruct_m6BE10587906941FD822CA800A36BE3DF008E3500 (HardwareRayTracingAccelStruct_tA0222D6E6F3D30B7B6B3BE3B0D68E3D107BE459E* __this, const RuntimeMethod* method) 
 {
 	{
@@ -1756,7 +1756,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RayTracingAccelerationStructure_tA2CDD2FA1D6A
 		return L_0;
 	}
 }
-// Method Definition Index: 79477
+// Method Definition Index: 81726
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HardwareRayTracingAccelStruct__ctor_m613ED437C5CD8951216805B7864F3613B2A11DD6 (HardwareRayTracingAccelStruct_tA0222D6E6F3D30B7B6B3BE3B0D68E3D107BE459E* __this, AccelerationStructureOptions_t62404A77F410F289F5C5C9F80D4360966E5B40B8* ___0_options, ReferenceCounter_t4AB2EABD22AF71296CD91AB92C5C2021A8E3580C* ___1_counter, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1813,7 +1813,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HardwareRayTracingAccelStruct__ctor_m613
 		return;
 	}
 }
-// Method Definition Index: 79478
+// Method Definition Index: 81727
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HardwareRayTracingAccelStruct_Dispose_m6FB132038DEDBDC5991DC22D5C93470FC449E7AA (HardwareRayTracingAccelStruct_tA0222D6E6F3D30B7B6B3BE3B0D68E3D107BE459E* __this, const RuntimeMethod* method) 
 {
 	RayTracingAccelerationStructure_tA2CDD2FA1D6A5A8D4BBA504ECCBB0208A3C7919D* G_B2_0 = NULL;
@@ -1846,7 +1846,7 @@ IL_0016:
 		return;
 	}
 }
-// Method Definition Index: 79479
+// Method Definition Index: 81728
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t HardwareRayTracingAccelStruct_AddInstance_mE0FCF9DAF826771BF3E779817677F1652EACEF9B (HardwareRayTracingAccelStruct_tA0222D6E6F3D30B7B6B3BE3B0D68E3D107BE459E* __this, MeshInstanceDesc_tB2FE46683FA05965417F454F188294A3269F5F73 ___0_meshInstance, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1953,7 +1953,7 @@ IL_0087:
 		return L_28;
 	}
 }
-// Method Definition Index: 79480
+// Method Definition Index: 81729
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HardwareRayTracingAccelStruct_RemoveInstance_mE5DF5B0417E759CD5B2FCBBC28658C3426E38972 (HardwareRayTracingAccelStruct_tA0222D6E6F3D30B7B6B3BE3B0D68E3D107BE459E* __this, int32_t ___0_instanceHandle, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1979,7 +1979,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HardwareRayTracingAccelStruct_RemoveInst
 		return;
 	}
 }
-// Method Definition Index: 79481
+// Method Definition Index: 81730
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HardwareRayTracingAccelStruct_ClearInstances_m8045B3737D8571848EADDAC8328BCCC0BD318530 (HardwareRayTracingAccelStruct_tA0222D6E6F3D30B7B6B3BE3B0D68E3D107BE459E* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2002,7 +2002,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HardwareRayTracingAccelStruct_ClearInsta
 		return;
 	}
 }
-// Method Definition Index: 79482
+// Method Definition Index: 81731
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HardwareRayTracingAccelStruct_UpdateInstanceTransform_m165ECCD5E1A275CCB1E7DDD71825C7C362D61572 (HardwareRayTracingAccelStruct_tA0222D6E6F3D30B7B6B3BE3B0D68E3D107BE459E* __this, int32_t ___0_instanceHandle, Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 ___1_localToWorldMatrix, const RuntimeMethod* method) 
 {
 	{
@@ -2017,7 +2017,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HardwareRayTracingAccelStruct_UpdateInst
 		return;
 	}
 }
-// Method Definition Index: 79483
+// Method Definition Index: 81732
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HardwareRayTracingAccelStruct_UpdateInstanceID_m14BA46089072411405EA53F3827AEEF1EC08EF55 (HardwareRayTracingAccelStruct_tA0222D6E6F3D30B7B6B3BE3B0D68E3D107BE459E* __this, int32_t ___0_instanceHandle, uint32_t ___1_instanceID, const RuntimeMethod* method) 
 {
 	{
@@ -2032,7 +2032,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HardwareRayTracingAccelStruct_UpdateInst
 		return;
 	}
 }
-// Method Definition Index: 79484
+// Method Definition Index: 81733
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HardwareRayTracingAccelStruct_UpdateInstanceMask_mF37F0AB5CA040D8F7FD8C5599532D4B2441FF1EE (HardwareRayTracingAccelStruct_tA0222D6E6F3D30B7B6B3BE3B0D68E3D107BE459E* __this, int32_t ___0_instanceHandle, uint32_t ___1_mask, const RuntimeMethod* method) 
 {
 	{
@@ -2047,7 +2047,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HardwareRayTracingAccelStruct_UpdateInst
 		return;
 	}
 }
-// Method Definition Index: 79485
+// Method Definition Index: 81734
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HardwareRayTracingAccelStruct_Build_mD3B92F3AD271BC9059A0D0AE6C28155A9A529596 (HardwareRayTracingAccelStruct_tA0222D6E6F3D30B7B6B3BE3B0D68E3D107BE459E* __this, CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* ___0_cmd, GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* ___1_scratchBuffer, const RuntimeMethod* method) 
 {
 	BuildSettings_tB970A34CAC0B7D0539FFCA20FA7F1727CDAC2A02 V_0;
@@ -2079,7 +2079,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HardwareRayTracingAccelStruct_Build_mD3B
 		return;
 	}
 }
-// Method Definition Index: 79486
+// Method Definition Index: 81735
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t HardwareRayTracingAccelStruct_GetBuildScratchBufferRequiredSizeInBytes_mAF6E0B7FF6312E368DD59379C03D39FE6C92C96D (HardwareRayTracingAccelStruct_tA0222D6E6F3D30B7B6B3BE3B0D68E3D107BE459E* __this, const RuntimeMethod* method) 
 {
 	{
@@ -2087,7 +2087,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t HardwareRayTracingAccelStruct_GetBui
 		return ((int64_t)0);
 	}
 }
-// Method Definition Index: 79487
+// Method Definition Index: 81736
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HardwareRayTracingAccelStruct_CheckInstanceHandleIsValid_m7C8D5787EDE1DF828252F0D905ED4F4DC68E419A (HardwareRayTracingAccelStruct_tA0222D6E6F3D30B7B6B3BE3B0D68E3D107BE459E* __this, int32_t ___0_instanceHandle, const RuntimeMethod* method) 
 {
 	{
@@ -2103,7 +2103,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HardwareRayTracingAccelStruct_CheckInsta
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 79488
+// Method Definition Index: 81737
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HardwareRayTracingBackend__ctor_m2D1F6646545D009A5705B331183E587E87C715D8 (HardwareRayTracingBackend_t0857B59AE84A6B407563D88644196D4181477B99* __this, RayTracingResources_t4F2C2153F93648342EFFD0B9DC4CB5166A9533F5* ___0_resources, const RuntimeMethod* method) 
 {
 	{
@@ -2117,7 +2117,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HardwareRayTracingBackend__ctor_m2D1F664
 		return;
 	}
 }
-// Method Definition Index: 79489
+// Method Definition Index: 81738
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* HardwareRayTracingBackend_CreateRayTracingShader_mFDA1EA02462EACBF9F36BC020A6E92C84ACBD0E5 (HardwareRayTracingBackend_t0857B59AE84A6B407563D88644196D4181477B99* __this, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_shader, String_t* ___1_kernelName, GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* ___2_dispatchBuffer, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2137,7 +2137,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* HardwareRayTracingBackend_Crea
 		return L_3;
 	}
 }
-// Method Definition Index: 79490
+// Method Definition Index: 81739
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* HardwareRayTracingBackend_CreateAccelerationStructure_m9BC501A5C6E52A08BF0C7AFA3B8B2BB6C9F4F044 (HardwareRayTracingBackend_t0857B59AE84A6B407563D88644196D4181477B99* __this, AccelerationStructureOptions_t62404A77F410F289F5C5C9F80D4360966E5B40B8* ___0_options, ReferenceCounter_t4AB2EABD22AF71296CD91AB92C5C2021A8E3580C* ___1_counter, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2155,7 +2155,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* HardwareRayTracingBackend_Crea
 		return L_2;
 	}
 }
-// Method Definition Index: 79491
+// Method Definition Index: 81740
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t HardwareRayTracingBackend_GetRequiredTraceScratchBufferSizeInBytes_mEE05FCC58980849E300CC96DEEA0F926527638C0 (HardwareRayTracingBackend_t0857B59AE84A6B407563D88644196D4181477B99* __this, uint32_t ___0_width, uint32_t ___1_height, uint32_t ___2_depth, const RuntimeMethod* method) 
 {
 	{
@@ -2171,7 +2171,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t HardwareRayTracingBackend_GetRequire
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 79492
+// Method Definition Index: 81741
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HardwareRayTracingShader__ctor_m7FEE7B0B18A532403FDB77E6EDCA9F7808B86BFE (HardwareRayTracingShader_t52DF30BEB1E7F9A3414D6E559C368D64338F987F* __this, RayTracingShader_t0CC904310653C677A0886882C057D5161E05580A* ___0_shader, String_t* ___1_dispatchFuncName, GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* ___2_unused, const RuntimeMethod* method) 
 {
 	{
@@ -2189,7 +2189,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HardwareRayTracingShader__ctor_m7FEE7B0B
 		return;
 	}
 }
-// Method Definition Index: 79493
+// Method Definition Index: 81742
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint3_tC1C1C817DB46ED2E6A6C7390716FDDD565917F7B HardwareRayTracingShader_GetThreadGroupSizes_mAF3A08BBDE365780DDE99CF61BD5CCA229564887 (HardwareRayTracingShader_t52DF30BEB1E7F9A3414D6E559C368D64338F987F* __this, const RuntimeMethod* method) 
 {
 	{
@@ -2200,7 +2200,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint3_tC1C1C817DB46ED2E6A6C7390716FDDD565917F
 		return L_0;
 	}
 }
-// Method Definition Index: 79494
+// Method Definition Index: 81743
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HardwareRayTracingShader_SetAccelerationStructure_mEAB0BDC2B187BC0918630311B10BC3DCC540C1A1 (HardwareRayTracingShader_t52DF30BEB1E7F9A3414D6E559C368D64338F987F* __this, CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* ___0_cmd, String_t* ___1_name, RuntimeObject* ___2_accelStruct, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2239,7 +2239,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HardwareRayTracingShader_SetAcceleration
 		return;
 	}
 }
-// Method Definition Index: 79495
+// Method Definition Index: 81744
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HardwareRayTracingShader_SetIntParam_m7ADAEC0E364C5655AD7DF4755078C055CC64305F (HardwareRayTracingShader_t52DF30BEB1E7F9A3414D6E559C368D64338F987F* __this, CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* ___0_cmd, int32_t ___1_nameID, int32_t ___2_val, const RuntimeMethod* method) 
 {
 	{
@@ -2254,7 +2254,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HardwareRayTracingShader_SetIntParam_m7A
 		return;
 	}
 }
-// Method Definition Index: 79496
+// Method Definition Index: 81745
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HardwareRayTracingShader_SetFloatParam_m418DEB646E2C8343379340811E19225CFA13A208 (HardwareRayTracingShader_t52DF30BEB1E7F9A3414D6E559C368D64338F987F* __this, CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* ___0_cmd, int32_t ___1_nameID, float ___2_val, const RuntimeMethod* method) 
 {
 	{
@@ -2269,7 +2269,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HardwareRayTracingShader_SetFloatParam_m
 		return;
 	}
 }
-// Method Definition Index: 79497
+// Method Definition Index: 81746
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HardwareRayTracingShader_SetVectorParam_mC478EB3AC7EDD521E96AF99821C2A1A175FC5817 (HardwareRayTracingShader_t52DF30BEB1E7F9A3414D6E559C368D64338F987F* __this, CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* ___0_cmd, int32_t ___1_nameID, Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___2_val, const RuntimeMethod* method) 
 {
 	{
@@ -2284,7 +2284,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HardwareRayTracingShader_SetVectorParam_
 		return;
 	}
 }
-// Method Definition Index: 79498
+// Method Definition Index: 81747
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HardwareRayTracingShader_SetMatrixParam_m9084F6509C47C11150D09F73D7D52E84CB62AB0D (HardwareRayTracingShader_t52DF30BEB1E7F9A3414D6E559C368D64338F987F* __this, CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* ___0_cmd, int32_t ___1_nameID, Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 ___2_val, const RuntimeMethod* method) 
 {
 	{
@@ -2299,7 +2299,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HardwareRayTracingShader_SetMatrixParam_
 		return;
 	}
 }
-// Method Definition Index: 79499
+// Method Definition Index: 81748
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HardwareRayTracingShader_SetTextureParam_mFCBCBFC1AAADAF3A42ADB38C8231AA3793788CD7 (HardwareRayTracingShader_t52DF30BEB1E7F9A3414D6E559C368D64338F987F* __this, CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* ___0_cmd, int32_t ___1_nameID, RenderTargetIdentifier_tA528663AC6EB3911D8E91AA40F7070FA5455442B ___2_rt, const RuntimeMethod* method) 
 {
 	{
@@ -2314,7 +2314,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HardwareRayTracingShader_SetTextureParam
 		return;
 	}
 }
-// Method Definition Index: 79500
+// Method Definition Index: 81749
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HardwareRayTracingShader_SetBufferParam_m0102E603034BEF9AB7C17CEC6AF8E22D4F809BDE (HardwareRayTracingShader_t52DF30BEB1E7F9A3414D6E559C368D64338F987F* __this, CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* ___0_cmd, int32_t ___1_nameID, GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* ___2_buffer, const RuntimeMethod* method) 
 {
 	{
@@ -2329,7 +2329,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HardwareRayTracingShader_SetBufferParam_
 		return;
 	}
 }
-// Method Definition Index: 79501
+// Method Definition Index: 81750
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HardwareRayTracingShader_SetBufferParam_mC828343D3A17D1FC9DC63777FD66B68827C840EA (HardwareRayTracingShader_t52DF30BEB1E7F9A3414D6E559C368D64338F987F* __this, CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* ___0_cmd, int32_t ___1_nameID, ComputeBuffer_t51EADA9015EBCC1B982C5584E9AB2734415A8233* ___2_buffer, const RuntimeMethod* method) 
 {
 	{
@@ -2344,7 +2344,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HardwareRayTracingShader_SetBufferParam_
 		return;
 	}
 }
-// Method Definition Index: 79502
+// Method Definition Index: 81751
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HardwareRayTracingShader_SetConstantBufferParam_m76037B5FBB32DAA4F74EF7F18AB2B5BA2D1E2DB8 (HardwareRayTracingShader_t52DF30BEB1E7F9A3414D6E559C368D64338F987F* __this, CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* ___0_cmd, int32_t ___1_nameID, GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* ___2_buffer, int32_t ___3_offset, int32_t ___4_size, const RuntimeMethod* method) 
 {
 	{
@@ -2361,7 +2361,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HardwareRayTracingShader_SetConstantBuff
 		return;
 	}
 }
-// Method Definition Index: 79503
+// Method Definition Index: 81752
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HardwareRayTracingShader_SetConstantBufferParam_m9DFB25A62E2A9C2DEE615887DD642480247EB865 (HardwareRayTracingShader_t52DF30BEB1E7F9A3414D6E559C368D64338F987F* __this, CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* ___0_cmd, int32_t ___1_nameID, ComputeBuffer_t51EADA9015EBCC1B982C5584E9AB2734415A8233* ___2_buffer, int32_t ___3_offset, int32_t ___4_size, const RuntimeMethod* method) 
 {
 	{
@@ -2378,7 +2378,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HardwareRayTracingShader_SetConstantBuff
 		return;
 	}
 }
-// Method Definition Index: 79504
+// Method Definition Index: 81753
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HardwareRayTracingShader_Dispatch_m80E421A408EA311D9F14D42206DDD84178820CEF (HardwareRayTracingShader_t52DF30BEB1E7F9A3414D6E559C368D64338F987F* __this, CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* ___0_cmd, GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* ___1_scratchBuffer, uint32_t ___2_width, uint32_t ___3_height, uint32_t ___4_depth, const RuntimeMethod* method) 
 {
 	{
@@ -2395,7 +2395,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HardwareRayTracingShader_Dispatch_m80E42
 		return;
 	}
 }
-// Method Definition Index: 79505
+// Method Definition Index: 81754
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HardwareRayTracingShader_Dispatch_m878588BABB6CEA62380765F92B32FBF7A8C0A3FF (HardwareRayTracingShader_t52DF30BEB1E7F9A3414D6E559C368D64338F987F* __this, CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* ___0_cmd, GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* ___1_scratchBuffer, GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* ___2_argsBuffer, const RuntimeMethod* method) 
 {
 	{
@@ -2410,7 +2410,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HardwareRayTracingShader_Dispatch_m87858
 		return;
 	}
 }
-// Method Definition Index: 79506
+// Method Definition Index: 81755
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t HardwareRayTracingShader_GetTraceScratchBufferRequiredSizeInBytes_m4885E2101C32A26F762913B305ABE0EA862442E8 (HardwareRayTracingShader_t52DF30BEB1E7F9A3414D6E559C368D64338F987F* __this, uint32_t ___0_width, uint32_t ___1_height, uint32_t ___2_depth, const RuntimeMethod* method) 
 {
 	{
@@ -2480,7 +2480,7 @@ IL2CPP_EXTERN_C void MeshInstanceDesc_tB2FE46683FA05965417F454F188294A3269F5F73_
 IL2CPP_EXTERN_C void MeshInstanceDesc_tB2FE46683FA05965417F454F188294A3269F5F73_marshal_com_cleanup(MeshInstanceDesc_tB2FE46683FA05965417F454F188294A3269F5F73_marshaled_com& marshaled)
 {
 }
-// Method Definition Index: 79507
+// Method Definition Index: 81756
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MeshInstanceDesc__ctor_mC1F2D78863A3D1EEBB915C475B07F96C8DA939B4 (MeshInstanceDesc_tB2FE46683FA05965417F454F188294A3269F5F73* __this, Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4* ___0_mesh, int32_t ___1_subMeshIndex, const RuntimeMethod* method) 
 {
 	{
@@ -2532,7 +2532,7 @@ IL2CPP_EXTERN_C  void MeshInstanceDesc__ctor_mC1F2D78863A3D1EEBB915C475B07F96C8D
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 79533
+// Method Definition Index: 81782
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RayTracingContext__ctor_mC3C6736F88FD9B40C1055ADD7BF4309198632339 (RayTracingContext_tE1718B700E40616B50787F24C6FCFAD74684E7D9* __this, int32_t ___0_backend, RayTracingResources_t4F2C2153F93648342EFFD0B9DC4CB5166A9533F5* ___1_resources, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2626,7 +2626,7 @@ IL_005e:
 		return;
 	}
 }
-// Method Definition Index: 79534
+// Method Definition Index: 81783
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RayTracingContext__ctor_m625A3777FD1ABAD52EF4F92FFD48A3AC0CF46CEA (RayTracingContext_tE1718B700E40616B50787F24C6FCFAD74684E7D9* __this, RayTracingResources_t4F2C2153F93648342EFFD0B9DC4CB5166A9533F5* ___0_resources, const RuntimeMethod* method) 
 {
 	RayTracingContext_tE1718B700E40616B50787F24C6FCFAD74684E7D9* G_B2_0 = NULL;
@@ -2664,7 +2664,7 @@ IL_000d:
 		return;
 	}
 }
-// Method Definition Index: 79535
+// Method Definition Index: 81784
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RayTracingContext_Dispose_m644D68CE0150834232997AB9967E759E4E8D3191 (RayTracingContext_tE1718B700E40616B50787F24C6FCFAD74684E7D9* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2717,7 +2717,7 @@ IL_0022:
 		return;
 	}
 }
-// Method Definition Index: 79536
+// Method Definition Index: 81785
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RayTracingResources_t4F2C2153F93648342EFFD0B9DC4CB5166A9533F5* RayTracingContext_get_Resources_mF71E401C9C4D04D104ACF4A77D250B36E1D3BD7D (RayTracingContext_tE1718B700E40616B50787F24C6FCFAD74684E7D9* __this, const RuntimeMethod* method) 
 {
 	{
@@ -2726,7 +2726,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RayTracingResources_t4F2C2153F93648342EFFD0B9
 		return L_0;
 	}
 }
-// Method Definition Index: 79537
+// Method Definition Index: 81786
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RayTracingContext_set_Resources_m951513BE15192C3B78942EED37A62F2931297C50 (RayTracingContext_tE1718B700E40616B50787F24C6FCFAD74684E7D9* __this, RayTracingResources_t4F2C2153F93648342EFFD0B9DC4CB5166A9533F5* ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -2737,7 +2737,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RayTracingContext_set_Resources_m951513B
 		return;
 	}
 }
-// Method Definition Index: 79538
+// Method Definition Index: 81787
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool RayTracingContext_IsBackendSupported_m031EE28D5E4F904D007ADF5269B88B73B1B20C56 (int32_t ___0_backend, const RuntimeMethod* method) 
 {
 	{
@@ -2777,7 +2777,7 @@ IL_0013:
 		return (bool)0;
 	}
 }
-// Method Definition Index: 79539
+// Method Definition Index: 81788
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* RayTracingContext_CreateRayTracingShader_m23B2CD527A90EA5900FF8D16E5BA857E74AA06E1 (RayTracingContext_tE1718B700E40616B50787F24C6FCFAD74684E7D9* __this, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_shader, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2798,7 +2798,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* RayTracingContext_CreateRayTra
 		return L_3;
 	}
 }
-// Method Definition Index: 79540
+// Method Definition Index: 81789
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* RayTracingContext_LoadRayTracingShaderFromAssetBundle_m5F69D7748597571B62D32120F446F0525510FF71 (RayTracingContext_tE1718B700E40616B50787F24C6FCFAD74684E7D9* __this, AssetBundle_tB38418819A49060CD738CB21541649340F082943* ___0_assetBundle, String_t* ___1_name, const RuntimeMethod* method) 
 {
 	Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* V_0 = NULL;
@@ -2821,7 +2821,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* RayTracingContext_LoadRayTraci
 		return L_6;
 	}
 }
-// Method Definition Index: 79541
+// Method Definition Index: 81790
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* RayTracingContext_CreateAccelerationStructure_mC7D36C093D290F102FAF0F206A0691130E904A74 (RayTracingContext_tE1718B700E40616B50787F24C6FCFAD74684E7D9* __this, AccelerationStructureOptions_t62404A77F410F289F5C5C9F80D4360966E5B40B8* ___0_options, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2842,7 +2842,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* RayTracingContext_CreateAccele
 		return L_3;
 	}
 }
-// Method Definition Index: 79542
+// Method Definition Index: 81791
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t RayTracingContext_GetRequiredTraceScratchBufferSizeInBytes_m1342F02CDB64593E51506762ABFBBF000009901C (RayTracingContext_tE1718B700E40616B50787F24C6FCFAD74684E7D9* __this, uint32_t ___0_width, uint32_t ___1_height, uint32_t ___2_depth, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2863,7 +2863,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t RayTracingContext_GetRequiredTraceSc
 		return L_4;
 	}
 }
-// Method Definition Index: 79543
+// Method Definition Index: 81792
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t RayTracingContext_GetScratchBufferStrideInBytes_mF0C9AE9AE45A85067B98293FBA8A3EF8CA5EDAA3 (const RuntimeMethod* method) 
 {
 	{
@@ -2871,7 +2871,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t RayTracingContext_GetScratchBufferSt
 		return 4;
 	}
 }
-// Method Definition Index: 79544
+// Method Definition Index: 81793
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t RayTracingContext_get_BackendType_m409AD888850BECA9CD60F4DAE3AC295961F3E82E (RayTracingContext_tE1718B700E40616B50787F24C6FCFAD74684E7D9* __this, const RuntimeMethod* method) 
 {
 	{
@@ -2880,7 +2880,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t RayTracingContext_get_BackendType_m40
 		return L_0;
 	}
 }
-// Method Definition Index: 79545
+// Method Definition Index: 81794
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RayTracingContext_set_BackendType_mD76B3ECB08571547BDB0E8BE309E74430758AA3F (RayTracingContext_tE1718B700E40616B50787F24C6FCFAD74684E7D9* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -2906,7 +2906,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RayTracingContext_set_BackendType_mD76B3
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 79546
+// Method Definition Index: 81795
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AccelerationStructureOptions__ctor_m3C5FF0A8FB1B9361277CEE3D8A50E0850AC20ED9 (AccelerationStructureOptions_t62404A77F410F289F5C5C9F80D4360966E5B40B8* __this, const RuntimeMethod* method) 
 {
 	{
@@ -2922,7 +2922,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AccelerationStructureOptions__ctor_m3C5F
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 79547
+// Method Definition Index: 81796
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReferenceCounter_Inc_m9A5D2006967F9C9F9F09AD15CA76095675C005F3 (ReferenceCounter_t4AB2EABD22AF71296CD91AB92C5C2021A8E3580C* __this, const RuntimeMethod* method) 
 {
 	{
@@ -2933,7 +2933,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReferenceCounter_Inc_m9A5D2006967F9C9F9F
 		return;
 	}
 }
-// Method Definition Index: 79548
+// Method Definition Index: 81797
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReferenceCounter_Dec_mF7B26E4B8232FADCFE3FBEC489F86A0F9F0FF824 (ReferenceCounter_t4AB2EABD22AF71296CD91AB92C5C2021A8E3580C* __this, const RuntimeMethod* method) 
 {
 	{
@@ -2944,7 +2944,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReferenceCounter_Dec_mF7B26E4B8232FADCFE
 		return;
 	}
 }
-// Method Definition Index: 79549
+// Method Definition Index: 81798
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReferenceCounter__ctor_mE28C990308A976CC6E48A670E57DBE0A095FB8EF (ReferenceCounter_t4AB2EABD22AF71296CD91AB92C5C2021A8E3580C* __this, const RuntimeMethod* method) 
 {
 	{
@@ -2960,7 +2960,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReferenceCounter__ctor_mE28C990308A976CC
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 79550
+// Method Definition Index: 81799
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* RayTracingHelper_CreateDispatchIndirectBuffer_m6B7F3340F21AD8B73DB5CDD24F4281A0745EF3C7 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2976,7 +2976,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2
 		return L_0;
 	}
 }
-// Method Definition Index: 79551
+// Method Definition Index: 81800
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* RayTracingHelper_CreateScratchBufferForBuildAndDispatch_mEDF8EAEE17E27AED51B36406876BDA39C5DCE43F (RuntimeObject* ___0_accelStruct, RuntimeObject* ___1_shader, uint32_t ___2_dispatchWidth, uint32_t ___3_dispatchHeight, uint32_t ___4_dispatchDepth, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3027,7 +3027,7 @@ IL_001b:
 		return L_10;
 	}
 }
-// Method Definition Index: 79552
+// Method Definition Index: 81801
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* RayTracingHelper_CreateScratchBufferForBuild_mDADFA19A8563B9C1BF33406C208E5AF56E276B2D (RuntimeObject* ___0_accelStruct, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3066,7 +3066,7 @@ IL_000c:
 		return L_4;
 	}
 }
-// Method Definition Index: 79553
+// Method Definition Index: 81802
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* RayTracingHelper_CreateScratchBufferForTrace_mF8BE1D15176C11BA21553F701B2DA09B2C2DB3FD (RuntimeObject* ___0_shader, uint32_t ___1_dispatchWidth, uint32_t ___2_dispatchHeight, uint32_t ___3_dispatchDepth, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3108,7 +3108,7 @@ IL_000f:
 		return L_7;
 	}
 }
-// Method Definition Index: 79554
+// Method Definition Index: 81803
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RayTracingHelper_ResizeScratchBufferForTrace_m1E81C00A594FA21D356D6346EFD984E8FAE992F9 (RuntimeObject* ___0_shader, uint32_t ___1_dispatchWidth, uint32_t ___2_dispatchHeight, uint32_t ___3_dispatchDepth, GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1** ___4_scratchBuffer, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3214,7 +3214,7 @@ IL_004a:
 		return;
 	}
 }
-// Method Definition Index: 79555
+// Method Definition Index: 81804
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RayTracingHelper_ResizeScratchBufferForBuild_mE3A0D58C1131FF94CFE7D1E1B33C486B9E61838D (RuntimeObject* ___0_accelStruct, GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1** ___1_scratchBuffer, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3325,7 +3325,7 @@ IL_0041:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 79556
+// Method Definition Index: 81805
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t RayTracingRenderPipelineResources_get_version_mF6084A3FBBD4678825BE322C0D88DE9BC565655E (RayTracingRenderPipelineResources_tA6E971DB933305AFF39E9A5092C74508E6C5459A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3334,7 +3334,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t RayTracingRenderPipelineResources_get
 		return L_0;
 	}
 }
-// Method Definition Index: 79557
+// Method Definition Index: 81806
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* RayTracingRenderPipelineResources_get_GeometryPoolKernels_m637907733B4E4183C7F69A7413A36CA481CD5194 (RayTracingRenderPipelineResources_tA6E971DB933305AFF39E9A5092C74508E6C5459A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3343,7 +3343,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ComputeShader_tA7BDD0F6EE879D149480F5890BA2E6
 		return L_0;
 	}
 }
-// Method Definition Index: 79558
+// Method Definition Index: 81807
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RayTracingRenderPipelineResources_set_GeometryPoolKernels_m0A6FEB565EF9BE718BF5C1E719C8DAF9B801937E (RayTracingRenderPipelineResources_tA6E971DB933305AFF39E9A5092C74508E6C5459A* __this, ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3361,7 +3361,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RayTracingRenderPipelineResources_set_Ge
 		return;
 	}
 }
-// Method Definition Index: 79559
+// Method Definition Index: 81808
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* RayTracingRenderPipelineResources_get_CopyBuffer_m780B0B93FFFB768A3C9CFD4B74B6A8665FD19E44 (RayTracingRenderPipelineResources_tA6E971DB933305AFF39E9A5092C74508E6C5459A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3370,7 +3370,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ComputeShader_tA7BDD0F6EE879D149480F5890BA2E6
 		return L_0;
 	}
 }
-// Method Definition Index: 79560
+// Method Definition Index: 81809
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RayTracingRenderPipelineResources_set_CopyBuffer_m9A6F64DEC8FD199518C17E6A8BE6D4EF68C76362 (RayTracingRenderPipelineResources_tA6E971DB933305AFF39E9A5092C74508E6C5459A* __this, ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3388,7 +3388,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RayTracingRenderPipelineResources_set_Co
 		return;
 	}
 }
-// Method Definition Index: 79561
+// Method Definition Index: 81810
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* RayTracingRenderPipelineResources_get_CopyPositions_m3C746632696BD223AE5D72BD3BFB1631D85E067D (RayTracingRenderPipelineResources_tA6E971DB933305AFF39E9A5092C74508E6C5459A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3397,7 +3397,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ComputeShader_tA7BDD0F6EE879D149480F5890BA2E6
 		return L_0;
 	}
 }
-// Method Definition Index: 79562
+// Method Definition Index: 81811
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RayTracingRenderPipelineResources_set_CopyPositions_mC56832609D54B88FE8BDFA44376FF8D16DDE2E54 (RayTracingRenderPipelineResources_tA6E971DB933305AFF39E9A5092C74508E6C5459A* __this, ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3415,7 +3415,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RayTracingRenderPipelineResources_set_Co
 		return;
 	}
 }
-// Method Definition Index: 79563
+// Method Definition Index: 81812
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* RayTracingRenderPipelineResources_get_BitHistogram_mB09CCEB5BAE17EA5F409398A4A97CDC04E275F5A (RayTracingRenderPipelineResources_tA6E971DB933305AFF39E9A5092C74508E6C5459A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3424,7 +3424,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ComputeShader_tA7BDD0F6EE879D149480F5890BA2E6
 		return L_0;
 	}
 }
-// Method Definition Index: 79564
+// Method Definition Index: 81813
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RayTracingRenderPipelineResources_set_BitHistogram_m73C8795D062B043B241B4DAC7956004B25CBE784 (RayTracingRenderPipelineResources_tA6E971DB933305AFF39E9A5092C74508E6C5459A* __this, ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3442,7 +3442,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RayTracingRenderPipelineResources_set_Bi
 		return;
 	}
 }
-// Method Definition Index: 79565
+// Method Definition Index: 81814
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* RayTracingRenderPipelineResources_get_BlockReducePart_m122881746CA9BB936372F04001F2E1DB175D6393 (RayTracingRenderPipelineResources_tA6E971DB933305AFF39E9A5092C74508E6C5459A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3451,7 +3451,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ComputeShader_tA7BDD0F6EE879D149480F5890BA2E6
 		return L_0;
 	}
 }
-// Method Definition Index: 79566
+// Method Definition Index: 81815
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RayTracingRenderPipelineResources_set_BlockReducePart_mAF3B4FFF426F929403F9F70D9F8ED6DF6CA6489E (RayTracingRenderPipelineResources_tA6E971DB933305AFF39E9A5092C74508E6C5459A* __this, ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3469,7 +3469,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RayTracingRenderPipelineResources_set_Bl
 		return;
 	}
 }
-// Method Definition Index: 79567
+// Method Definition Index: 81816
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* RayTracingRenderPipelineResources_get_BlockScan_m69D8D65D5C20002878A448985BE257652EFA6BF1 (RayTracingRenderPipelineResources_tA6E971DB933305AFF39E9A5092C74508E6C5459A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3478,7 +3478,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ComputeShader_tA7BDD0F6EE879D149480F5890BA2E6
 		return L_0;
 	}
 }
-// Method Definition Index: 79568
+// Method Definition Index: 81817
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RayTracingRenderPipelineResources_set_BlockScan_m4A1E3AB6E62C16764BB796622EBFD345DCF293E4 (RayTracingRenderPipelineResources_tA6E971DB933305AFF39E9A5092C74508E6C5459A* __this, ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3496,7 +3496,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RayTracingRenderPipelineResources_set_Bl
 		return;
 	}
 }
-// Method Definition Index: 79569
+// Method Definition Index: 81818
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* RayTracingRenderPipelineResources_get_BuildHlbvh_mFB9B0EA3FF7CE2F6813A125EB65F7DFF8A6DA538 (RayTracingRenderPipelineResources_tA6E971DB933305AFF39E9A5092C74508E6C5459A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3505,7 +3505,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ComputeShader_tA7BDD0F6EE879D149480F5890BA2E6
 		return L_0;
 	}
 }
-// Method Definition Index: 79570
+// Method Definition Index: 81819
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RayTracingRenderPipelineResources_set_BuildHlbvh_m46BFF2C4AB8BF59FF652E8BFAD2A29E79B49FCF8 (RayTracingRenderPipelineResources_tA6E971DB933305AFF39E9A5092C74508E6C5459A* __this, ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3523,7 +3523,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RayTracingRenderPipelineResources_set_Bu
 		return;
 	}
 }
-// Method Definition Index: 79571
+// Method Definition Index: 81820
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* RayTracingRenderPipelineResources_get_RestructureBvh_mF4FF4B5BE103690351CAA1CD5DC03222412D6E27 (RayTracingRenderPipelineResources_tA6E971DB933305AFF39E9A5092C74508E6C5459A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3532,7 +3532,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ComputeShader_tA7BDD0F6EE879D149480F5890BA2E6
 		return L_0;
 	}
 }
-// Method Definition Index: 79572
+// Method Definition Index: 81821
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RayTracingRenderPipelineResources_set_RestructureBvh_mA9CE17465F0DA7D5F033D9281054F2CACFD60134 (RayTracingRenderPipelineResources_tA6E971DB933305AFF39E9A5092C74508E6C5459A* __this, ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3550,7 +3550,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RayTracingRenderPipelineResources_set_Re
 		return;
 	}
 }
-// Method Definition Index: 79573
+// Method Definition Index: 81822
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* RayTracingRenderPipelineResources_get_Scatter_m823ED35060C9D79F20949434E2789F26C3750723 (RayTracingRenderPipelineResources_tA6E971DB933305AFF39E9A5092C74508E6C5459A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3559,7 +3559,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ComputeShader_tA7BDD0F6EE879D149480F5890BA2E6
 		return L_0;
 	}
 }
-// Method Definition Index: 79574
+// Method Definition Index: 81823
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RayTracingRenderPipelineResources_set_Scatter_m82477E896CD2DBED9EBDF7E2A217641CDFC2CCCA (RayTracingRenderPipelineResources_tA6E971DB933305AFF39E9A5092C74508E6C5459A* __this, ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3577,7 +3577,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RayTracingRenderPipelineResources_set_Sc
 		return;
 	}
 }
-// Method Definition Index: 79575
+// Method Definition Index: 81824
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RayTracingRenderPipelineResources__ctor_m8AB44591885527718E692A717ADA8F241DDF8922 (RayTracingRenderPipelineResources_tA6E971DB933305AFF39E9A5092C74508E6C5459A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3595,7 +3595,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RayTracingRenderPipelineResources__ctor_
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 79576
+// Method Definition Index: 81825
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* RayTracingResources_get_geometryPoolKernels_m266E7A8B48D3CC8F6E4CE3E0FAE3FB0CCEB022AF (RayTracingResources_t4F2C2153F93648342EFFD0B9DC4CB5166A9533F5* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3604,7 +3604,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ComputeShader_tA7BDD0F6EE879D149480F5890BA2E6
 		return L_0;
 	}
 }
-// Method Definition Index: 79577
+// Method Definition Index: 81826
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RayTracingResources_set_geometryPoolKernels_m67E0FB50A70BCECBF5C03A5AFD6396C75F98C25E (RayTracingResources_t4F2C2153F93648342EFFD0B9DC4CB5166A9533F5* __this, ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -3615,7 +3615,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RayTracingResources_set_geometryPoolKern
 		return;
 	}
 }
-// Method Definition Index: 79578
+// Method Definition Index: 81827
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* RayTracingResources_get_copyBuffer_m73AD0950FD765873ED8820390BFF769AE40B19DA (RayTracingResources_t4F2C2153F93648342EFFD0B9DC4CB5166A9533F5* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3624,7 +3624,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ComputeShader_tA7BDD0F6EE879D149480F5890BA2E6
 		return L_0;
 	}
 }
-// Method Definition Index: 79579
+// Method Definition Index: 81828
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RayTracingResources_set_copyBuffer_m341862420B0404D83B3EC9D60A10D1483DE5E905 (RayTracingResources_t4F2C2153F93648342EFFD0B9DC4CB5166A9533F5* __this, ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -3635,7 +3635,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RayTracingResources_set_copyBuffer_m3418
 		return;
 	}
 }
-// Method Definition Index: 79580
+// Method Definition Index: 81829
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* RayTracingResources_get_copyPositions_m44A53C639DEAE1D032EAB39EEB553731D536338B (RayTracingResources_t4F2C2153F93648342EFFD0B9DC4CB5166A9533F5* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3644,7 +3644,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ComputeShader_tA7BDD0F6EE879D149480F5890BA2E6
 		return L_0;
 	}
 }
-// Method Definition Index: 79581
+// Method Definition Index: 81830
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RayTracingResources_set_copyPositions_m03BEC51E8AFAAF45AB7BE5A1C9CF10B105CD7958 (RayTracingResources_t4F2C2153F93648342EFFD0B9DC4CB5166A9533F5* __this, ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -3655,7 +3655,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RayTracingResources_set_copyPositions_m0
 		return;
 	}
 }
-// Method Definition Index: 79582
+// Method Definition Index: 81831
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* RayTracingResources_get_bitHistogram_m9CCC85F00B2CF75367F3E5545E5BE29FEBB3C962 (RayTracingResources_t4F2C2153F93648342EFFD0B9DC4CB5166A9533F5* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3664,7 +3664,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ComputeShader_tA7BDD0F6EE879D149480F5890BA2E6
 		return L_0;
 	}
 }
-// Method Definition Index: 79583
+// Method Definition Index: 81832
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RayTracingResources_set_bitHistogram_m9BB5B08BEAA9D5DA6B871E8CC4C1067A81A9075E (RayTracingResources_t4F2C2153F93648342EFFD0B9DC4CB5166A9533F5* __this, ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -3675,7 +3675,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RayTracingResources_set_bitHistogram_m9B
 		return;
 	}
 }
-// Method Definition Index: 79584
+// Method Definition Index: 81833
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* RayTracingResources_get_scatter_mC9A32AF4CDF3F9D6A7785C2C0EDD73CC87832E18 (RayTracingResources_t4F2C2153F93648342EFFD0B9DC4CB5166A9533F5* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3684,7 +3684,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ComputeShader_tA7BDD0F6EE879D149480F5890BA2E6
 		return L_0;
 	}
 }
-// Method Definition Index: 79585
+// Method Definition Index: 81834
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RayTracingResources_set_scatter_m1E36DC3FDCBF370993B3BE465EB393D1CCE03DB7 (RayTracingResources_t4F2C2153F93648342EFFD0B9DC4CB5166A9533F5* __this, ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -3695,7 +3695,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RayTracingResources_set_scatter_m1E36DC3
 		return;
 	}
 }
-// Method Definition Index: 79586
+// Method Definition Index: 81835
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* RayTracingResources_get_blockReducePart_m3C489BF8656F175EABF1CC6692CADE908ABD96E5 (RayTracingResources_t4F2C2153F93648342EFFD0B9DC4CB5166A9533F5* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3704,7 +3704,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ComputeShader_tA7BDD0F6EE879D149480F5890BA2E6
 		return L_0;
 	}
 }
-// Method Definition Index: 79587
+// Method Definition Index: 81836
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RayTracingResources_set_blockReducePart_mB77E152AF3A817243580790F805ABD562D72B257 (RayTracingResources_t4F2C2153F93648342EFFD0B9DC4CB5166A9533F5* __this, ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -3715,7 +3715,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RayTracingResources_set_blockReducePart_
 		return;
 	}
 }
-// Method Definition Index: 79588
+// Method Definition Index: 81837
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* RayTracingResources_get_blockScan_m1DCAAFA0C8F6213F0B8D11157BA10639B320FF5C (RayTracingResources_t4F2C2153F93648342EFFD0B9DC4CB5166A9533F5* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3724,7 +3724,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ComputeShader_tA7BDD0F6EE879D149480F5890BA2E6
 		return L_0;
 	}
 }
-// Method Definition Index: 79589
+// Method Definition Index: 81838
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RayTracingResources_set_blockScan_m0BA0ECC6014260AB8B1A068F6D77648B491A8242 (RayTracingResources_t4F2C2153F93648342EFFD0B9DC4CB5166A9533F5* __this, ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -3735,7 +3735,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RayTracingResources_set_blockScan_m0BA0E
 		return;
 	}
 }
-// Method Definition Index: 79590
+// Method Definition Index: 81839
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* RayTracingResources_get_buildHlbvh_m20E4226A647B99288EA4D9F3E4B88E9001CA4133 (RayTracingResources_t4F2C2153F93648342EFFD0B9DC4CB5166A9533F5* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3744,7 +3744,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ComputeShader_tA7BDD0F6EE879D149480F5890BA2E6
 		return L_0;
 	}
 }
-// Method Definition Index: 79591
+// Method Definition Index: 81840
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RayTracingResources_set_buildHlbvh_m582157D93911F3A15841C19C939943EB9AD2B3B1 (RayTracingResources_t4F2C2153F93648342EFFD0B9DC4CB5166A9533F5* __this, ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -3755,7 +3755,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RayTracingResources_set_buildHlbvh_m5821
 		return;
 	}
 }
-// Method Definition Index: 79592
+// Method Definition Index: 81841
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* RayTracingResources_get_restructureBvh_m0B3428F5982BD27CE50E59238361CF6868EE3DB5 (RayTracingResources_t4F2C2153F93648342EFFD0B9DC4CB5166A9533F5* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3764,7 +3764,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ComputeShader_tA7BDD0F6EE879D149480F5890BA2E6
 		return L_0;
 	}
 }
-// Method Definition Index: 79593
+// Method Definition Index: 81842
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RayTracingResources_set_restructureBvh_m318AD8BB2EBC6FF6963E9D3743DF363BF635AA9F (RayTracingResources_t4F2C2153F93648342EFFD0B9DC4CB5166A9533F5* __this, ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -3775,7 +3775,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RayTracingResources_set_restructureBvh_m
 		return;
 	}
 }
-// Method Definition Index: 79594
+// Method Definition Index: 81843
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RayTracingResources_LoadFromAssetBundle_m05E8CCB2997876929EACED357D52F31B8448602A (RayTracingResources_t4F2C2153F93648342EFFD0B9DC4CB5166A9533F5* __this, AssetBundle_tB38418819A49060CD738CB21541649340F082943* ___0_assetBundle, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3852,7 +3852,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RayTracingResources_LoadFromAssetBundle_
 		return;
 	}
 }
-// Method Definition Index: 79595
+// Method Definition Index: 81844
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool RayTracingResources_LoadFromRenderPipelineResources_mBA946B2593DC725345914C3CE1C1A86EEFF9EEC2 (RayTracingResources_t4F2C2153F93648342EFFD0B9DC4CB5166A9533F5* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3938,7 +3938,7 @@ IL_000b:
 		return (bool)1;
 	}
 }
-// Method Definition Index: 79596
+// Method Definition Index: 81845
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RayTracingResources__ctor_mA41B35C84DE3ED2A0EAA97EBFD4BE547B3A0DD28 (RayTracingResources_t4F2C2153F93648342EFFD0B9DC4CB5166A9533F5* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3954,7 +3954,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RayTracingResources__ctor_mA41B35C84DE3E
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 79597
+// Method Definition Index: 81846
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SID__cctor_m1C72A600DBE54F2F29DC571DA15E94E79756129C (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3998,7 +3998,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SID__cctor_m1C72A600DBE54F2F29DC571DA15E
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 79598
+// Method Definition Index: 81847
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnifiedRayTracingException__ctor_mC5124DD873D5658CD09E3B32E47BD6B3EFF22ED8 (UnifiedRayTracingException_t27D3075E97E07349098D57EA02E6067EE6F3B390* __this, String_t* ___0_message, int32_t ___1_errorCode, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4019,7 +4019,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnifiedRayTracingException__ctor_mC5124D
 		return;
 	}
 }
-// Method Definition Index: 79599
+// Method Definition Index: 81848
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t UnifiedRayTracingException_get_errorCode_m00F445F7EB9721E36E1D6A2F923FECD6067002A3 (UnifiedRayTracingException_t27D3075E97E07349098D57EA02E6067EE6F3B390* __this, const RuntimeMethod* method) 
 {
 	{
@@ -4028,7 +4028,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t UnifiedRayTracingException_get_errorC
 		return L_0;
 	}
 }
-// Method Definition Index: 79600
+// Method Definition Index: 81849
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnifiedRayTracingException_set_errorCode_mCEF3167E73557CDED8BCD486F5DB2B6D223043E1 (UnifiedRayTracingException_t27D3075E97E07349098D57EA02E6067EE6F3B390* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -4070,7 +4070,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnifiedRayTracingException_set_errorCode
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 79601
+// Method Definition Index: 81850
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void __JobReflectionRegistrationOutput__1874814860780562806_CreateJobReflectionData_mEAE9072E8892ABF35AD7881CF046DBEC27FF6AAC (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4109,7 +4109,7 @@ IL_0016:
 		return;
 	}
 }
-// Method Definition Index: 79602
+// Method Definition Index: 81851
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void __JobReflectionRegistrationOutput__1874814860780562806_EarlyInit_m24841F62066A83EE470737503831C05F5B0C8F7B (const RuntimeMethod* method) 
 {
 	{
@@ -4120,7 +4120,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void __JobReflectionRegistrationOutput__18748
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-// Method Definition Index: 37794
+// Method Definition Index: 38154
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Settings_set_enableCompaction_m1AB48D9BC0D0785988A3BED6C9BCC5932C53D6EC_inline (Settings_t635C231FDA8D35EBE9568F993ED1442F0E145D94* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -4129,7 +4129,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Settings_set_enableCompactio
 		return;
 	}
 }
-// Method Definition Index: 37792
+// Method Definition Index: 38152
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Settings_set_buildFlagsStaticGeometries_m27C81507599C81DDF01CADE529B58C97550A3058_inline (Settings_t635C231FDA8D35EBE9568F993ED1442F0E145D94* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -4138,7 +4138,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Settings_set_buildFlagsStati
 		return;
 	}
 }
-// Method Definition Index: 79476
+// Method Definition Index: 81725
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RayTracingAccelerationStructure_tA2CDD2FA1D6A5A8D4BBA504ECCBB0208A3C7919D* HardwareRayTracingAccelStruct_get_accelStruct_m6BE10587906941FD822CA800A36BE3DF008E3500_inline (HardwareRayTracingAccelStruct_tA0222D6E6F3D30B7B6B3BE3B0D68E3D107BE459E* __this, const RuntimeMethod* method) 
 {
 	{
@@ -4147,7 +4147,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RayTracingAccelerationStructure_t
 		return L_0;
 	}
 }
-// Method Definition Index: 37789
+// Method Definition Index: 38149
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void BuildSettings_set_buildFlags_mE83AE894871667EB2BBD1B68160B0292D518CC87_inline (BuildSettings_tB970A34CAC0B7D0539FFCA20FA7F1727CDAC2A02* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -4156,7 +4156,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void BuildSettings_set_buildFlags
 		return;
 	}
 }
-// Method Definition Index: 35864
+// Method Definition Index: 36207
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_get_zero_m0C1249C3F25B1C70EAD3CC8B31259975A457AE39_inline (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4170,7 +4170,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D
 		return L_0;
 	}
 }
-// Method Definition Index: 37790
+// Method Definition Index: 38150
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void BuildSettings_set_relativeOrigin_mC231E6EE2CF2776437A27C9463AFF52F9F0C39A5_inline (BuildSettings_tB970A34CAC0B7D0539FFCA20FA7F1727CDAC2A02* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -4179,7 +4179,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void BuildSettings_set_relativeOr
 		return;
 	}
 }
-// Method Definition Index: 50464
+// Method Definition Index: 50824
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void uint3__ctor_mEFEA14BBA36F53111474B0C3C3B729061F1ACCAF_inline (uint3_tC1C1C817DB46ED2E6A6C7390716FDDD565917F7B* __this, uint32_t ___0_x, uint32_t ___1_y, uint32_t ___2_z, const RuntimeMethod* method) 
 {
 	{
@@ -4196,7 +4196,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void uint3__ctor_mEFEA14BBA36F531
 		return;
 	}
 }
-// Method Definition Index: 35817
+// Method Definition Index: 36160
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 Matrix4x4_get_identity_m6568A73831F3E2D587420D20FF423959D7D8AB56_inline (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4210,7 +4210,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Matrix4x4_tDB70CF134A14BA38190C59
 		return L_0;
 	}
 }
-// Method Definition Index: 79545
+// Method Definition Index: 81794
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void RayTracingContext_set_BackendType_mD76B3ECB08571547BDB0E8BE309E74430758AA3F_inline (RayTracingContext_tE1718B700E40616B50787F24C6FCFAD74684E7D9* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -4220,7 +4220,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void RayTracingContext_set_Backen
 		return;
 	}
 }
-// Method Definition Index: 79537
+// Method Definition Index: 81786
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void RayTracingContext_set_Resources_m951513BE15192C3B78942EED37A62F2931297C50_inline (RayTracingContext_tE1718B700E40616B50787F24C6FCFAD74684E7D9* __this, RayTracingResources_t4F2C2153F93648342EFFD0B9DC4CB5166A9533F5* ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -4231,7 +4231,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void RayTracingContext_set_Resour
 		return;
 	}
 }
-// Method Definition Index: 79544
+// Method Definition Index: 81793
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t RayTracingContext_get_BackendType_m409AD888850BECA9CD60F4DAE3AC295961F3E82E_inline (RayTracingContext_tE1718B700E40616B50787F24C6FCFAD74684E7D9* __this, const RuntimeMethod* method) 
 {
 	{
@@ -4240,7 +4240,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t RayTracingContext_get_Bac
 		return L_0;
 	}
 }
-// Method Definition Index: 79577
+// Method Definition Index: 81826
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void RayTracingResources_set_geometryPoolKernels_m67E0FB50A70BCECBF5C03A5AFD6396C75F98C25E_inline (RayTracingResources_t4F2C2153F93648342EFFD0B9DC4CB5166A9533F5* __this, ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -4251,7 +4251,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void RayTracingResources_set_geom
 		return;
 	}
 }
-// Method Definition Index: 79579
+// Method Definition Index: 81828
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void RayTracingResources_set_copyBuffer_m341862420B0404D83B3EC9D60A10D1483DE5E905_inline (RayTracingResources_t4F2C2153F93648342EFFD0B9DC4CB5166A9533F5* __this, ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -4262,7 +4262,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void RayTracingResources_set_copy
 		return;
 	}
 }
-// Method Definition Index: 79581
+// Method Definition Index: 81830
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void RayTracingResources_set_copyPositions_m03BEC51E8AFAAF45AB7BE5A1C9CF10B105CD7958_inline (RayTracingResources_t4F2C2153F93648342EFFD0B9DC4CB5166A9533F5* __this, ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -4273,7 +4273,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void RayTracingResources_set_copy
 		return;
 	}
 }
-// Method Definition Index: 79583
+// Method Definition Index: 81832
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void RayTracingResources_set_bitHistogram_m9BB5B08BEAA9D5DA6B871E8CC4C1067A81A9075E_inline (RayTracingResources_t4F2C2153F93648342EFFD0B9DC4CB5166A9533F5* __this, ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -4284,7 +4284,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void RayTracingResources_set_bitH
 		return;
 	}
 }
-// Method Definition Index: 79587
+// Method Definition Index: 81836
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void RayTracingResources_set_blockReducePart_mB77E152AF3A817243580790F805ABD562D72B257_inline (RayTracingResources_t4F2C2153F93648342EFFD0B9DC4CB5166A9533F5* __this, ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -4295,7 +4295,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void RayTracingResources_set_bloc
 		return;
 	}
 }
-// Method Definition Index: 79589
+// Method Definition Index: 81838
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void RayTracingResources_set_blockScan_m0BA0ECC6014260AB8B1A068F6D77648B491A8242_inline (RayTracingResources_t4F2C2153F93648342EFFD0B9DC4CB5166A9533F5* __this, ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -4306,7 +4306,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void RayTracingResources_set_bloc
 		return;
 	}
 }
-// Method Definition Index: 79591
+// Method Definition Index: 81840
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void RayTracingResources_set_buildHlbvh_m582157D93911F3A15841C19C939943EB9AD2B3B1_inline (RayTracingResources_t4F2C2153F93648342EFFD0B9DC4CB5166A9533F5* __this, ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -4317,7 +4317,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void RayTracingResources_set_buil
 		return;
 	}
 }
-// Method Definition Index: 79593
+// Method Definition Index: 81842
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void RayTracingResources_set_restructureBvh_m318AD8BB2EBC6FF6963E9D3743DF363BF635AA9F_inline (RayTracingResources_t4F2C2153F93648342EFFD0B9DC4CB5166A9533F5* __this, ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -4328,7 +4328,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void RayTracingResources_set_rest
 		return;
 	}
 }
-// Method Definition Index: 79585
+// Method Definition Index: 81834
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void RayTracingResources_set_scatter_m1E36DC3FDCBF370993B3BE465EB393D1CCE03DB7_inline (RayTracingResources_t4F2C2153F93648342EFFD0B9DC4CB5166A9533F5* __this, ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -4339,7 +4339,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void RayTracingResources_set_scat
 		return;
 	}
 }
-// Method Definition Index: 79557
+// Method Definition Index: 81806
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* RayTracingRenderPipelineResources_get_GeometryPoolKernels_m637907733B4E4183C7F69A7413A36CA481CD5194_inline (RayTracingRenderPipelineResources_tA6E971DB933305AFF39E9A5092C74508E6C5459A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -4348,7 +4348,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ComputeShader_tA7BDD0F6EE879D1494
 		return L_0;
 	}
 }
-// Method Definition Index: 79559
+// Method Definition Index: 81808
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* RayTracingRenderPipelineResources_get_CopyBuffer_m780B0B93FFFB768A3C9CFD4B74B6A8665FD19E44_inline (RayTracingRenderPipelineResources_tA6E971DB933305AFF39E9A5092C74508E6C5459A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -4357,7 +4357,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ComputeShader_tA7BDD0F6EE879D1494
 		return L_0;
 	}
 }
-// Method Definition Index: 79561
+// Method Definition Index: 81810
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* RayTracingRenderPipelineResources_get_CopyPositions_m3C746632696BD223AE5D72BD3BFB1631D85E067D_inline (RayTracingRenderPipelineResources_tA6E971DB933305AFF39E9A5092C74508E6C5459A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -4366,7 +4366,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ComputeShader_tA7BDD0F6EE879D1494
 		return L_0;
 	}
 }
-// Method Definition Index: 79563
+// Method Definition Index: 81812
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* RayTracingRenderPipelineResources_get_BitHistogram_mB09CCEB5BAE17EA5F409398A4A97CDC04E275F5A_inline (RayTracingRenderPipelineResources_tA6E971DB933305AFF39E9A5092C74508E6C5459A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -4375,7 +4375,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ComputeShader_tA7BDD0F6EE879D1494
 		return L_0;
 	}
 }
-// Method Definition Index: 79565
+// Method Definition Index: 81814
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* RayTracingRenderPipelineResources_get_BlockReducePart_m122881746CA9BB936372F04001F2E1DB175D6393_inline (RayTracingRenderPipelineResources_tA6E971DB933305AFF39E9A5092C74508E6C5459A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -4384,7 +4384,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ComputeShader_tA7BDD0F6EE879D1494
 		return L_0;
 	}
 }
-// Method Definition Index: 79567
+// Method Definition Index: 81816
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* RayTracingRenderPipelineResources_get_BlockScan_m69D8D65D5C20002878A448985BE257652EFA6BF1_inline (RayTracingRenderPipelineResources_tA6E971DB933305AFF39E9A5092C74508E6C5459A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -4393,7 +4393,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ComputeShader_tA7BDD0F6EE879D1494
 		return L_0;
 	}
 }
-// Method Definition Index: 79569
+// Method Definition Index: 81818
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* RayTracingRenderPipelineResources_get_BuildHlbvh_mFB9B0EA3FF7CE2F6813A125EB65F7DFF8A6DA538_inline (RayTracingRenderPipelineResources_tA6E971DB933305AFF39E9A5092C74508E6C5459A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -4402,7 +4402,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ComputeShader_tA7BDD0F6EE879D1494
 		return L_0;
 	}
 }
-// Method Definition Index: 79571
+// Method Definition Index: 81820
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* RayTracingRenderPipelineResources_get_RestructureBvh_mF4FF4B5BE103690351CAA1CD5DC03222412D6E27_inline (RayTracingRenderPipelineResources_tA6E971DB933305AFF39E9A5092C74508E6C5459A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -4411,7 +4411,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ComputeShader_tA7BDD0F6EE879D1494
 		return L_0;
 	}
 }
-// Method Definition Index: 79573
+// Method Definition Index: 81822
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* RayTracingRenderPipelineResources_get_Scatter_m823ED35060C9D79F20949434E2789F26C3750723_inline (RayTracingRenderPipelineResources_tA6E971DB933305AFF39E9A5092C74508E6C5459A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -4420,7 +4420,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ComputeShader_tA7BDD0F6EE879D1494
 		return L_0;
 	}
 }
-// Method Definition Index: 79600
+// Method Definition Index: 81849
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void UnifiedRayTracingException_set_errorCode_mCEF3167E73557CDED8BCD486F5DB2B6D223043E1_inline (UnifiedRayTracingException_t27D3075E97E07349098D57EA02E6067EE6F3B390* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
