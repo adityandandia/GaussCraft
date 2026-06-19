@@ -1,8 +1,8 @@
 from fastapi import APIRouter, UploadFile, File, BackgroundTasks, HTTPException
 from fastapi.responses import FileResponse, RedirectResponse
-import uuid, shutil, os
+import uuid, shutil, os, zipfile
 from pathlib import Path
-from backend.tasks import run_pipeline
+from backend.tasks import run_pipeline, run_pipeline_from_images
 
 router = APIRouter()
 WORKSPACE = Path("/home/cave/3dapp/workspace")
@@ -13,12 +13,28 @@ jobs = {}
 async def upload(background_tasks: BackgroundTasks, file: UploadFile = File(...)):
     job_id = str(uuid.uuid4())
     session_dir = WORKSPACE / job_id
-    os.makedirs(session_dir / "images", exist_ok=True)
-    video_path = session_dir / "input.mp4"
-    with open(video_path, "wb") as buffer:
+    images_dir = session_dir / "images"
+    os.makedirs(images_dir, exist_ok=True)
+
+    # save uploaded file
+    upload_path = session_dir / file.filename
+    with open(upload_path, "wb") as buffer:
         shutil.copyfileobj(file.file, buffer)
-    jobs[job_id] = "processing"
-    background_tasks.add_task(run_pipeline, job_id, video_path, session_dir, jobs)
+
+    # if zip of frames, extract to images_dir
+    if file.filename.endswith(".zip"):
+        with zipfile.ZipFile(upload_path, 'r') as z:
+            z.extractall(images_dir)
+        os.remove(upload_path)
+        jobs[job_id] = "processing"
+        background_tasks.add_task(run_pipeline_from_images, job_id, session_dir, jobs)
+    else:
+        # treat as video
+        video_path = session_dir / "input.mp4"
+        os.rename(upload_path, video_path)
+        jobs[job_id] = "processing"
+        background_tasks.add_task(run_pipeline, job_id, video_path, session_dir, jobs)
+
     return {"job_id": job_id}
 
 @router.get("/status/{job_id}")
@@ -33,12 +49,9 @@ def download_ply(job_id: str):
         raise HTTPException(status_code=404, detail="Job not found")
     if jobs[job_id] != "done":
         raise HTTPException(status_code=400, detail="Job not complete yet")
-    
-    # cleaned ply is always written here by clean_splat()
     ply_path = WORKSPACE / job_id / "point_cloud.ply"
     if not ply_path.exists():
         raise HTTPException(status_code=404, detail="PLY file not found")
-    
     return FileResponse(
         path=str(ply_path),
         media_type="application/octet-stream",
