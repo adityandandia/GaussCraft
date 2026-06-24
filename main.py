@@ -39,3 +39,31 @@ async def upload_video(background_tasks: BackgroundTasks, file: UploadFile = Fil
 
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8000)
+
+from fastapi.responses import FileResponse
+import os
+
+PLY_PATH = "/home/cave/3dapp/workspace"  # we'll find the actual ply below
+
+@app.get("/health")
+def health():
+    ply_files = []
+    for root, dirs, files in os.walk("/home/cave/3dapp/workspace"):
+        for f in files:
+            if f.endswith(".ply"):
+                ply_files.append(os.path.join(root, f))
+    latest = sorted(ply_files)[-1] if ply_files else None
+    return {"status": "ok", "ply_ready": latest is not None, "ply_path": latest}
+
+@app.get("/splat/latest.ply")
+def serve_ply():
+    ply_files = []
+    for root, dirs, files in os.walk("/home/cave/3dapp/workspace"):
+        for f in files:
+            if f.endswith("cleaned_point_cloud.ply"):
+                ply_files.append(os.path.join(root, f))
+    if not ply_files:
+        from fastapi import HTTPException
+        raise HTTPException(status_code=404, detail="No PLY found. Run pipeline first.")
+    latest = sorted(ply_files)[-1]
+    return FileResponse(path=latest, media_type="application/octet-stream", filename="latest.ply")

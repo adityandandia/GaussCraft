@@ -121,6 +121,7 @@ struct CustomSampler_tDA472186F08B4016626F032F944036BADFDB5487;
 struct DebugHandler_t3A09E2CFD1CA6F5C192968A6FF19EE4863F44DA4;
 struct Delegate_t;
 struct DelegateData_t9B286B493293CD2D23A5B2B5EF0E5B1324C2B77E;
+struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2;
 struct GaussianCutout_t54EC7CBB423FA7499B14109E62517AB1A667ADBA;
 struct GaussianSplatAsset_tA0EE79B8E6D2BC1E544889BBF56C99F9BAE3F49A;
 struct GaussianSplatRenderSystem_t11BFE69BA1DF507190D893301F735C193816AC6F;
@@ -214,6 +215,7 @@ IL2CPP_EXTERN_C RuntimeClass* HashSet_1_t1E34051779ACFE950A5A1FFE8C474411C83AEEF
 IL2CPP_EXTERN_C RuntimeClass* IBaseRenderGraphBuilder_tFFF84F72F862F1BE246A789AB6A59F959B490F3D_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* InvalidOperationException_t5DDE4D49B7405FAAB1E4576F4715A42A3FAD4BAB_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* KernelIndices_tEFD6CAEF003F62325653E92668E93399405C3C26_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* List_1_t80CD30FBFCDEA39B09C09E4715C2381F2427FFDA_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* MaterialPropertyBlock_t2308669579033A857EFE6E4831909F638B27411D_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3_il2cpp_TypeInfo_var;
@@ -239,6 +241,7 @@ IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_tDF942AF1578D24
 IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_tDF942AF1578D241DB8BF7052F9E320EFB92ACA1B____5E453DCC2D6484320DE675E10949B24A35B7283B5933C77CB36CE8007B21D29F_FieldInfo_var;
 IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_tDF942AF1578D241DB8BF7052F9E320EFB92ACA1B____908A849E2F73450E8831271296B184D9CB8515A9D3006499C5A3054DE04102D1_FieldInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral01A849374C26F36DBF4641EFCBB31ABDCEFF10D2;
+IL2CPP_EXTERN_C String_t* _stringLiteral0417411373A2D4746573E9E290E910AB237214C7;
 IL2CPP_EXTERN_C String_t* _stringLiteral04D42C0368809244A1E028A6F0B0E9232259FB39;
 IL2CPP_EXTERN_C String_t* _stringLiteral066E09F054EFE4505D21B1F8FCD3088DDDF80F97;
 IL2CPP_EXTERN_C String_t* _stringLiteral0D79F9B48C13F4734AEA578DE28CB1375E7439A7;
@@ -257,14 +260,17 @@ IL2CPP_EXTERN_C String_t* _stringLiteral2695115A108426254A5EC94E59DDBCDAF8563E61
 IL2CPP_EXTERN_C String_t* _stringLiteral2CC7883DE15B35C7EB3DFC1DA6A449C9A3C77633;
 IL2CPP_EXTERN_C String_t* _stringLiteral2DCE0D7FCD703103CF0C8CCEBB689819620197F5;
 IL2CPP_EXTERN_C String_t* _stringLiteral2EB61A3A9F0326E3202F3C914A1C5FECA1ED9F82;
+IL2CPP_EXTERN_C String_t* _stringLiteral3017D43784CDC6156A3AA5CC2AF3CB32FAF4FA08;
 IL2CPP_EXTERN_C String_t* _stringLiteral350652A59E81F2E1C253D553B7B9F0324EA5AC2F;
 IL2CPP_EXTERN_C String_t* _stringLiteral365DF8832C79B7CACE301F2BE4B7B42FFEF1C8B6;
 IL2CPP_EXTERN_C String_t* _stringLiteral36ED0E3A3DAC9C387172C01C8C968EFAA6696AE8;
 IL2CPP_EXTERN_C String_t* _stringLiteral39E07E5F60D56737FAAB8529807A6B5A4729B426;
 IL2CPP_EXTERN_C String_t* _stringLiteral3C5BE8CBA5A398D6E135E36D7AB53DE8D7F1E17A;
+IL2CPP_EXTERN_C String_t* _stringLiteral3C865CD37F13CF7D0AF2A047D1E483438916420B;
 IL2CPP_EXTERN_C String_t* _stringLiteral3D13C32D6F9A64A754BD9B3EF0612990A7730E68;
 IL2CPP_EXTERN_C String_t* _stringLiteral3F49B11A35F23F16926683598F5663CB5E89D9B0;
 IL2CPP_EXTERN_C String_t* _stringLiteral3FB0E416BF78CCC64E19286497715790563B6AD4;
+IL2CPP_EXTERN_C String_t* _stringLiteral40A3162833B32D688D9E44F5896618E9257B838E;
 IL2CPP_EXTERN_C String_t* _stringLiteral46739B774F29A1E6150A1F7FB57B049BA2188998;
 IL2CPP_EXTERN_C String_t* _stringLiteral49AE794C00022ECA141068DEA9531BF6E0D342B7;
 IL2CPP_EXTERN_C String_t* _stringLiteral4E5111B618A63A0B8A990DE7831E8C1174DB1455;
@@ -286,13 +292,19 @@ IL2CPP_EXTERN_C String_t* _stringLiteral75C9716749EA210206E3467390B7A11F3F33DDFA
 IL2CPP_EXTERN_C String_t* _stringLiteral7663E88C4790D45BD7F57511C40023FDF2A9B041;
 IL2CPP_EXTERN_C String_t* _stringLiteral768B818911986978F112776D3EE0D06AA5D13E6A;
 IL2CPP_EXTERN_C String_t* _stringLiteral76995D09E193A5D45B2133619BC1B7E947F88CBB;
+IL2CPP_EXTERN_C String_t* _stringLiteral78415019B0F0C4678DF2257F57C65FCC9EE79B4A;
 IL2CPP_EXTERN_C String_t* _stringLiteral794D108735E26C17F33527BAD863D2ECD0723BDF;
 IL2CPP_EXTERN_C String_t* _stringLiteral7B165A9C3BDBF7D8A6156F3DBF752DE42DE911C0;
+IL2CPP_EXTERN_C String_t* _stringLiteral7B54F3A97FB92AFE16080714710013FA799BC7A5;
 IL2CPP_EXTERN_C String_t* _stringLiteral7E80E238C16F622CA996E52E0A5AA2C015F43703;
 IL2CPP_EXTERN_C String_t* _stringLiteral7F14B77709857A155C808FD537C01FAD6A1BDB04;
 IL2CPP_EXTERN_C String_t* _stringLiteral7F8965F448C5DD999776FE4276B9870088ECA285;
 IL2CPP_EXTERN_C String_t* _stringLiteral8149E0EFE12170E095B014FCDF1BBF45C9577A9A;
 IL2CPP_EXTERN_C String_t* _stringLiteral818E6160E3F1935C888D959B2488DA33FE21507A;
+IL2CPP_EXTERN_C String_t* _stringLiteral855DC3778FB864EDB3C0805C746598FD20FC643A;
+IL2CPP_EXTERN_C String_t* _stringLiteral85744DA9E8CF1BADC18142680D22D1AA9910E41C;
+IL2CPP_EXTERN_C String_t* _stringLiteral8AD88FE738B9FD0CB35EC952371F989DF6663E7F;
+IL2CPP_EXTERN_C String_t* _stringLiteral8CF36CF94F08B70CA405EC4FB54CB17AEC3DB7A4;
 IL2CPP_EXTERN_C String_t* _stringLiteral9082C2533EF68CCB9275241AE54C586BC562A2ED;
 IL2CPP_EXTERN_C String_t* _stringLiteral94815E8EC0EA33B9EBC924206A2FB6F26351BA7D;
 IL2CPP_EXTERN_C String_t* _stringLiteral94F6010C9602EBA450D96D3DA332A47EF892D80F;
@@ -313,6 +325,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteralAD32F58840A114E80751E236BA9F0EEE53342DFC
 IL2CPP_EXTERN_C String_t* _stringLiteralAFC0A5D985EE15F6F25AFC1AE92F9CBE4DFE1CCE;
 IL2CPP_EXTERN_C String_t* _stringLiteralB0434638C8DCD85B89D612B929C2A4D853BCE9DB;
 IL2CPP_EXTERN_C String_t* _stringLiteralB12992830BE36AF15A5EF2EBF2BD499A64A62A8C;
+IL2CPP_EXTERN_C String_t* _stringLiteralB2957BB71D75A1FC0BE035457692BB1585EFB163;
 IL2CPP_EXTERN_C String_t* _stringLiteralB4588B4D8CEC79CEAC4A4A2A95534812EED75459;
 IL2CPP_EXTERN_C String_t* _stringLiteralB64A42CE807EBCD489C114FA14D2580F4856D652;
 IL2CPP_EXTERN_C String_t* _stringLiteralB74A5F02DDB698E92FA4BCC827B2303BA65E6CB5;
@@ -355,8 +368,11 @@ IL2CPP_EXTERN_C String_t* _stringLiteralF1C54DAF37C5B4FB6F11028E252AE605A78AC80F
 IL2CPP_EXTERN_C String_t* _stringLiteralF4F635B142B446C83CAF87E6A4016B584B98B5F4;
 IL2CPP_EXTERN_C String_t* _stringLiteralF786C9389DEB700ACF619EE4B8675E30645DC9F7;
 IL2CPP_EXTERN_C String_t* _stringLiteralF8426F06799636B084107C7944C85096DEE54922;
+IL2CPP_EXTERN_C String_t* _stringLiteralF99FC1B4E52FB1847FD9602415BA6DC474FDAAE4;
 IL2CPP_EXTERN_C String_t* _stringLiteralFCE042213D7DB148CA6D1D48A4988C534B28AD73;
 IL2CPP_EXTERN_C String_t* _stringLiteralFE125FC99B255EA0D338AC7A56A180BA01E09A81;
+IL2CPP_EXTERN_C String_t* _stringLiteralFF0E2D4D8603A0EBFEEBE524ACAA64A70AD13ADA;
+IL2CPP_EXTERN_C String_t* _stringLiteralFFA7161D3FD8A0EAC5351C85ABF11D6A81645530;
 IL2CPP_EXTERN_C const RuntimeMethod* ContextContainer_Get_TisUniversalCameraData_t7904AE9D68B973761A72DFAA7CA3DE915696E1C7_mE62F7903614384541B770CC0B9A99BD2E608A0F8_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* ContextContainer_Get_TisUniversalResourceData_t1F1DE4101BE122578EAA5E4750D00ACAF1042626_m1CAD9250ED48A65B3DE774336F9221928EB054B4_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_Add_mBE433394CAC9F543EA4C11BD0F783D8BF6EBA683_RuntimeMethod_var;
@@ -2065,6 +2081,10 @@ struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_StaticFields
 	String_t* ___TrueString;
 	String_t* ___FalseString;
 };
+struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2_StaticFields
+{
+	CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ___enumSeperatorCharArray;
+};
 struct IntPtr_t_StaticFields
 {
 	intptr_t ___Zero;
@@ -2743,6 +2763,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatRenderer_InitSortBuffers_m4
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GraphicsBuffer_Dispose_m2D1F14A03BE2CAA0A68536470298B468F77AB596 (GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SupportResources_Dispose_m9B2AEED86B6B94C9928B0F55E8990341ACF1ACD3 (SupportResources_t5AC238831D0D3573BDE0D34C7CF4228E4102A62F* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatRenderer_EnsureSorterAndRegister_m8D7877263292496F70350DFDFFA89E49146DCEFB (GaussianSplatRenderer_t4D745E5F7574870774C18D1B3991A1CB47891EB3* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ComputeShader_FindKernel_m3BA5C50794FA6AF4C432E55FBBD7CB266532F659 (ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* __this, String_t* ___0_name, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ComputeShader_SetBuffer_m27D878BB0412309CF59C164CAF872580C6F053E1 (ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* __this, int32_t ___0_kernelIndex, int32_t ___1_nameID, GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* ___2_buffer, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ComputeShader_SetInt_m5BED46962875818A120FA6D2E4FD820B62BCE8AD (ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* __this, int32_t ___0_nameID, int32_t ___1_val, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ComputeShader_GetKernelThreadGroupSizes_m693428494DB1FD3CFC69FCE4E0093A2C4AAE1CBE (ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* __this, int32_t ___0_kernelIndex, uint32_t* ___1_x, uint32_t* ___2_y, uint32_t* ___3_z, const RuntimeMethod* method) ;
@@ -2850,6 +2871,8 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Matrix4x4_get_lossyScale_mFB3D4CF6408D710D607CA1D2AF94B2E4E0B57EB7_inline (Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CommandBuffer_SetComputeTextureParam_m4EE2EFCF46096652EA2D3D14C0DE3D1252CD2174 (CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* __this, ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* ___0_computeShader, int32_t ___1_kernelIndex, String_t* ___2_name, RenderTargetIdentifier_tA528663AC6EB3911D8E91AA40F7070FA5455442B ___3_rt, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CommandBuffer_SetComputeMatrixParam_m5D9259AC509EE5473BC46C6D8E3A80467993826A (CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* __this, ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* ___0_computeShader, String_t* ___1_name, Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 ___2_val, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741 (RuntimeObject* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m9E3155FB84015C823606188F53B47CB44C444991 (String_t* ___0_str0, String_t* ___1_str1, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Shader_PropertyToID_mE98523D50F5656CAE89B30695C458253EB8956CA (String_t* ___0_name, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GSRenderPass__ctor_mAC3B47A8D71B2CE09B10774BC07823CE43D1A95D (GSRenderPass_t9B9EA925E2C4A8785B790B4329E65B73A03D2DCA* __this, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ScriptableRenderPass_set_renderPassEvent_m63FA581FFDE1C69C2E1358BD0B8DB30275334960_inline (ScriptableRenderPass_tEA38F6C7AD8D111A2251E4C2A7530BCEE7D6D2B0* __this, int32_t ___0_value, const RuntimeMethod* method) ;
@@ -2907,7 +2930,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float3_t4AB5D88249ADB24F69FFD0793
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void float4__ctor_m2A21052EF06884F609D1CDA9A2C2ED84A7584345_inline (float4_t89D9A294E7A79BD81BFBDD18654508532958555E* __this, float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E ___0_xyz, float ___1_w, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t GaussianUtils_MortonPart1By2_mF87D4F7FB0BF80F79760C187472E15B30CE65965 (uint64_t ___0_x, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void uint2__ctor_mDE945EFF54FDA16335AC19E9E01A9BAE161B8D3F_inline (uint2_t157753816C23B82EB918C3D3AFCFDDE06A04C05F* __this, uint32_t ___0_x, uint32_t ___1_y, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ComputeShader_FindKernel_m3BA5C50794FA6AF4C432E55FBBD7CB266532F659 (ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* __this, String_t* ___0_name, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ComputeShader_IsSupported_m578F85780373DE2085340BE5662D5B499FEB3B6C (ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* __this, int32_t ___0_kernelIndex, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LocalKeyword__ctor_m2525E4690C99FAF415082FD7E1AD44CFE7F08169 (LocalKeyword_tED7F563B432A5461E58CE7032AF6D1CD669CD0CB* __this, ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* ___0_shader, String_t* ___1_name, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ComputeShader_EnableKeyword_m5DA6242BA150DE6FF5AC30683AA24F6994EB74A6 (ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* __this, LocalKeyword_tED7F563B432A5461E58CE7032AF6D1CD669CD0CB* ___0_keyword, const RuntimeMethod* method) ;
@@ -2955,7 +2977,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void uint4__ctor_m59B6A219A0285C6
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 86608
+// Method Definition Index: 86824
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MonoScriptData_tCD151C8432BD93111085E32296D43F937CFD4404 UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mFD5AED8D06DDE3DAA2E7048F31F0B1D33D358717 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2989,7 +3011,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MonoScriptData_tCD151C8432BD93111085E32296D43
 		return L_6;
 	}
 }
-// Method Definition Index: 86609
+// Method Definition Index: 86825
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mF3507156882C7E280180EB2FE7FB1BBFE97F3374 (UnitySourceGeneratedAssemblyMonoScriptTypes_v1_t876DDF01810A7C8220F51E8B0F45566D24CBA077* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3075,7 +3097,7 @@ IL2CPP_EXTERN_C void MonoScriptData_tCD151C8432BD93111085E32296D43F937CFD4404_ma
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 86610
+// Method Definition Index: 86826
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ShaderData_t3FCE749CA1640092D11B2183ADE1558972BC7182 GaussianCutout_GetShaderData_m3172B06FA9744BDAA54400EBA5CC1262C184E876 (GaussianCutout_t54EC7CBB423FA7499B14109E62517AB1A667ADBA* ___0_self, Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 ___1_rendererMatrix, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3182,7 +3204,7 @@ IL_005a:
 		return L_14;
 	}
 }
-// Method Definition Index: 86611
+// Method Definition Index: 86827
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianCutout__ctor_mC0DDF9825A5ECC53929831B1D4CC0680DD2B2184 (GaussianCutout_t54EC7CBB423FA7499B14109E62517AB1A667ADBA* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3214,7 +3236,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianCutout__ctor_mC0DDF9825A5ECC5392
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 86612
+// Method Definition Index: 86828
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t GaussianSplatAsset_get_formatVersion_mCFE51A2C2EF5B113458033CDB1A3EE051D48C76C (GaussianSplatAsset_tA0EE79B8E6D2BC1E544889BBF56C99F9BAE3F49A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3223,7 +3245,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t GaussianSplatAsset_get_formatVersion_
 		return L_0;
 	}
 }
-// Method Definition Index: 86613
+// Method Definition Index: 86829
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t GaussianSplatAsset_get_splatCount_m980BF18C9B216AE0B6A9DCF42A2567163990B199 (GaussianSplatAsset_tA0EE79B8E6D2BC1E544889BBF56C99F9BAE3F49A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3232,7 +3254,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t GaussianSplatAsset_get_splatCount_m98
 		return L_0;
 	}
 }
-// Method Definition Index: 86614
+// Method Definition Index: 86830
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 GaussianSplatAsset_get_boundsMin_m6B7349A8F65AE951CB38C3A3F0C34E67E0EB207E (GaussianSplatAsset_tA0EE79B8E6D2BC1E544889BBF56C99F9BAE3F49A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3241,7 +3263,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A
 		return L_0;
 	}
 }
-// Method Definition Index: 86615
+// Method Definition Index: 86831
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 GaussianSplatAsset_get_boundsMax_m9559E91312FB7D2BE1C431657B3F2CC813456766 (GaussianSplatAsset_tA0EE79B8E6D2BC1E544889BBF56C99F9BAE3F49A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3250,7 +3272,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A
 		return L_0;
 	}
 }
-// Method Definition Index: 86616
+// Method Definition Index: 86832
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Hash128_t93367F504B687578F893CDBCD13FB95AC8A87A40 GaussianSplatAsset_get_dataHash_mA56C7270E0FF1465EE93A0B69A97F3923BFC0B00 (GaussianSplatAsset_tA0EE79B8E6D2BC1E544889BBF56C99F9BAE3F49A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3259,7 +3281,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Hash128_t93367F504B687578F893CDBCD13FB95AC8A8
 		return L_0;
 	}
 }
-// Method Definition Index: 86617
+// Method Definition Index: 86833
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t GaussianSplatAsset_GetVectorSize_m5010CD77CD3F0782D1690B5CE320527CBAA86C7E (int32_t ___0_fmt, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
@@ -3342,7 +3364,7 @@ IL_003b:
 		return L_5;
 	}
 }
-// Method Definition Index: 86618
+// Method Definition Index: 86834
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t GaussianSplatAsset_GetColorSize_m6D40AADACB656411C11197EE7FE9D1C8A34FF9F2 (int32_t ___0_fmt, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
@@ -3425,7 +3447,7 @@ IL_003b:
 		return L_5;
 	}
 }
-// Method Definition Index: 86619
+// Method Definition Index: 86835
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatAsset_Initialize_m6D32BD420407112DD6782A2A9389C299B9482DC9 (GaussianSplatAsset_tA0EE79B8E6D2BC1E544889BBF56C99F9BAE3F49A* __this, int32_t ___0_splats, int32_t ___1_formatPos, int32_t ___2_formatScale, int32_t ___3_formatColor, int32_t ___4_formatSh, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___5_bMin, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___6_bMax, CameraInfoU5BU5D_tBD71A686376499F40D4C58D8523D3384D12F6EBE* ___7_cameraInfos, const RuntimeMethod* method) 
 {
 	{
@@ -3460,7 +3482,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatAsset_Initialize_m6D32BD420
 		return;
 	}
 }
-// Method Definition Index: 86620
+// Method Definition Index: 86836
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatAsset_SetDataHash_mD16ED779DDE682162D3A354B29B1916A181F75E5 (GaussianSplatAsset_tA0EE79B8E6D2BC1E544889BBF56C99F9BAE3F49A* __this, Hash128_t93367F504B687578F893CDBCD13FB95AC8A87A40 ___0_hash, const RuntimeMethod* method) 
 {
 	{
@@ -3471,7 +3493,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatAsset_SetDataHash_mD16ED779
 		return;
 	}
 }
-// Method Definition Index: 86621
+// Method Definition Index: 86837
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatAsset_SetAssetFiles_mB0B669052003EBD1A51AD194D939274E616C851D (GaussianSplatAsset_tA0EE79B8E6D2BC1E544889BBF56C99F9BAE3F49A* __this, TextAsset_t2C64E93DA366D9DE5A8209E1802FA4884AC1BD69* ___0_dataChunk, TextAsset_t2C64E93DA366D9DE5A8209E1802FA4884AC1BD69* ___1_dataPos, TextAsset_t2C64E93DA366D9DE5A8209E1802FA4884AC1BD69* ___2_dataOther, TextAsset_t2C64E93DA366D9DE5A8209E1802FA4884AC1BD69* ___3_dataColor, TextAsset_t2C64E93DA366D9DE5A8209E1802FA4884AC1BD69* ___4_dataSh, const RuntimeMethod* method) 
 {
 	{
@@ -3499,7 +3521,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatAsset_SetAssetFiles_mB0B669
 		return;
 	}
 }
-// Method Definition Index: 86622
+// Method Definition Index: 86838
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t GaussianSplatAsset_GetOtherSizeNoSHIndex_mABAF690FA8B5EB0B3D2561123E5016783E4FC153 (int32_t ___0_scaleFormat, const RuntimeMethod* method) 
 {
 	{
@@ -3510,7 +3532,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t GaussianSplatAsset_GetOtherSizeNoSHIn
 		return ((int32_t)il2cpp_codegen_add(4, L_1));
 	}
 }
-// Method Definition Index: 86623
+// Method Definition Index: 86839
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t GaussianSplatAsset_GetSHCount_m75EC2E5FF80117ECD552E9F94716B79540E6FE62 (int32_t ___0_fmt, int32_t ___1_splatCount, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
@@ -3657,7 +3679,7 @@ IL_0076:
 		return L_9;
 	}
 }
-// Method Definition Index: 86624
+// Method Definition Index: 86840
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ValueTuple_2_t973F7AB0EF5DD3619E518A966941F10D8098F52D GaussianSplatAsset_CalcTextureSize_mB2D6F1D5A62A5FB4674B102D0A69587D563DCB2A (int32_t ___0_splatCount, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3696,7 +3718,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ValueTuple_2_t973F7AB0EF5DD3619E518A966941F10
 		return L_10;
 	}
 }
-// Method Definition Index: 86625
+// Method Definition Index: 86841
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t GaussianSplatAsset_ColorFormatToGraphics_m11770C9C948BE830E4F744C7309F6ED997647536 (int32_t ___0_format, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
@@ -3779,7 +3801,7 @@ IL_003d:
 		return L_5;
 	}
 }
-// Method Definition Index: 86626
+// Method Definition Index: 86842
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t GaussianSplatAsset_CalcPosDataSize_mA310539B6BAE0A5201191EAA81AFC872E0F36BAF (int32_t ___0_splatCount, int32_t ___1_formatPos, const RuntimeMethod* method) 
 {
 	{
@@ -3791,7 +3813,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t GaussianSplatAsset_CalcPosDataSize_mA
 		return ((int64_t)((int32_t)il2cpp_codegen_multiply(L_0, L_2)));
 	}
 }
-// Method Definition Index: 86627
+// Method Definition Index: 86843
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t GaussianSplatAsset_CalcOtherDataSize_m25A5B8AC7B1417CC88974861B8BA876D55890B8E (int32_t ___0_splatCount, int32_t ___1_formatScale, const RuntimeMethod* method) 
 {
 	{
@@ -3803,7 +3825,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t GaussianSplatAsset_CalcOtherDataSize_
 		return ((int64_t)((int32_t)il2cpp_codegen_multiply(L_0, L_2)));
 	}
 }
-// Method Definition Index: 86628
+// Method Definition Index: 86844
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t GaussianSplatAsset_CalcColorDataSize_mBC6153E6B649C22AE2FF6A3F951BC8964D2B74C5 (int32_t ___0_splatCount, int32_t ___1_formatColor, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
@@ -3827,7 +3849,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t GaussianSplatAsset_CalcColorDataSize_
 		return ((int64_t)((int32_t)il2cpp_codegen_multiply(((int32_t)il2cpp_codegen_multiply(L_5, L_6)), L_8)));
 	}
 }
-// Method Definition Index: 86629
+// Method Definition Index: 86845
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t GaussianSplatAsset_CalcSHDataSize_mD85C6026EDC2C999B08D2F0C624687CBB34CB085 (int32_t ___0_splatCount, int32_t ___1_formatSh, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3937,7 +3959,7 @@ IL_0054:
 		return ((int64_t)L_15);
 	}
 }
-// Method Definition Index: 86630
+// Method Definition Index: 86846
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t GaussianSplatAsset_CalcChunkDataSize_m254C40BE7BA3F06DCDC988F9ED84FA053247426A (int32_t ___0_splatCount, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3955,7 +3977,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t GaussianSplatAsset_CalcChunkDataSize_
 		return ((int64_t)((int32_t)il2cpp_codegen_multiply(((int32_t)(((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_add(L_0, ((int32_t)256))), 1))/((int32_t)256))), L_1)));
 	}
 }
-// Method Definition Index: 86631
+// Method Definition Index: 86847
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t GaussianSplatAsset_get_posFormat_mB06433AD1961A13E970A9008F435714E74BBB8D2 (GaussianSplatAsset_tA0EE79B8E6D2BC1E544889BBF56C99F9BAE3F49A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3964,7 +3986,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t GaussianSplatAsset_get_posFormat_mB06
 		return L_0;
 	}
 }
-// Method Definition Index: 86632
+// Method Definition Index: 86848
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t GaussianSplatAsset_get_scaleFormat_mB618407F3DA0B920D71A318111F296996BCDE56D (GaussianSplatAsset_tA0EE79B8E6D2BC1E544889BBF56C99F9BAE3F49A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3973,7 +3995,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t GaussianSplatAsset_get_scaleFormat_mB
 		return L_0;
 	}
 }
-// Method Definition Index: 86633
+// Method Definition Index: 86849
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t GaussianSplatAsset_get_shFormat_mE6FC49254DD383A383416349F293AC9E7B5CCBC5 (GaussianSplatAsset_tA0EE79B8E6D2BC1E544889BBF56C99F9BAE3F49A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3982,7 +4004,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t GaussianSplatAsset_get_shFormat_mE6FC
 		return L_0;
 	}
 }
-// Method Definition Index: 86634
+// Method Definition Index: 86850
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t GaussianSplatAsset_get_colorFormat_m8F15480090C4A981A0E9B8D02138AA3C87CCE949 (GaussianSplatAsset_tA0EE79B8E6D2BC1E544889BBF56C99F9BAE3F49A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3991,7 +4013,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t GaussianSplatAsset_get_colorFormat_m8
 		return L_0;
 	}
 }
-// Method Definition Index: 86635
+// Method Definition Index: 86851
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TextAsset_t2C64E93DA366D9DE5A8209E1802FA4884AC1BD69* GaussianSplatAsset_get_posData_mDD058CA3D6894E7ECAAE5020BA4920ADBC3199F2 (GaussianSplatAsset_tA0EE79B8E6D2BC1E544889BBF56C99F9BAE3F49A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -4000,7 +4022,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TextAsset_t2C64E93DA366D9DE5A8209E1802FA4884A
 		return L_0;
 	}
 }
-// Method Definition Index: 86636
+// Method Definition Index: 86852
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TextAsset_t2C64E93DA366D9DE5A8209E1802FA4884AC1BD69* GaussianSplatAsset_get_colorData_mA15E50560E75CF62E19462EE737D45C4DE16BB77 (GaussianSplatAsset_tA0EE79B8E6D2BC1E544889BBF56C99F9BAE3F49A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -4009,7 +4031,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TextAsset_t2C64E93DA366D9DE5A8209E1802FA4884A
 		return L_0;
 	}
 }
-// Method Definition Index: 86637
+// Method Definition Index: 86853
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TextAsset_t2C64E93DA366D9DE5A8209E1802FA4884AC1BD69* GaussianSplatAsset_get_otherData_mDCBFF9F6D852C580E40D2A15D93BAFE1098D55CC (GaussianSplatAsset_tA0EE79B8E6D2BC1E544889BBF56C99F9BAE3F49A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -4018,7 +4040,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TextAsset_t2C64E93DA366D9DE5A8209E1802FA4884A
 		return L_0;
 	}
 }
-// Method Definition Index: 86638
+// Method Definition Index: 86854
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TextAsset_t2C64E93DA366D9DE5A8209E1802FA4884AC1BD69* GaussianSplatAsset_get_shData_m87F2C90150773C15B25F44C64396DA187BC807A0 (GaussianSplatAsset_tA0EE79B8E6D2BC1E544889BBF56C99F9BAE3F49A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -4027,7 +4049,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TextAsset_t2C64E93DA366D9DE5A8209E1802FA4884A
 		return L_0;
 	}
 }
-// Method Definition Index: 86639
+// Method Definition Index: 86855
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TextAsset_t2C64E93DA366D9DE5A8209E1802FA4884AC1BD69* GaussianSplatAsset_get_chunkData_mD3EF1CDC2CF6591AF33C27F047743E2F145AEE5A (GaussianSplatAsset_tA0EE79B8E6D2BC1E544889BBF56C99F9BAE3F49A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -4036,7 +4058,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TextAsset_t2C64E93DA366D9DE5A8209E1802FA4884A
 		return L_0;
 	}
 }
-// Method Definition Index: 86640
+// Method Definition Index: 86856
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR CameraInfoU5BU5D_tBD71A686376499F40D4C58D8523D3384D12F6EBE* GaussianSplatAsset_get_cameras_mD4E1C1C68CD339EF6DCA0F920979BFAEEE5940E4 (GaussianSplatAsset_tA0EE79B8E6D2BC1E544889BBF56C99F9BAE3F49A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -4045,7 +4067,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR CameraInfoU5BU5D_tBD71A686376499F40D4C58D8523
 		return L_0;
 	}
 }
-// Method Definition Index: 86641
+// Method Definition Index: 86857
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatAsset__ctor_mF9AE9916B23A2334E4573A11ABA9B3C5701BBF83 (GaussianSplatAsset_tA0EE79B8E6D2BC1E544889BBF56C99F9BAE3F49A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -4139,7 +4161,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatAsset__ctor_mF9AE9916B23A23
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 86642
+// Method Definition Index: 86858
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GaussianSplatRenderSystem_t11BFE69BA1DF507190D893301F735C193816AC6F* GaussianSplatRenderSystem_get_instance_mA834ED2B56789CF922D47A35288A284D23D2FA26 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4177,7 +4199,7 @@ IL_0014:
 		return G_B2_0;
 	}
 }
-// Method Definition Index: 86643
+// Method Definition Index: 86859
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatRenderSystem_RegisterSplat_m18B81E350BBA03BA76829480E19FECAE4D4E9B04 (GaussianSplatRenderSystem_t11BFE69BA1DF507190D893301F735C193816AC6F* __this, GaussianSplatRenderer_t4D745E5F7574870774C18D1B3991A1CB47891EB3* ___0_r, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4241,7 +4263,7 @@ IL_003a:
 		return;
 	}
 }
-// Method Definition Index: 86644
+// Method Definition Index: 86860
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatRenderSystem_UnregisterSplat_m822012614FB13EF8FC1A94BD02CB3C375EF458D5 (GaussianSplatRenderSystem_t11BFE69BA1DF507190D893301F735C193816AC6F* __this, GaussianSplatRenderer_t4D745E5F7574870774C18D1B3991A1CB47891EB3* ___0_r, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4441,7 +4463,7 @@ IL_00cf:
 		return;
 	}
 }
-// Method Definition Index: 86645
+// Method Definition Index: 86861
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GaussianSplatRenderSystem_GatherSplatsForCamera_m89BE0BCEB6875FF149B6211AF7329F193B8E77AE (GaussianSplatRenderSystem_t11BFE69BA1DF507190D893301F735C193816AC6F* __this, Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* ___0_cam, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4652,7 +4674,7 @@ IL_00a1:
 		return (bool)1;
 	}
 }
-// Method Definition Index: 86646
+// Method Definition Index: 86862
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* GaussianSplatRenderSystem_SortAndRenderSplats_m24D01B7F50FC99FF8CCBAA68D6AB3EE3293F31F7 (GaussianSplatRenderSystem_t11BFE69BA1DF507190D893301F735C193816AC6F* __this, Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* ___0_cam, CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* ___1_cmb, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5191,7 +5213,7 @@ IL_021d:
 		return L_109;
 	}
 }
-// Method Definition Index: 86647
+// Method Definition Index: 86863
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* GaussianSplatRenderSystem_InitialClearCmdBuffer_mB090681AAB33C45FB4B5001BFB0254D543B20DF0 (GaussianSplatRenderSystem_t11BFE69BA1DF507190D893301F735C193816AC6F* __this, Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* ___0_cam, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5283,7 +5305,7 @@ IL_005d:
 		return L_16;
 	}
 }
-// Method Definition Index: 86648
+// Method Definition Index: 86864
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatRenderSystem_OnPreCullCamera_mE9F39C3B5D7697C0DD3EDE5E0C95D5162601ABA0 (GaussianSplatRenderSystem_t11BFE69BA1DF507190D893301F735C193816AC6F* __this, Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* ___0_cam, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5371,7 +5393,7 @@ IL_000a:
 		return;
 	}
 }
-// Method Definition Index: 86649
+// Method Definition Index: 86865
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatRenderSystem__ctor_mB37BC9202A68EB400AA5CE0B2204186AB21D96A5 (GaussianSplatRenderSystem_t11BFE69BA1DF507190D893301F735C193816AC6F* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5405,7 +5427,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatRenderSystem__ctor_mB37BC92
 		return;
 	}
 }
-// Method Definition Index: 86650
+// Method Definition Index: 86866
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatRenderSystem__cctor_m4BFF2379B09871298F48728EC4CCEB74064D9189 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5450,7 +5472,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatRenderSystem__cctor_m4BFF23
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 86651
+// Method Definition Index: 86867
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass12_0__ctor_m8D4F4ED9445152B9C008CF07BB603FB72464245C (U3CU3Ec__DisplayClass12_0_tFFB5B80F8E97AF080AA30C5C4BB1F66F4A59D43C* __this, const RuntimeMethod* method) 
 {
 	{
@@ -5458,7 +5480,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass12_0__ctor_m8D4F4ED
 		return;
 	}
 }
-// Method Definition Index: 86652
+// Method Definition Index: 86868
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t U3CU3Ec__DisplayClass12_0_U3CGatherSplatsForCameraU3Eb__0_m347D4A79FCA58F8A024824297C5DF533A2BF598C (U3CU3Ec__DisplayClass12_0_tFFB5B80F8E97AF080AA30C5C4BB1F66F4A59D43C* __this, ValueTuple_2_t8AE91CBECB6D606C58C0177D4C6FA3F8538166EB ___0_a, ValueTuple_2_t8AE91CBECB6D606C58C0177D4C6FA3F8538166EB ___1_b, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
@@ -5551,7 +5573,7 @@ IL_0025:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 86653
+// Method Definition Index: 86869
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GaussianSplatRenderer_get_editModified_mB8C7C75B2C95A6C576DACD332D07C306F8B3A371 (GaussianSplatRenderer_t4D745E5F7574870774C18D1B3991A1CB47891EB3* __this, const RuntimeMethod* method) 
 {
 	{
@@ -5560,7 +5582,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GaussianSplatRenderer_get_editModified_m
 		return L_0;
 	}
 }
-// Method Definition Index: 86654
+// Method Definition Index: 86870
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatRenderer_set_editModified_m40C1413B7008906BF1C89F1F923AC9BFE35C2584 (GaussianSplatRenderer_t4D745E5F7574870774C18D1B3991A1CB47891EB3* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -5570,7 +5592,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatRenderer_set_editModified_m
 		return;
 	}
 }
-// Method Definition Index: 86655
+// Method Definition Index: 86871
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t GaussianSplatRenderer_get_editSelectedSplats_m4D9B676972930BC649275987CBB02088947FFCCF (GaussianSplatRenderer_t4D745E5F7574870774C18D1B3991A1CB47891EB3* __this, const RuntimeMethod* method) 
 {
 	{
@@ -5579,7 +5601,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t GaussianSplatRenderer_get_editSelect
 		return L_0;
 	}
 }
-// Method Definition Index: 86656
+// Method Definition Index: 86872
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatRenderer_set_editSelectedSplats_m5D00675B6BE6A09E8EA512E836FAC35298F7FE6B (GaussianSplatRenderer_t4D745E5F7574870774C18D1B3991A1CB47891EB3* __this, uint32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -5589,7 +5611,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatRenderer_set_editSelectedSp
 		return;
 	}
 }
-// Method Definition Index: 86657
+// Method Definition Index: 86873
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t GaussianSplatRenderer_get_editDeletedSplats_mC5DDFE00F291B4B4E881BBACC328CCD54D78CA0A (GaussianSplatRenderer_t4D745E5F7574870774C18D1B3991A1CB47891EB3* __this, const RuntimeMethod* method) 
 {
 	{
@@ -5598,7 +5620,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t GaussianSplatRenderer_get_editDelete
 		return L_0;
 	}
 }
-// Method Definition Index: 86658
+// Method Definition Index: 86874
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatRenderer_set_editDeletedSplats_mFB637AC0BF5F2AA823E9488AAE443A642FA5F0CB (GaussianSplatRenderer_t4D745E5F7574870774C18D1B3991A1CB47891EB3* __this, uint32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -5608,7 +5630,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatRenderer_set_editDeletedSpl
 		return;
 	}
 }
-// Method Definition Index: 86659
+// Method Definition Index: 86875
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t GaussianSplatRenderer_get_editCutSplats_mE2233A27F5F24902EBED514D142282FBAD082E76 (GaussianSplatRenderer_t4D745E5F7574870774C18D1B3991A1CB47891EB3* __this, const RuntimeMethod* method) 
 {
 	{
@@ -5617,7 +5639,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t GaussianSplatRenderer_get_editCutSpl
 		return L_0;
 	}
 }
-// Method Definition Index: 86660
+// Method Definition Index: 86876
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatRenderer_set_editCutSplats_mBC9EBE56557EC85EBB1DF84FA1B2C6119FAA6FB8 (GaussianSplatRenderer_t4D745E5F7574870774C18D1B3991A1CB47891EB3* __this, uint32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -5627,7 +5649,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatRenderer_set_editCutSplats_
 		return;
 	}
 }
-// Method Definition Index: 86661
+// Method Definition Index: 86877
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3 GaussianSplatRenderer_get_editSelectedBounds_mE62B75E400ACD7C1021A18E84865B07CEB28402E (GaussianSplatRenderer_t4D745E5F7574870774C18D1B3991A1CB47891EB3* __this, const RuntimeMethod* method) 
 {
 	{
@@ -5636,7 +5658,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD3
 		return L_0;
 	}
 }
-// Method Definition Index: 86662
+// Method Definition Index: 86878
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatRenderer_set_editSelectedBounds_mBD8A760C9F954F11D8620724B48AFAE4C3C0B5EB (GaussianSplatRenderer_t4D745E5F7574870774C18D1B3991A1CB47891EB3* __this, Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3 ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -5646,7 +5668,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatRenderer_set_editSelectedBo
 		return;
 	}
 }
-// Method Definition Index: 86663
+// Method Definition Index: 86879
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GaussianSplatAsset_tA0EE79B8E6D2BC1E544889BBF56C99F9BAE3F49A* GaussianSplatRenderer_get_asset_m9069B0FB36C90D63276DBA4757CE305BDB41D60E (GaussianSplatRenderer_t4D745E5F7574870774C18D1B3991A1CB47891EB3* __this, const RuntimeMethod* method) 
 {
 	{
@@ -5655,7 +5677,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GaussianSplatAsset_tA0EE79B8E6D2BC1E544889BBF
 		return L_0;
 	}
 }
-// Method Definition Index: 86664
+// Method Definition Index: 86880
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t GaussianSplatRenderer_get_splatCount_mF3D27719399D08CE6E6C6C9D08A2B78A338D2B7C (GaussianSplatRenderer_t4D745E5F7574870774C18D1B3991A1CB47891EB3* __this, const RuntimeMethod* method) 
 {
 	{
@@ -5664,7 +5686,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t GaussianSplatRenderer_get_splatCount_
 		return L_0;
 	}
 }
-// Method Definition Index: 86665
+// Method Definition Index: 86881
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GaussianSplatRenderer_get_HasValidAsset_m052FB2791568BCF4B5F1FB6FBD8413F2A7BFC5D1 (GaussianSplatRenderer_t4D745E5F7574870774C18D1B3991A1CB47891EB3* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5765,7 +5787,7 @@ IL_0079:
 		return (bool)0;
 	}
 }
-// Method Definition Index: 86666
+// Method Definition Index: 86882
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GaussianSplatRenderer_get_HasValidRenderSetup_m24427B0EDAFC1D0D848613B97CB84B18081A4234 (GaussianSplatRenderer_t4D745E5F7574870774C18D1B3991A1CB47891EB3* __this, const RuntimeMethod* method) 
 {
 	{
@@ -5793,7 +5815,7 @@ IL_001a:
 		return (bool)0;
 	}
 }
-// Method Definition Index: 86667
+// Method Definition Index: 86883
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatRenderer_CreateResourcesForAsset_mE72EB5FB27D669147C059E5A7671A013E6D62DC1 (GaussianSplatRenderer_t4D745E5F7574870774C18D1B3991A1CB47891EB3* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6106,7 +6128,7 @@ IL_0203:
 		return;
 	}
 }
-// Method Definition Index: 86668
+// Method Definition Index: 86884
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatRenderer_InitSortBuffers_m45A8EA047882243D9E3BC3982F22119E7C88F205 (GaussianSplatRenderer_t4D745E5F7574870774C18D1B3991A1CB47891EB3* __this, int32_t ___0_count, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6115,6 +6137,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatRenderer_InitSortBuffers_m4
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral1C88F8F1B1AD4263BE356B07019AFB6631B5C23F);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral855DC3778FB864EDB3C0805C746598FD20FC643A);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralCE6A7F47A3BFEF660879A00F1F4224FB98FC511D);
 		s_Il2CppMethodInitialized = true;
 	}
@@ -6196,84 +6219,96 @@ IL_0022:
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_GpuSortKeys), (void*)L_11);
 		//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:435>
 		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_12 = __this->___m_CSSplatUtilities;
+		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_13 = __this->___m_CSSplatUtilities;
+		NullCheck(L_13);
+		int32_t L_14;
+		L_14 = ComputeShader_FindKernel_m3BA5C50794FA6AF4C432E55FBBD7CB266532F659(L_13, _stringLiteral855DC3778FB864EDB3C0805C746598FD20FC643A, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var);
-		int32_t L_13 = ((Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_StaticFields*)il2cpp_codegen_static_fields_for(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var))->___SplatSortKeys;
-		GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_14 = __this->___m_GpuSortKeys;
+		int32_t L_15 = ((Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_StaticFields*)il2cpp_codegen_static_fields_for(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var))->___SplatSortKeys;
+		GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_16 = __this->___m_GpuSortKeys;
 		NullCheck(L_12);
-		ComputeShader_SetBuffer_m27D878BB0412309CF59C164CAF872580C6F053E1(L_12, 0, L_13, L_14, NULL);
+		ComputeShader_SetBuffer_m27D878BB0412309CF59C164CAF872580C6F053E1(L_12, L_14, L_15, L_16, NULL);
 		//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:436>
-		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_15 = __this->___m_CSSplatUtilities;
-		int32_t L_16 = ((Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_StaticFields*)il2cpp_codegen_static_fields_for(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var))->___SplatCount;
-		GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_17 = __this->___m_GpuSortDistances;
-		NullCheck(L_17);
-		int32_t L_18;
-		L_18 = GraphicsBuffer_get_count_mFB2375DCEEFB459134AB0056F0ED77191E9EFB4F(L_17, NULL);
-		NullCheck(L_15);
-		ComputeShader_SetInt_m5BED46962875818A120FA6D2E4FD820B62BCE8AD(L_15, L_16, L_18, NULL);
-		//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:437>
-		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_19 = __this->___m_CSSplatUtilities;
+		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_17 = __this->___m_CSSplatUtilities;
+		int32_t L_18 = ((Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_StaticFields*)il2cpp_codegen_static_fields_for(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var))->___SplatCount;
+		GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_19 = __this->___m_GpuSortDistances;
 		NullCheck(L_19);
-		ComputeShader_GetKernelThreadGroupSizes_m693428494DB1FD3CFC69FCE4E0093A2C4AAE1CBE(L_19, 0, (&V_0), (&V_1), (&V_2), NULL);
-		//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:438>
-		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_20 = __this->___m_CSSplatUtilities;
-		GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_21 = __this->___m_GpuSortDistances;
+		int32_t L_20;
+		L_20 = GraphicsBuffer_get_count_mFB2375DCEEFB459134AB0056F0ED77191E9EFB4F(L_19, NULL);
+		NullCheck(L_17);
+		ComputeShader_SetInt_m5BED46962875818A120FA6D2E4FD820B62BCE8AD(L_17, L_18, L_20, NULL);
+		//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:437>
+		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_21 = __this->___m_CSSplatUtilities;
+		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_22 = __this->___m_CSSplatUtilities;
+		NullCheck(L_22);
+		int32_t L_23;
+		L_23 = ComputeShader_FindKernel_m3BA5C50794FA6AF4C432E55FBBD7CB266532F659(L_22, _stringLiteral855DC3778FB864EDB3C0805C746598FD20FC643A, NULL);
 		NullCheck(L_21);
-		int32_t L_22;
-		L_22 = GraphicsBuffer_get_count_mFB2375DCEEFB459134AB0056F0ED77191E9EFB4F(L_21, NULL);
-		uint32_t L_23 = V_0;
-		uint32_t L_24 = V_0;
-		NullCheck(L_20);
-		ComputeShader_Dispatch_mEED7BA68C28B1B39E75208D0D4D9915D41985B0A(L_20, 0, ((int32_t)(((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_add(L_22, (int32_t)L_23)), 1))/(int32_t)L_24)), 1, 1, NULL);
+		ComputeShader_GetKernelThreadGroupSizes_m693428494DB1FD3CFC69FCE4E0093A2C4AAE1CBE(L_21, L_23, (&V_0), (&V_1), (&V_2), NULL);
+		//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:438>
+		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_24 = __this->___m_CSSplatUtilities;
+		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_25 = __this->___m_CSSplatUtilities;
+		NullCheck(L_25);
+		int32_t L_26;
+		L_26 = ComputeShader_FindKernel_m3BA5C50794FA6AF4C432E55FBBD7CB266532F659(L_25, _stringLiteral855DC3778FB864EDB3C0805C746598FD20FC643A, NULL);
+		GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_27 = __this->___m_GpuSortDistances;
+		NullCheck(L_27);
+		int32_t L_28;
+		L_28 = GraphicsBuffer_get_count_mFB2375DCEEFB459134AB0056F0ED77191E9EFB4F(L_27, NULL);
+		uint32_t L_29 = V_0;
+		uint32_t L_30 = V_0;
+		NullCheck(L_24);
+		ComputeShader_Dispatch_mEED7BA68C28B1B39E75208D0D4D9915D41985B0A(L_24, L_26, ((int32_t)(((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_add(L_28, (int32_t)L_29)), 1))/(int32_t)L_30)), 1, 1, NULL);
 		//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:440>
-		Args_tBAE774674039658F77D5FE64731DD4270CC56AFF* L_25 = (Args_tBAE774674039658F77D5FE64731DD4270CC56AFF*)(&__this->___m_SorterArgs);
-		GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_26 = __this->___m_GpuSortDistances;
-		L_25->___inputKeys = L_26;
-		Il2CppCodeGenWriteBarrier((void**)(&L_25->___inputKeys), (void*)L_26);
+		Args_tBAE774674039658F77D5FE64731DD4270CC56AFF* L_31 = (Args_tBAE774674039658F77D5FE64731DD4270CC56AFF*)(&__this->___m_SorterArgs);
+		GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_32 = __this->___m_GpuSortDistances;
+		L_31->___inputKeys = L_32;
+		Il2CppCodeGenWriteBarrier((void**)(&L_31->___inputKeys), (void*)L_32);
 		//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:441>
-		Args_tBAE774674039658F77D5FE64731DD4270CC56AFF* L_27 = (Args_tBAE774674039658F77D5FE64731DD4270CC56AFF*)(&__this->___m_SorterArgs);
-		GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_28 = __this->___m_GpuSortKeys;
-		L_27->___inputValues = L_28;
-		Il2CppCodeGenWriteBarrier((void**)(&L_27->___inputValues), (void*)L_28);
+		Args_tBAE774674039658F77D5FE64731DD4270CC56AFF* L_33 = (Args_tBAE774674039658F77D5FE64731DD4270CC56AFF*)(&__this->___m_SorterArgs);
+		GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_34 = __this->___m_GpuSortKeys;
+		L_33->___inputValues = L_34;
+		Il2CppCodeGenWriteBarrier((void**)(&L_33->___inputValues), (void*)L_34);
 		//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:442>
-		Args_tBAE774674039658F77D5FE64731DD4270CC56AFF* L_29 = (Args_tBAE774674039658F77D5FE64731DD4270CC56AFF*)(&__this->___m_SorterArgs);
-		int32_t L_30 = ___0_count;
-		L_29->___count = L_30;
+		Args_tBAE774674039658F77D5FE64731DD4270CC56AFF* L_35 = (Args_tBAE774674039658F77D5FE64731DD4270CC56AFF*)(&__this->___m_SorterArgs);
+		int32_t L_36 = ___0_count;
+		L_35->___count = L_36;
 		//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:443>
-		GpuSorting_t1F8999C4F0E7BE4DCFE5D75FF50B303DFBD5781C* L_31 = __this->___m_Sorter;
-		NullCheck(L_31);
-		bool L_32;
-		L_32 = GpuSorting_get_Valid_mE587566381F0BF55CFB318AEDBC0FF19872D0AC2_inline(L_31, NULL);
-		if (!L_32)
+		GpuSorting_t1F8999C4F0E7BE4DCFE5D75FF50B303DFBD5781C* L_37 = __this->___m_Sorter;
+		NullCheck(L_37);
+		bool L_38;
+		L_38 = GpuSorting_get_Valid_mE587566381F0BF55CFB318AEDBC0FF19872D0AC2_inline(L_37, NULL);
+		if (!L_38)
 		{
-			goto IL_011b;
+			goto IL_0148;
 		}
 	}
 	{
 		//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:444>
-		Args_tBAE774674039658F77D5FE64731DD4270CC56AFF* L_33 = (Args_tBAE774674039658F77D5FE64731DD4270CC56AFF*)(&__this->___m_SorterArgs);
-		int32_t L_34 = ___0_count;
-		SupportResources_t5AC238831D0D3573BDE0D34C7CF4228E4102A62F L_35;
-		L_35 = SupportResources_Load_m550E9C1106C52240633EB81CE331567C5940F736(L_34, NULL);
-		L_33->___resources = L_35;
-		Il2CppCodeGenWriteBarrier((void**)&(((&L_33->___resources))->___altBuffer), (void*)NULL);
+		Args_tBAE774674039658F77D5FE64731DD4270CC56AFF* L_39 = (Args_tBAE774674039658F77D5FE64731DD4270CC56AFF*)(&__this->___m_SorterArgs);
+		int32_t L_40 = ___0_count;
+		SupportResources_t5AC238831D0D3573BDE0D34C7CF4228E4102A62F L_41;
+		L_41 = SupportResources_Load_m550E9C1106C52240633EB81CE331567C5940F736(L_40, NULL);
+		L_39->___resources = L_41;
+		Il2CppCodeGenWriteBarrier((void**)&(((&L_39->___resources))->___altBuffer), (void*)NULL);
 		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
-		Il2CppCodeGenWriteBarrier((void**)&(((&L_33->___resources))->___altPayloadBuffer), (void*)NULL);
+		Il2CppCodeGenWriteBarrier((void**)&(((&L_39->___resources))->___altPayloadBuffer), (void*)NULL);
 		#endif
 		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
-		Il2CppCodeGenWriteBarrier((void**)&(((&L_33->___resources))->___passHistBuffer), (void*)NULL);
+		Il2CppCodeGenWriteBarrier((void**)&(((&L_39->___resources))->___passHistBuffer), (void*)NULL);
 		#endif
 		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
-		Il2CppCodeGenWriteBarrier((void**)&(((&L_33->___resources))->___globalHistBuffer), (void*)NULL);
+		Il2CppCodeGenWriteBarrier((void**)&(((&L_39->___resources))->___globalHistBuffer), (void*)NULL);
 		#endif
 	}
 
-IL_011b:
+IL_0148:
 	{
 		//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:445>
 		return;
 	}
 }
-// Method Definition Index: 86669
+// Method Definition Index: 86885
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GaussianSplatRenderer_get_resourcesAreSetUp_m8DDB59958D02E7364B420A331AC824F6BCA80CC1 (GaussianSplatRenderer_t4D745E5F7574870774C18D1B3991A1CB47891EB3* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6345,7 +6380,7 @@ IL_004c:
 		return (bool)0;
 	}
 }
-// Method Definition Index: 86670
+// Method Definition Index: 86886
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatRenderer_EnsureMaterials_mCAB5E1FD4B9EE13C8E3C18F52BB30D400463EB41 (GaussianSplatRenderer_t4D745E5F7574870774C18D1B3991A1CB47891EB3* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6423,7 +6458,7 @@ IL_0086:
 		return;
 	}
 }
-// Method Definition Index: 86671
+// Method Definition Index: 86887
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatRenderer_EnsureSorterAndRegister_m8D7877263292496F70350DFDFFA89E49146DCEFB (GaussianSplatRenderer_t4D745E5F7574870774C18D1B3991A1CB47891EB3* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6492,7 +6527,7 @@ IL_0043:
 		return;
 	}
 }
-// Method Definition Index: 86672
+// Method Definition Index: 86888
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatRenderer_OnEnable_mDF7D70413503FD628129088C803464A2E8DCF0AA (GaussianSplatRenderer_t4D745E5F7574870774C18D1B3991A1CB47891EB3* __this, const RuntimeMethod* method) 
 {
 	{
@@ -6523,7 +6558,7 @@ IL_0010:
 		return;
 	}
 }
-// Method Definition Index: 86673
+// Method Definition Index: 86889
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatRenderer_SetAssetDataOnCS_m80F9D7F7B3AA97516EFB44DF210F91CC70FD8351 (GaussianSplatRenderer_t4D745E5F7574870774C18D1B3991A1CB47891EB3* __this, CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* ___0_cmb, int32_t ___1_kernel, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6904,7 +6939,7 @@ IL_0173:
 		return;
 	}
 }
-// Method Definition Index: 86674
+// Method Definition Index: 86890
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatRenderer_SetAssetDataOnMaterial_mC0D030EE9A4885495DCEFFEB7E7A592B5678FBB7 (GaussianSplatRenderer_t4D745E5F7574870774C18D1B3991A1CB47891EB3* __this, MaterialPropertyBlock_t2308669579033A857EFE6E4831909F638B27411D* ___0_mat, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7134,7 +7169,7 @@ IL_00fb:
 		return;
 	}
 }
-// Method Definition Index: 86675
+// Method Definition Index: 86891
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatRenderer_DisposeBuffer_m66D2A36317D322EA944689F79D3625364985F5C7 (GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1** ___0_buf, const RuntimeMethod* method) 
 {
 	GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* G_B2_0 = NULL;
@@ -7171,7 +7206,7 @@ IL_000d:
 		return;
 	}
 }
-// Method Definition Index: 86676
+// Method Definition Index: 86892
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatRenderer_DisposeResourcesForAsset_mF0CDC0D8B9CB36195DBD1923E36EBFEBA8F5900B (GaussianSplatRenderer_t4D745E5F7574870774C18D1B3991A1CB47891EB3* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7258,7 +7293,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatRenderer_DisposeResourcesFo
 		return;
 	}
 }
-// Method Definition Index: 86677
+// Method Definition Index: 86893
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatRenderer_OnDisable_m21CCF3686899FEEB01EA9131DF50989213607C7B (GaussianSplatRenderer_t4D745E5F7574870774C18D1B3991A1CB47891EB3* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7296,13 +7331,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatRenderer_OnDisable_m21CCF36
 		return;
 	}
 }
-// Method Definition Index: 86678
+// Method Definition Index: 86894
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatRenderer_CalcViewData_m2B9684A50B269FC1B7CA9C221AE9D3728B504673 (GaussianSplatRenderer_t4D745E5F7574870774C18D1B3991A1CB47891EB3* __this, CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* ___0_cmb, Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* ___1_cam, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral3C865CD37F13CF7D0AF2A047D1E483438916420B);
 		s_Il2CppMethodInitialized = true;
 	}
 	Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 V_0;
@@ -7567,30 +7603,39 @@ IL_0140:
 		CommandBuffer_SetComputeIntParam_m253E1647D4F7E5613A31E0EF4DE4A67FDDEA4CC6(G_B11_3, G_B11_2, G_B11_1, G_B11_0, NULL);
 		//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:608>
 		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_63 = __this->___m_CSSplatUtilities;
-		NullCheck(L_63);
-		ComputeShader_GetKernelThreadGroupSizes_m693428494DB1FD3CFC69FCE4E0093A2C4AAE1CBE(L_63, 2, (&V_9), (&V_10), (&V_11), NULL);
-		//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:609>
-		CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_64 = ___0_cmb;
-		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_65 = __this->___m_CSSplatUtilities;
-		GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_66 = __this->___m_GpuView;
-		NullCheck(L_66);
-		int32_t L_67;
-		L_67 = GraphicsBuffer_get_count_mFB2375DCEEFB459134AB0056F0ED77191E9EFB4F(L_66, NULL);
-		uint32_t L_68 = V_9;
-		uint32_t L_69 = V_9;
+		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_64 = __this->___m_CSSplatUtilities;
 		NullCheck(L_64);
-		CommandBuffer_DispatchCompute_mF9F5605B77F0480FD4B8C3BCAEC2FC59A24E31A2(L_64, L_65, 2, ((int32_t)(((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_add(L_67, (int32_t)L_68)), 1))/(int32_t)L_69)), 1, 1, NULL);
+		int32_t L_65;
+		L_65 = ComputeShader_FindKernel_m3BA5C50794FA6AF4C432E55FBBD7CB266532F659(L_64, _stringLiteral3C865CD37F13CF7D0AF2A047D1E483438916420B, NULL);
+		NullCheck(L_63);
+		ComputeShader_GetKernelThreadGroupSizes_m693428494DB1FD3CFC69FCE4E0093A2C4AAE1CBE(L_63, L_65, (&V_9), (&V_10), (&V_11), NULL);
+		//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:609>
+		CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_66 = ___0_cmb;
+		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_67 = __this->___m_CSSplatUtilities;
+		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_68 = __this->___m_CSSplatUtilities;
+		NullCheck(L_68);
+		int32_t L_69;
+		L_69 = ComputeShader_FindKernel_m3BA5C50794FA6AF4C432E55FBBD7CB266532F659(L_68, _stringLiteral3C865CD37F13CF7D0AF2A047D1E483438916420B, NULL);
+		GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_70 = __this->___m_GpuView;
+		NullCheck(L_70);
+		int32_t L_71;
+		L_71 = GraphicsBuffer_get_count_mFB2375DCEEFB459134AB0056F0ED77191E9EFB4F(L_70, NULL);
+		uint32_t L_72 = V_9;
+		uint32_t L_73 = V_9;
+		NullCheck(L_66);
+		CommandBuffer_DispatchCompute_mF9F5605B77F0480FD4B8C3BCAEC2FC59A24E31A2(L_66, L_67, L_69, ((int32_t)(((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_add(L_71, (int32_t)L_72)), 1))/(int32_t)L_73)), 1, 1, NULL);
 		//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:610>
 		return;
 	}
 }
-// Method Definition Index: 86679
+// Method Definition Index: 86895
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatRenderer_SortPoints_m88D49C24C0419A884B49E42592E462806E2B5F0E (GaussianSplatRenderer_t4D745E5F7574870774C18D1B3991A1CB47891EB3* __this, CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* ___0_cmd, Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* ___1_cam, Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 ___2_matrix, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7B54F3A97FB92AFE16080714710013FA799BC7A5);
 		s_Il2CppMethodInitialized = true;
 	}
 	Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 V_0;
@@ -7650,127 +7695,151 @@ IL_000a:
 		//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:624>
 		CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_13 = ___0_cmd;
 		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_14 = __this->___m_CSSplatUtilities;
+		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_15 = __this->___m_CSSplatUtilities;
+		NullCheck(L_15);
+		int32_t L_16;
+		L_16 = ComputeShader_FindKernel_m3BA5C50794FA6AF4C432E55FBBD7CB266532F659(L_15, _stringLiteral7B54F3A97FB92AFE16080714710013FA799BC7A5, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var);
-		int32_t L_15 = ((Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_StaticFields*)il2cpp_codegen_static_fields_for(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var))->___SplatSortDistances;
-		GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_16 = __this->___m_GpuSortDistances;
+		int32_t L_17 = ((Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_StaticFields*)il2cpp_codegen_static_fields_for(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var))->___SplatSortDistances;
+		GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_18 = __this->___m_GpuSortDistances;
 		NullCheck(L_13);
-		CommandBuffer_SetComputeBufferParam_mF358CEC3E841ACFA0ECA0D9495B8287A842F20CA(L_13, L_14, 1, L_15, L_16, NULL);
+		CommandBuffer_SetComputeBufferParam_mF358CEC3E841ACFA0ECA0D9495B8287A842F20CA(L_13, L_14, L_16, L_17, L_18, NULL);
 		//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:625>
-		CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_17 = ___0_cmd;
-		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_18 = __this->___m_CSSplatUtilities;
-		int32_t L_19 = ((Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_StaticFields*)il2cpp_codegen_static_fields_for(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var))->___SplatSortKeys;
-		GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_20 = __this->___m_GpuSortKeys;
-		NullCheck(L_17);
-		CommandBuffer_SetComputeBufferParam_mF358CEC3E841ACFA0ECA0D9495B8287A842F20CA(L_17, L_18, 1, L_19, L_20, NULL);
-		//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:626>
-		CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_21 = ___0_cmd;
-		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_22 = __this->___m_CSSplatUtilities;
-		int32_t L_23 = ((Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_StaticFields*)il2cpp_codegen_static_fields_for(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var))->___SplatChunks;
-		GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_24 = __this->___m_GpuChunks;
+		CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_19 = ___0_cmd;
+		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_20 = __this->___m_CSSplatUtilities;
+		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_21 = __this->___m_CSSplatUtilities;
 		NullCheck(L_21);
-		CommandBuffer_SetComputeBufferParam_mF358CEC3E841ACFA0ECA0D9495B8287A842F20CA(L_21, L_22, 1, L_23, L_24, NULL);
-		//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:627>
+		int32_t L_22;
+		L_22 = ComputeShader_FindKernel_m3BA5C50794FA6AF4C432E55FBBD7CB266532F659(L_21, _stringLiteral7B54F3A97FB92AFE16080714710013FA799BC7A5, NULL);
+		int32_t L_23 = ((Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_StaticFields*)il2cpp_codegen_static_fields_for(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var))->___SplatSortKeys;
+		GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_24 = __this->___m_GpuSortKeys;
+		NullCheck(L_19);
+		CommandBuffer_SetComputeBufferParam_mF358CEC3E841ACFA0ECA0D9495B8287A842F20CA(L_19, L_20, L_22, L_23, L_24, NULL);
+		//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:626>
 		CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_25 = ___0_cmd;
 		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_26 = __this->___m_CSSplatUtilities;
-		int32_t L_27 = ((Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_StaticFields*)il2cpp_codegen_static_fields_for(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var))->___SplatPos;
-		GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_28 = __this->___m_GpuPosData;
+		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_27 = __this->___m_CSSplatUtilities;
+		NullCheck(L_27);
+		int32_t L_28;
+		L_28 = ComputeShader_FindKernel_m3BA5C50794FA6AF4C432E55FBBD7CB266532F659(L_27, _stringLiteral7B54F3A97FB92AFE16080714710013FA799BC7A5, NULL);
+		int32_t L_29 = ((Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_StaticFields*)il2cpp_codegen_static_fields_for(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var))->___SplatChunks;
+		GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_30 = __this->___m_GpuChunks;
 		NullCheck(L_25);
-		CommandBuffer_SetComputeBufferParam_mF358CEC3E841ACFA0ECA0D9495B8287A842F20CA(L_25, L_26, 1, L_27, L_28, NULL);
+		CommandBuffer_SetComputeBufferParam_mF358CEC3E841ACFA0ECA0D9495B8287A842F20CA(L_25, L_26, L_28, L_29, L_30, NULL);
+		//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:627>
+		CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_31 = ___0_cmd;
+		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_32 = __this->___m_CSSplatUtilities;
+		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_33 = __this->___m_CSSplatUtilities;
+		NullCheck(L_33);
+		int32_t L_34;
+		L_34 = ComputeShader_FindKernel_m3BA5C50794FA6AF4C432E55FBBD7CB266532F659(L_33, _stringLiteral7B54F3A97FB92AFE16080714710013FA799BC7A5, NULL);
+		int32_t L_35 = ((Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_StaticFields*)il2cpp_codegen_static_fields_for(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var))->___SplatPos;
+		GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_36 = __this->___m_GpuPosData;
+		NullCheck(L_31);
+		CommandBuffer_SetComputeBufferParam_mF358CEC3E841ACFA0ECA0D9495B8287A842F20CA(L_31, L_32, L_34, L_35, L_36, NULL);
 		//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:628>
-		CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_29 = ___0_cmd;
-		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_30 = __this->___m_CSSplatUtilities;
-		int32_t L_31 = ((Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_StaticFields*)il2cpp_codegen_static_fields_for(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var))->___SplatFormat;
-		GaussianSplatAsset_tA0EE79B8E6D2BC1E544889BBF56C99F9BAE3F49A* L_32 = __this->___m_Asset;
-		NullCheck(L_32);
-		int32_t L_33;
-		L_33 = GaussianSplatAsset_get_posFormat_mB06433AD1961A13E970A9008F435714E74BBB8D2_inline(L_32, NULL);
-		NullCheck(L_29);
-		CommandBuffer_SetComputeIntParam_m253E1647D4F7E5613A31E0EF4DE4A67FDDEA4CC6(L_29, L_30, L_31, L_33, NULL);
-		//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:629>
-		CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_34 = ___0_cmd;
-		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_35 = __this->___m_CSSplatUtilities;
-		int32_t L_36 = ((Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_StaticFields*)il2cpp_codegen_static_fields_for(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var))->___MatrixMV;
-		Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 L_37 = V_0;
-		Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 L_38 = ___2_matrix;
-		Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 L_39;
-		L_39 = Matrix4x4_op_Multiply_m75E91775655DCA8DFC8EDE0AB787285BB3935162_inline(L_37, L_38, NULL);
-		NullCheck(L_34);
-		CommandBuffer_SetComputeMatrixParam_mACD1D51DC9FF0D852A2C2F4C19F4114395E446C0(L_34, L_35, L_36, L_39, NULL);
-		//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:630>
-		CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_40 = ___0_cmd;
-		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_41 = __this->___m_CSSplatUtilities;
-		int32_t L_42 = ((Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_StaticFields*)il2cpp_codegen_static_fields_for(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var))->___SplatCount;
-		int32_t L_43 = __this->___m_SplatCount;
+		CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_37 = ___0_cmd;
+		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_38 = __this->___m_CSSplatUtilities;
+		int32_t L_39 = ((Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_StaticFields*)il2cpp_codegen_static_fields_for(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var))->___SplatFormat;
+		GaussianSplatAsset_tA0EE79B8E6D2BC1E544889BBF56C99F9BAE3F49A* L_40 = __this->___m_Asset;
 		NullCheck(L_40);
-		CommandBuffer_SetComputeIntParam_m253E1647D4F7E5613A31E0EF4DE4A67FDDEA4CC6(L_40, L_41, L_42, L_43, NULL);
+		int32_t L_41;
+		L_41 = GaussianSplatAsset_get_posFormat_mB06433AD1961A13E970A9008F435714E74BBB8D2_inline(L_40, NULL);
+		NullCheck(L_37);
+		CommandBuffer_SetComputeIntParam_m253E1647D4F7E5613A31E0EF4DE4A67FDDEA4CC6(L_37, L_38, L_39, L_41, NULL);
+		//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:629>
+		CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_42 = ___0_cmd;
+		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_43 = __this->___m_CSSplatUtilities;
+		int32_t L_44 = ((Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_StaticFields*)il2cpp_codegen_static_fields_for(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var))->___MatrixMV;
+		Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 L_45 = V_0;
+		Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 L_46 = ___2_matrix;
+		Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 L_47;
+		L_47 = Matrix4x4_op_Multiply_m75E91775655DCA8DFC8EDE0AB787285BB3935162_inline(L_45, L_46, NULL);
+		NullCheck(L_42);
+		CommandBuffer_SetComputeMatrixParam_mACD1D51DC9FF0D852A2C2F4C19F4114395E446C0(L_42, L_43, L_44, L_47, NULL);
+		//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:630>
+		CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_48 = ___0_cmd;
+		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_49 = __this->___m_CSSplatUtilities;
+		int32_t L_50 = ((Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_StaticFields*)il2cpp_codegen_static_fields_for(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var))->___SplatCount;
+		int32_t L_51 = __this->___m_SplatCount;
+		NullCheck(L_48);
+		CommandBuffer_SetComputeIntParam_m253E1647D4F7E5613A31E0EF4DE4A67FDDEA4CC6(L_48, L_49, L_50, L_51, NULL);
 		//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:631>
-		CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_44 = ___0_cmd;
-		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_45 = __this->___m_CSSplatUtilities;
-		int32_t L_46 = ((Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_StaticFields*)il2cpp_codegen_static_fields_for(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var))->___SplatChunkCount;
-		bool L_47 = __this->___m_GpuChunksValid;
-		if (L_47)
+		CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_52 = ___0_cmd;
+		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_53 = __this->___m_CSSplatUtilities;
+		int32_t L_54 = ((Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_StaticFields*)il2cpp_codegen_static_fields_for(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var))->___SplatChunkCount;
+		bool L_55 = __this->___m_GpuChunksValid;
+		if (L_55)
 		{
-			G_B4_0 = L_46;
-			G_B4_1 = L_45;
-			G_B4_2 = L_44;
-			goto IL_0103;
+			G_B4_0 = L_54;
+			G_B4_1 = L_53;
+			G_B4_2 = L_52;
+			goto IL_013f;
 		}
-		G_B3_0 = L_46;
-		G_B3_1 = L_45;
-		G_B3_2 = L_44;
+		G_B3_0 = L_54;
+		G_B3_1 = L_53;
+		G_B3_2 = L_52;
 	}
 	{
 		G_B5_0 = 0;
 		G_B5_1 = G_B3_0;
 		G_B5_2 = G_B3_1;
 		G_B5_3 = G_B3_2;
-		goto IL_010e;
+		goto IL_014a;
 	}
 
-IL_0103:
+IL_013f:
 	{
-		GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_48 = __this->___m_GpuChunks;
-		NullCheck(L_48);
-		int32_t L_49;
-		L_49 = GraphicsBuffer_get_count_mFB2375DCEEFB459134AB0056F0ED77191E9EFB4F(L_48, NULL);
-		G_B5_0 = L_49;
+		GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_56 = __this->___m_GpuChunks;
+		NullCheck(L_56);
+		int32_t L_57;
+		L_57 = GraphicsBuffer_get_count_mFB2375DCEEFB459134AB0056F0ED77191E9EFB4F(L_56, NULL);
+		G_B5_0 = L_57;
 		G_B5_1 = G_B4_0;
 		G_B5_2 = G_B4_1;
 		G_B5_3 = G_B4_2;
 	}
 
-IL_010e:
+IL_014a:
 	{
 		NullCheck(G_B5_3);
 		CommandBuffer_SetComputeIntParam_m253E1647D4F7E5613A31E0EF4DE4A67FDDEA4CC6(G_B5_3, G_B5_2, G_B5_1, G_B5_0, NULL);
 		//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:632>
-		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_50 = __this->___m_CSSplatUtilities;
-		NullCheck(L_50);
-		ComputeShader_GetKernelThreadGroupSizes_m693428494DB1FD3CFC69FCE4E0093A2C4AAE1CBE(L_50, 1, (&V_1), (&V_2), (&V_3), NULL);
+		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_58 = __this->___m_CSSplatUtilities;
+		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_59 = __this->___m_CSSplatUtilities;
+		NullCheck(L_59);
+		int32_t L_60;
+		L_60 = ComputeShader_FindKernel_m3BA5C50794FA6AF4C432E55FBBD7CB266532F659(L_59, _stringLiteral7B54F3A97FB92AFE16080714710013FA799BC7A5, NULL);
+		NullCheck(L_58);
+		ComputeShader_GetKernelThreadGroupSizes_m693428494DB1FD3CFC69FCE4E0093A2C4AAE1CBE(L_58, L_60, (&V_1), (&V_2), (&V_3), NULL);
 		//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:633>
-		CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_51 = ___0_cmd;
-		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_52 = __this->___m_CSSplatUtilities;
-		GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_53 = __this->___m_GpuSortDistances;
-		NullCheck(L_53);
-		int32_t L_54;
-		L_54 = GraphicsBuffer_get_count_mFB2375DCEEFB459134AB0056F0ED77191E9EFB4F(L_53, NULL);
-		uint32_t L_55 = V_1;
-		uint32_t L_56 = V_1;
-		NullCheck(L_51);
-		CommandBuffer_DispatchCompute_mF9F5605B77F0480FD4B8C3BCAEC2FC59A24E31A2(L_51, L_52, 1, ((int32_t)(((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_add(L_54, (int32_t)L_55)), 1))/(int32_t)L_56)), 1, 1, NULL);
+		CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_61 = ___0_cmd;
+		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_62 = __this->___m_CSSplatUtilities;
+		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_63 = __this->___m_CSSplatUtilities;
+		NullCheck(L_63);
+		int32_t L_64;
+		L_64 = ComputeShader_FindKernel_m3BA5C50794FA6AF4C432E55FBBD7CB266532F659(L_63, _stringLiteral7B54F3A97FB92AFE16080714710013FA799BC7A5, NULL);
+		GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_65 = __this->___m_GpuSortDistances;
+		NullCheck(L_65);
+		int32_t L_66;
+		L_66 = GraphicsBuffer_get_count_mFB2375DCEEFB459134AB0056F0ED77191E9EFB4F(L_65, NULL);
+		uint32_t L_67 = V_1;
+		uint32_t L_68 = V_1;
+		NullCheck(L_61);
+		CommandBuffer_DispatchCompute_mF9F5605B77F0480FD4B8C3BCAEC2FC59A24E31A2(L_61, L_62, L_64, ((int32_t)(((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_add(L_66, (int32_t)L_67)), 1))/(int32_t)L_68)), 1, 1, NULL);
 		//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:636>
 		GaussianSplatRenderer_EnsureSorterAndRegister_m8D7877263292496F70350DFDFFA89E49146DCEFB(__this, NULL);
 		//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:637>
-		GpuSorting_t1F8999C4F0E7BE4DCFE5D75FF50B303DFBD5781C* L_57 = __this->___m_Sorter;
-		CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_58 = ___0_cmd;
-		Args_tBAE774674039658F77D5FE64731DD4270CC56AFF L_59 = __this->___m_SorterArgs;
-		NullCheck(L_57);
-		GpuSorting_Dispatch_m0B395600677C17C44BC42CE8F51A417EC8382BDA(L_57, L_58, L_59, NULL);
+		GpuSorting_t1F8999C4F0E7BE4DCFE5D75FF50B303DFBD5781C* L_69 = __this->___m_Sorter;
+		CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_70 = ___0_cmd;
+		Args_tBAE774674039658F77D5FE64731DD4270CC56AFF L_71 = __this->___m_SorterArgs;
+		NullCheck(L_69);
+		GpuSorting_Dispatch_m0B395600677C17C44BC42CE8F51A417EC8382BDA(L_69, L_70, L_71, NULL);
 		//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:639>
 		return;
 	}
 }
-// Method Definition Index: 86680
+// Method Definition Index: 86896
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatRenderer_Update_m25F65C45EA1ABBF139DA5E32574FD0A2DEE3C197 (GaussianSplatRenderer_t4D745E5F7574870774C18D1B3991A1CB47891EB3* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7877,7 +7946,7 @@ IL_0077:
 		return;
 	}
 }
-// Method Definition Index: 86681
+// Method Definition Index: 86897
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatRenderer_ActivateCamera_m1AB6254CC8A0FD14A366BEB3FB57A0DF911A1059 (GaussianSplatRenderer_t4D745E5F7574870774C18D1B3991A1CB47891EB3* __this, int32_t ___0_index, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8002,13 +8071,14 @@ IL_002a:
 		return;
 	}
 }
-// Method Definition Index: 86682
+// Method Definition Index: 86898
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatRenderer_ClearGraphicsBuffer_m03D50E3D25AC9A78BAEADFEE0E031B33A0170899 (GaussianSplatRenderer_t4D745E5F7574870774C18D1B3991A1CB47891EB3* __this, GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* ___0_buf, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral0417411373A2D4746573E9E290E910AB237214C7);
 		s_Il2CppMethodInitialized = true;
 	}
 	uint32_t V_0 = 0;
@@ -8017,45 +8087,58 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatRenderer_ClearGraphicsBuffe
 	{
 		//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:684>
 		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_0 = __this->___m_CSSplatUtilities;
+		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_1 = __this->___m_CSSplatUtilities;
+		NullCheck(L_1);
+		int32_t L_2;
+		L_2 = ComputeShader_FindKernel_m3BA5C50794FA6AF4C432E55FBBD7CB266532F659(L_1, _stringLiteral0417411373A2D4746573E9E290E910AB237214C7, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var);
-		int32_t L_1 = ((Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_StaticFields*)il2cpp_codegen_static_fields_for(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var))->___DstBuffer;
-		GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_2 = ___0_buf;
+		int32_t L_3 = ((Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_StaticFields*)il2cpp_codegen_static_fields_for(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var))->___DstBuffer;
+		GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_4 = ___0_buf;
 		NullCheck(L_0);
-		ComputeShader_SetBuffer_m27D878BB0412309CF59C164CAF872580C6F053E1(L_0, 5, L_1, L_2, NULL);
+		ComputeShader_SetBuffer_m27D878BB0412309CF59C164CAF872580C6F053E1(L_0, L_2, L_3, L_4, NULL);
 		//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:685>
-		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_3 = __this->___m_CSSplatUtilities;
-		int32_t L_4 = ((Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_StaticFields*)il2cpp_codegen_static_fields_for(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var))->___BufferSize;
-		GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_5 = ___0_buf;
-		NullCheck(L_5);
-		int32_t L_6;
-		L_6 = GraphicsBuffer_get_count_mFB2375DCEEFB459134AB0056F0ED77191E9EFB4F(L_5, NULL);
-		NullCheck(L_3);
-		ComputeShader_SetInt_m5BED46962875818A120FA6D2E4FD820B62BCE8AD(L_3, L_4, L_6, NULL);
-		//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:686>
-		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_7 = __this->___m_CSSplatUtilities;
+		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_5 = __this->___m_CSSplatUtilities;
+		int32_t L_6 = ((Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_StaticFields*)il2cpp_codegen_static_fields_for(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var))->___BufferSize;
+		GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_7 = ___0_buf;
 		NullCheck(L_7);
-		ComputeShader_GetKernelThreadGroupSizes_m693428494DB1FD3CFC69FCE4E0093A2C4AAE1CBE(L_7, 5, (&V_0), (&V_1), (&V_2), NULL);
-		//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:687>
-		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_8 = __this->___m_CSSplatUtilities;
-		GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_9 = ___0_buf;
+		int32_t L_8;
+		L_8 = GraphicsBuffer_get_count_mFB2375DCEEFB459134AB0056F0ED77191E9EFB4F(L_7, NULL);
+		NullCheck(L_5);
+		ComputeShader_SetInt_m5BED46962875818A120FA6D2E4FD820B62BCE8AD(L_5, L_6, L_8, NULL);
+		//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:686>
+		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_9 = __this->___m_CSSplatUtilities;
+		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_10 = __this->___m_CSSplatUtilities;
+		NullCheck(L_10);
+		int32_t L_11;
+		L_11 = ComputeShader_FindKernel_m3BA5C50794FA6AF4C432E55FBBD7CB266532F659(L_10, _stringLiteral0417411373A2D4746573E9E290E910AB237214C7, NULL);
 		NullCheck(L_9);
-		int32_t L_10;
-		L_10 = GraphicsBuffer_get_count_mFB2375DCEEFB459134AB0056F0ED77191E9EFB4F(L_9, NULL);
-		uint32_t L_11 = V_0;
-		uint32_t L_12 = V_0;
-		NullCheck(L_8);
-		ComputeShader_Dispatch_mEED7BA68C28B1B39E75208D0D4D9915D41985B0A(L_8, 5, ((int32_t)((int64_t)(((int64_t)il2cpp_codegen_subtract(((int64_t)il2cpp_codegen_add(((int64_t)L_10), ((int64_t)(uint64_t)((uint32_t)L_11)))), ((int64_t)1)))/((int64_t)(uint64_t)((uint32_t)L_12))))), 1, 1, NULL);
+		ComputeShader_GetKernelThreadGroupSizes_m693428494DB1FD3CFC69FCE4E0093A2C4AAE1CBE(L_9, L_11, (&V_0), (&V_1), (&V_2), NULL);
+		//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:687>
+		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_12 = __this->___m_CSSplatUtilities;
+		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_13 = __this->___m_CSSplatUtilities;
+		NullCheck(L_13);
+		int32_t L_14;
+		L_14 = ComputeShader_FindKernel_m3BA5C50794FA6AF4C432E55FBBD7CB266532F659(L_13, _stringLiteral0417411373A2D4746573E9E290E910AB237214C7, NULL);
+		GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_15 = ___0_buf;
+		NullCheck(L_15);
+		int32_t L_16;
+		L_16 = GraphicsBuffer_get_count_mFB2375DCEEFB459134AB0056F0ED77191E9EFB4F(L_15, NULL);
+		uint32_t L_17 = V_0;
+		uint32_t L_18 = V_0;
+		NullCheck(L_12);
+		ComputeShader_Dispatch_mEED7BA68C28B1B39E75208D0D4D9915D41985B0A(L_12, L_14, ((int32_t)((int64_t)(((int64_t)il2cpp_codegen_subtract(((int64_t)il2cpp_codegen_add(((int64_t)L_16), ((int64_t)(uint64_t)((uint32_t)L_17)))), ((int64_t)1)))/((int64_t)(uint64_t)((uint32_t)L_18))))), 1, 1, NULL);
 		//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:688>
 		return;
 	}
 }
-// Method Definition Index: 86683
+// Method Definition Index: 86899
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatRenderer_UnionGraphicsBuffers_mC0B1F3C430179B6AD5756A738D3D5CFD94813CB7 (GaussianSplatRenderer_t4D745E5F7574870774C18D1B3991A1CB47891EB3* __this, GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* ___0_dst, GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* ___1_src, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB2957BB71D75A1FC0BE035457692BB1585EFB163);
 		s_Il2CppMethodInitialized = true;
 	}
 	uint32_t V_0 = 0;
@@ -8064,45 +8147,61 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatRenderer_UnionGraphicsBuffe
 	{
 		//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:692>
 		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_0 = __this->___m_CSSplatUtilities;
+		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_1 = __this->___m_CSSplatUtilities;
+		NullCheck(L_1);
+		int32_t L_2;
+		L_2 = ComputeShader_FindKernel_m3BA5C50794FA6AF4C432E55FBBD7CB266532F659(L_1, _stringLiteralB2957BB71D75A1FC0BE035457692BB1585EFB163, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var);
-		int32_t L_1 = ((Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_StaticFields*)il2cpp_codegen_static_fields_for(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var))->___SrcBuffer;
-		GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_2 = ___1_src;
+		int32_t L_3 = ((Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_StaticFields*)il2cpp_codegen_static_fields_for(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var))->___SrcBuffer;
+		GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_4 = ___1_src;
 		NullCheck(L_0);
-		ComputeShader_SetBuffer_m27D878BB0412309CF59C164CAF872580C6F053E1(L_0, 8, L_1, L_2, NULL);
+		ComputeShader_SetBuffer_m27D878BB0412309CF59C164CAF872580C6F053E1(L_0, L_2, L_3, L_4, NULL);
 		//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:693>
-		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_3 = __this->___m_CSSplatUtilities;
-		int32_t L_4 = ((Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_StaticFields*)il2cpp_codegen_static_fields_for(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var))->___DstBuffer;
-		GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_5 = ___0_dst;
-		NullCheck(L_3);
-		ComputeShader_SetBuffer_m27D878BB0412309CF59C164CAF872580C6F053E1(L_3, 8, L_4, L_5, NULL);
-		//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:694>
+		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_5 = __this->___m_CSSplatUtilities;
 		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_6 = __this->___m_CSSplatUtilities;
-		int32_t L_7 = ((Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_StaticFields*)il2cpp_codegen_static_fields_for(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var))->___BufferSize;
-		GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_8 = ___0_dst;
-		NullCheck(L_8);
-		int32_t L_9;
-		L_9 = GraphicsBuffer_get_count_mFB2375DCEEFB459134AB0056F0ED77191E9EFB4F(L_8, NULL);
 		NullCheck(L_6);
-		ComputeShader_SetInt_m5BED46962875818A120FA6D2E4FD820B62BCE8AD(L_6, L_7, L_9, NULL);
-		//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:695>
+		int32_t L_7;
+		L_7 = ComputeShader_FindKernel_m3BA5C50794FA6AF4C432E55FBBD7CB266532F659(L_6, _stringLiteralB2957BB71D75A1FC0BE035457692BB1585EFB163, NULL);
+		int32_t L_8 = ((Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_StaticFields*)il2cpp_codegen_static_fields_for(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var))->___DstBuffer;
+		GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_9 = ___0_dst;
+		NullCheck(L_5);
+		ComputeShader_SetBuffer_m27D878BB0412309CF59C164CAF872580C6F053E1(L_5, L_7, L_8, L_9, NULL);
+		//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:694>
 		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_10 = __this->___m_CSSplatUtilities;
-		NullCheck(L_10);
-		ComputeShader_GetKernelThreadGroupSizes_m693428494DB1FD3CFC69FCE4E0093A2C4AAE1CBE(L_10, 8, (&V_0), (&V_1), (&V_2), NULL);
-		//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:696>
-		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_11 = __this->___m_CSSplatUtilities;
+		int32_t L_11 = ((Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_StaticFields*)il2cpp_codegen_static_fields_for(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var))->___BufferSize;
 		GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_12 = ___0_dst;
 		NullCheck(L_12);
 		int32_t L_13;
 		L_13 = GraphicsBuffer_get_count_mFB2375DCEEFB459134AB0056F0ED77191E9EFB4F(L_12, NULL);
-		uint32_t L_14 = V_0;
-		uint32_t L_15 = V_0;
-		NullCheck(L_11);
-		ComputeShader_Dispatch_mEED7BA68C28B1B39E75208D0D4D9915D41985B0A(L_11, 8, ((int32_t)((int64_t)(((int64_t)il2cpp_codegen_subtract(((int64_t)il2cpp_codegen_add(((int64_t)L_13), ((int64_t)(uint64_t)((uint32_t)L_14)))), ((int64_t)1)))/((int64_t)(uint64_t)((uint32_t)L_15))))), 1, 1, NULL);
+		NullCheck(L_10);
+		ComputeShader_SetInt_m5BED46962875818A120FA6D2E4FD820B62BCE8AD(L_10, L_11, L_13, NULL);
+		//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:695>
+		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_14 = __this->___m_CSSplatUtilities;
+		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_15 = __this->___m_CSSplatUtilities;
+		NullCheck(L_15);
+		int32_t L_16;
+		L_16 = ComputeShader_FindKernel_m3BA5C50794FA6AF4C432E55FBBD7CB266532F659(L_15, _stringLiteralB2957BB71D75A1FC0BE035457692BB1585EFB163, NULL);
+		NullCheck(L_14);
+		ComputeShader_GetKernelThreadGroupSizes_m693428494DB1FD3CFC69FCE4E0093A2C4AAE1CBE(L_14, L_16, (&V_0), (&V_1), (&V_2), NULL);
+		//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:696>
+		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_17 = __this->___m_CSSplatUtilities;
+		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_18 = __this->___m_CSSplatUtilities;
+		NullCheck(L_18);
+		int32_t L_19;
+		L_19 = ComputeShader_FindKernel_m3BA5C50794FA6AF4C432E55FBBD7CB266532F659(L_18, _stringLiteralB2957BB71D75A1FC0BE035457692BB1585EFB163, NULL);
+		GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_20 = ___0_dst;
+		NullCheck(L_20);
+		int32_t L_21;
+		L_21 = GraphicsBuffer_get_count_mFB2375DCEEFB459134AB0056F0ED77191E9EFB4F(L_20, NULL);
+		uint32_t L_22 = V_0;
+		uint32_t L_23 = V_0;
+		NullCheck(L_17);
+		ComputeShader_Dispatch_mEED7BA68C28B1B39E75208D0D4D9915D41985B0A(L_17, L_19, ((int32_t)((int64_t)(((int64_t)il2cpp_codegen_subtract(((int64_t)il2cpp_codegen_add(((int64_t)L_21), ((int64_t)(uint64_t)((uint32_t)L_22)))), ((int64_t)1)))/((int64_t)(uint64_t)((uint32_t)L_23))))), 1, 1, NULL);
 		//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:697>
 		return;
 	}
 }
-// Method Definition Index: 86684
+// Method Definition Index: 86900
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float GaussianSplatRenderer_SortableUintToFloat_m7935A0E9FADE5F7372BC5437FF81CD31B4285C27 (uint32_t ___0_v, const RuntimeMethod* method) 
 {
 	uint32_t V_0 = 0;
@@ -8118,7 +8217,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float GaussianSplatRenderer_SortableUintToFlo
 		return L_3;
 	}
 }
-// Method Definition Index: 86685
+// Method Definition Index: 86901
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatRenderer_UpdateEditCountsAndBounds_m790D3CC900575D55DEE169161376DA14D30B0431 (GaussianSplatRenderer_t4D745E5F7574870774C18D1B3991A1CB47891EB3* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8130,6 +8229,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatRenderer_UpdateEditCountsAn
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral3017D43784CDC6156A3AA5CC2AF3CB32FAF4FA08);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral85744DA9E8CF1BADC18142680D22D1AA9910E41C);
 		s_Il2CppMethodInitialized = true;
 	}
 	CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* V_0 = NULL;
@@ -8176,40 +8277,48 @@ IL_0035:
 	{
 		//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:717>
 		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_2 = __this->___m_CSSplatUtilities;
+		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_3 = __this->___m_CSSplatUtilities;
+		NullCheck(L_3);
+		int32_t L_4;
+		L_4 = ComputeShader_FindKernel_m3BA5C50794FA6AF4C432E55FBBD7CB266532F659(L_3, _stringLiteral3017D43784CDC6156A3AA5CC2AF3CB32FAF4FA08, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var);
-		int32_t L_3 = ((Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_StaticFields*)il2cpp_codegen_static_fields_for(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var))->___DstBuffer;
-		GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_4 = __this->___m_GpuEditCountsBounds;
+		int32_t L_5 = ((Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_StaticFields*)il2cpp_codegen_static_fields_for(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var))->___DstBuffer;
+		GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_6 = __this->___m_GpuEditCountsBounds;
 		NullCheck(L_2);
-		ComputeShader_SetBuffer_m27D878BB0412309CF59C164CAF872580C6F053E1(L_2, 4, L_3, L_4, NULL);
+		ComputeShader_SetBuffer_m27D878BB0412309CF59C164CAF872580C6F053E1(L_2, L_4, L_5, L_6, NULL);
 		//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:718>
-		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_5 = __this->___m_CSSplatUtilities;
-		NullCheck(L_5);
-		ComputeShader_Dispatch_mEED7BA68C28B1B39E75208D0D4D9915D41985B0A(L_5, 4, 1, 1, 1, NULL);
+		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_7 = __this->___m_CSSplatUtilities;
+		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_8 = __this->___m_CSSplatUtilities;
+		NullCheck(L_8);
+		int32_t L_9;
+		L_9 = ComputeShader_FindKernel_m3BA5C50794FA6AF4C432E55FBBD7CB266532F659(L_8, _stringLiteral3017D43784CDC6156A3AA5CC2AF3CB32FAF4FA08, NULL);
+		NullCheck(L_7);
+		ComputeShader_Dispatch_mEED7BA68C28B1B39E75208D0D4D9915D41985B0A(L_7, L_9, 1, 1, 1, NULL);
 		//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:720>
-		CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_6 = (CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7*)il2cpp_codegen_object_new(CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7_il2cpp_TypeInfo_var);
-		CommandBuffer__ctor_m9445F1606331B732FCA393591F3E230714FD5FF4(L_6, NULL);
-		V_0 = L_6;
+		CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_10 = (CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7*)il2cpp_codegen_object_new(CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7_il2cpp_TypeInfo_var);
+		CommandBuffer__ctor_m9445F1606331B732FCA393591F3E230714FD5FF4(L_10, NULL);
+		V_0 = L_10;
 	}
 	{
 		auto __finallyBlock = il2cpp::utils::Finally([&]
 		{
 
-FINALLY_01a2:
+FINALLY_01ed:
 			{
 				{
-					CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_7 = V_0;
-					if (!L_7)
+					CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_11 = V_0;
+					if (!L_11)
 					{
-						goto IL_01ab;
+						goto IL_01f6;
 					}
 				}
 				{
-					CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_8 = V_0;
-					NullCheck(L_8);
-					InterfaceActionInvoker0::Invoke(0, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, L_8);
+					CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_12 = V_0;
+					NullCheck(L_12);
+					InterfaceActionInvoker0::Invoke(0, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, L_12);
 				}
 
-IL_01ab:
+IL_01f6:
 				{
 					return;
 				}
@@ -8219,154 +8328,166 @@ IL_01ab:
 		{
 			{
 				//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:721>
-				CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_9 = V_0;
-				GaussianSplatRenderer_SetAssetDataOnCS_m80F9D7F7B3AA97516EFB44DF210F91CC70FD8351(__this, L_9, 3, NULL);
+				CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_13 = V_0;
+				GaussianSplatRenderer_SetAssetDataOnCS_m80F9D7F7B3AA97516EFB44DF210F91CC70FD8351(__this, L_13, 3, NULL);
 				//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:722>
-				CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_10 = V_0;
-				ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_11 = __this->___m_CSSplatUtilities;
-				il2cpp_codegen_runtime_class_init_inline(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var);
-				int32_t L_12 = ((Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_StaticFields*)il2cpp_codegen_static_fields_for(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var))->___DstBuffer;
-				GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_13 = __this->___m_GpuEditCountsBounds;
-				NullCheck(L_10);
-				CommandBuffer_SetComputeBufferParam_mF358CEC3E841ACFA0ECA0D9495B8287A842F20CA(L_10, L_11, 3, L_12, L_13, NULL);
-				//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:723>
 				CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_14 = V_0;
 				ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_15 = __this->___m_CSSplatUtilities;
-				int32_t L_16 = ((Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_StaticFields*)il2cpp_codegen_static_fields_for(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var))->___BufferSize;
-				GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_17 = __this->___m_GpuEditSelected;
-				NullCheck(L_17);
-				int32_t L_18;
-				L_18 = GraphicsBuffer_get_count_mFB2375DCEEFB459134AB0056F0ED77191E9EFB4F(L_17, NULL);
+				ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_16 = __this->___m_CSSplatUtilities;
+				NullCheck(L_16);
+				int32_t L_17;
+				L_17 = ComputeShader_FindKernel_m3BA5C50794FA6AF4C432E55FBBD7CB266532F659(L_16, _stringLiteral85744DA9E8CF1BADC18142680D22D1AA9910E41C, NULL);
+				il2cpp_codegen_runtime_class_init_inline(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var);
+				int32_t L_18 = ((Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_StaticFields*)il2cpp_codegen_static_fields_for(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var))->___DstBuffer;
+				GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_19 = __this->___m_GpuEditCountsBounds;
 				NullCheck(L_14);
-				CommandBuffer_SetComputeIntParam_m253E1647D4F7E5613A31E0EF4DE4A67FDDEA4CC6(L_14, L_15, L_16, L_18, NULL);
-				//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:724>
-				ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_19 = __this->___m_CSSplatUtilities;
-				NullCheck(L_19);
-				ComputeShader_GetKernelThreadGroupSizes_m693428494DB1FD3CFC69FCE4E0093A2C4AAE1CBE(L_19, 3, (&V_1), (&V_7), (&V_8), NULL);
-				//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:725>
+				CommandBuffer_SetComputeBufferParam_mF358CEC3E841ACFA0ECA0D9495B8287A842F20CA(L_14, L_15, L_17, L_18, L_19, NULL);
+				//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:723>
 				CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_20 = V_0;
 				ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_21 = __this->___m_CSSplatUtilities;
-				GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_22 = __this->___m_GpuEditSelected;
-				NullCheck(L_22);
-				int32_t L_23;
-				L_23 = GraphicsBuffer_get_count_mFB2375DCEEFB459134AB0056F0ED77191E9EFB4F(L_22, NULL);
-				uint32_t L_24 = V_1;
-				uint32_t L_25 = V_1;
+				int32_t L_22 = ((Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_StaticFields*)il2cpp_codegen_static_fields_for(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var))->___BufferSize;
+				GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_23 = __this->___m_GpuEditSelected;
+				NullCheck(L_23);
+				int32_t L_24;
+				L_24 = GraphicsBuffer_get_count_mFB2375DCEEFB459134AB0056F0ED77191E9EFB4F(L_23, NULL);
 				NullCheck(L_20);
-				CommandBuffer_DispatchCompute_mF9F5605B77F0480FD4B8C3BCAEC2FC59A24E31A2(L_20, L_21, 3, ((int32_t)((int64_t)(((int64_t)il2cpp_codegen_subtract(((int64_t)il2cpp_codegen_add(((int64_t)L_23), ((int64_t)(uint64_t)((uint32_t)L_24)))), ((int64_t)1)))/((int64_t)(uint64_t)((uint32_t)L_25))))), 1, 1, NULL);
-				//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:726>
-				CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_26 = V_0;
-				il2cpp_codegen_runtime_class_init_inline(Graphics_t99CD970FFEA58171C70F54DF0C06D315BD452F2C_il2cpp_TypeInfo_var);
-				Graphics_ExecuteCommandBuffer_mE7D922583404AB08A25C1413A3EA9F6B0D2F16B9(L_26, NULL);
-				//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:728>
-				GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_27 = __this->___m_GpuEditCountsBounds;
-				NullCheck(L_27);
-				int32_t L_28;
-				L_28 = GraphicsBuffer_get_count_mFB2375DCEEFB459134AB0056F0ED77191E9EFB4F(L_27, NULL);
-				UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA* L_29 = (UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA*)(UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA*)SZArrayNew(UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA_il2cpp_TypeInfo_var, (uint32_t)L_28);
-				V_2 = L_29;
-				//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:729>
-				GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_30 = __this->___m_GpuEditCountsBounds;
-				UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA* L_31 = V_2;
+				CommandBuffer_SetComputeIntParam_m253E1647D4F7E5613A31E0EF4DE4A67FDDEA4CC6(L_20, L_21, L_22, L_24, NULL);
+				//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:724>
+				ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_25 = __this->___m_CSSplatUtilities;
+				ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_26 = __this->___m_CSSplatUtilities;
+				NullCheck(L_26);
+				int32_t L_27;
+				L_27 = ComputeShader_FindKernel_m3BA5C50794FA6AF4C432E55FBBD7CB266532F659(L_26, _stringLiteral85744DA9E8CF1BADC18142680D22D1AA9910E41C, NULL);
+				NullCheck(L_25);
+				ComputeShader_GetKernelThreadGroupSizes_m693428494DB1FD3CFC69FCE4E0093A2C4AAE1CBE(L_25, L_27, (&V_1), (&V_7), (&V_8), NULL);
+				//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:725>
+				CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_28 = V_0;
+				ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_29 = __this->___m_CSSplatUtilities;
+				ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_30 = __this->___m_CSSplatUtilities;
 				NullCheck(L_30);
-				GraphicsBuffer_GetData_m4BF0D00BDBDDC18598A09DF48460BCF5A34BC077(L_30, (RuntimeArray*)L_31, NULL);
-				//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:730>
-				UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA* L_32 = V_2;
+				int32_t L_31;
+				L_31 = ComputeShader_FindKernel_m3BA5C50794FA6AF4C432E55FBBD7CB266532F659(L_30, _stringLiteral85744DA9E8CF1BADC18142680D22D1AA9910E41C, NULL);
+				GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_32 = __this->___m_GpuEditSelected;
 				NullCheck(L_32);
-				int32_t L_33 = 0;
-				uint32_t L_34 = (L_32)->GetAt(static_cast<il2cpp_array_size_t>(L_33));
-				GaussianSplatRenderer_set_editSelectedSplats_m5D00675B6BE6A09E8EA512E836FAC35298F7FE6B_inline(__this, L_34, NULL);
-				//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:731>
-				UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA* L_35 = V_2;
-				NullCheck(L_35);
-				int32_t L_36 = 1;
-				uint32_t L_37 = (L_35)->GetAt(static_cast<il2cpp_array_size_t>(L_36));
-				GaussianSplatRenderer_set_editDeletedSplats_mFB637AC0BF5F2AA823E9488AAE443A642FA5F0CB_inline(__this, L_37, NULL);
-				//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:732>
-				UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA* L_38 = V_2;
-				NullCheck(L_38);
-				int32_t L_39 = 2;
-				uint32_t L_40 = (L_38)->GetAt(static_cast<il2cpp_array_size_t>(L_39));
-				GaussianSplatRenderer_set_editCutSplats_mBC9EBE56557EC85EBB1DF84FA1B2C6119FAA6FB8_inline(__this, L_40, NULL);
-				//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:733>
+				int32_t L_33;
+				L_33 = GraphicsBuffer_get_count_mFB2375DCEEFB459134AB0056F0ED77191E9EFB4F(L_32, NULL);
+				uint32_t L_34 = V_1;
+				uint32_t L_35 = V_1;
+				NullCheck(L_28);
+				CommandBuffer_DispatchCompute_mF9F5605B77F0480FD4B8C3BCAEC2FC59A24E31A2(L_28, L_29, L_31, ((int32_t)((int64_t)(((int64_t)il2cpp_codegen_subtract(((int64_t)il2cpp_codegen_add(((int64_t)L_33), ((int64_t)(uint64_t)((uint32_t)L_34)))), ((int64_t)1)))/((int64_t)(uint64_t)((uint32_t)L_35))))), 1, 1, NULL);
+				//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:726>
+				CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_36 = V_0;
+				il2cpp_codegen_runtime_class_init_inline(Graphics_t99CD970FFEA58171C70F54DF0C06D315BD452F2C_il2cpp_TypeInfo_var);
+				Graphics_ExecuteCommandBuffer_mE7D922583404AB08A25C1413A3EA9F6B0D2F16B9(L_36, NULL);
+				//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:728>
+				GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_37 = __this->___m_GpuEditCountsBounds;
+				NullCheck(L_37);
+				int32_t L_38;
+				L_38 = GraphicsBuffer_get_count_mFB2375DCEEFB459134AB0056F0ED77191E9EFB4F(L_37, NULL);
+				UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA* L_39 = (UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA*)(UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA*)SZArrayNew(UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA_il2cpp_TypeInfo_var, (uint32_t)L_38);
+				V_2 = L_39;
+				//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:729>
+				GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_40 = __this->___m_GpuEditCountsBounds;
 				UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA* L_41 = V_2;
-				NullCheck(L_41);
-				int32_t L_42 = 3;
-				uint32_t L_43 = (L_41)->GetAt(static_cast<il2cpp_array_size_t>(L_42));
-				il2cpp_codegen_runtime_class_init_inline(GaussianSplatRenderer_t4D745E5F7574870774C18D1B3991A1CB47891EB3_il2cpp_TypeInfo_var);
-				float L_44;
-				L_44 = GaussianSplatRenderer_SortableUintToFloat_m7935A0E9FADE5F7372BC5437FF81CD31B4285C27(L_43, NULL);
+				NullCheck(L_40);
+				GraphicsBuffer_GetData_m4BF0D00BDBDDC18598A09DF48460BCF5A34BC077(L_40, (RuntimeArray*)L_41, NULL);
+				//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:730>
+				UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA* L_42 = V_2;
+				NullCheck(L_42);
+				int32_t L_43 = 0;
+				uint32_t L_44 = (L_42)->GetAt(static_cast<il2cpp_array_size_t>(L_43));
+				GaussianSplatRenderer_set_editSelectedSplats_m5D00675B6BE6A09E8EA512E836FAC35298F7FE6B_inline(__this, L_44, NULL);
+				//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:731>
 				UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA* L_45 = V_2;
 				NullCheck(L_45);
-				int32_t L_46 = 4;
+				int32_t L_46 = 1;
 				uint32_t L_47 = (L_45)->GetAt(static_cast<il2cpp_array_size_t>(L_46));
-				float L_48;
-				L_48 = GaussianSplatRenderer_SortableUintToFloat_m7935A0E9FADE5F7372BC5437FF81CD31B4285C27(L_47, NULL);
-				UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA* L_49 = V_2;
-				NullCheck(L_49);
-				int32_t L_50 = 5;
-				uint32_t L_51 = (L_49)->GetAt(static_cast<il2cpp_array_size_t>(L_50));
-				float L_52;
-				L_52 = GaussianSplatRenderer_SortableUintToFloat_m7935A0E9FADE5F7372BC5437FF81CD31B4285C27(L_51, NULL);
-				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_53;
-				memset((&L_53), 0, sizeof(L_53));
-				Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_53), L_44, L_48, L_52, NULL);
-				V_3 = L_53;
+				GaussianSplatRenderer_set_editDeletedSplats_mFB637AC0BF5F2AA823E9488AAE443A642FA5F0CB_inline(__this, L_47, NULL);
+				//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:732>
+				UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA* L_48 = V_2;
+				NullCheck(L_48);
+				int32_t L_49 = 2;
+				uint32_t L_50 = (L_48)->GetAt(static_cast<il2cpp_array_size_t>(L_49));
+				GaussianSplatRenderer_set_editCutSplats_mBC9EBE56557EC85EBB1DF84FA1B2C6119FAA6FB8_inline(__this, L_50, NULL);
+				//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:733>
+				UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA* L_51 = V_2;
+				NullCheck(L_51);
+				int32_t L_52 = 3;
+				uint32_t L_53 = (L_51)->GetAt(static_cast<il2cpp_array_size_t>(L_52));
+				il2cpp_codegen_runtime_class_init_inline(GaussianSplatRenderer_t4D745E5F7574870774C18D1B3991A1CB47891EB3_il2cpp_TypeInfo_var);
+				float L_54;
+				L_54 = GaussianSplatRenderer_SortableUintToFloat_m7935A0E9FADE5F7372BC5437FF81CD31B4285C27(L_53, NULL);
+				UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA* L_55 = V_2;
+				NullCheck(L_55);
+				int32_t L_56 = 4;
+				uint32_t L_57 = (L_55)->GetAt(static_cast<il2cpp_array_size_t>(L_56));
+				float L_58;
+				L_58 = GaussianSplatRenderer_SortableUintToFloat_m7935A0E9FADE5F7372BC5437FF81CD31B4285C27(L_57, NULL);
+				UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA* L_59 = V_2;
+				NullCheck(L_59);
+				int32_t L_60 = 5;
+				uint32_t L_61 = (L_59)->GetAt(static_cast<il2cpp_array_size_t>(L_60));
+				float L_62;
+				L_62 = GaussianSplatRenderer_SortableUintToFloat_m7935A0E9FADE5F7372BC5437FF81CD31B4285C27(L_61, NULL);
+				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_63;
+				memset((&L_63), 0, sizeof(L_63));
+				Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_63), L_54, L_58, L_62, NULL);
+				V_3 = L_63;
 				//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:734>
-				UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA* L_54 = V_2;
-				NullCheck(L_54);
-				int32_t L_55 = 6;
-				uint32_t L_56 = (L_54)->GetAt(static_cast<il2cpp_array_size_t>(L_55));
-				float L_57;
-				L_57 = GaussianSplatRenderer_SortableUintToFloat_m7935A0E9FADE5F7372BC5437FF81CD31B4285C27(L_56, NULL);
-				UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA* L_58 = V_2;
-				NullCheck(L_58);
-				int32_t L_59 = 7;
-				uint32_t L_60 = (L_58)->GetAt(static_cast<il2cpp_array_size_t>(L_59));
-				float L_61;
-				L_61 = GaussianSplatRenderer_SortableUintToFloat_m7935A0E9FADE5F7372BC5437FF81CD31B4285C27(L_60, NULL);
-				UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA* L_62 = V_2;
-				NullCheck(L_62);
-				int32_t L_63 = 8;
-				uint32_t L_64 = (L_62)->GetAt(static_cast<il2cpp_array_size_t>(L_63));
-				float L_65;
-				L_65 = GaussianSplatRenderer_SortableUintToFloat_m7935A0E9FADE5F7372BC5437FF81CD31B4285C27(L_64, NULL);
-				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_66;
-				memset((&L_66), 0, sizeof(L_66));
-				Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_66), L_57, L_61, L_65, NULL);
-				V_4 = L_66;
+				UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA* L_64 = V_2;
+				NullCheck(L_64);
+				int32_t L_65 = 6;
+				uint32_t L_66 = (L_64)->GetAt(static_cast<il2cpp_array_size_t>(L_65));
+				float L_67;
+				L_67 = GaussianSplatRenderer_SortableUintToFloat_m7935A0E9FADE5F7372BC5437FF81CD31B4285C27(L_66, NULL);
+				UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA* L_68 = V_2;
+				NullCheck(L_68);
+				int32_t L_69 = 7;
+				uint32_t L_70 = (L_68)->GetAt(static_cast<il2cpp_array_size_t>(L_69));
+				float L_71;
+				L_71 = GaussianSplatRenderer_SortableUintToFloat_m7935A0E9FADE5F7372BC5437FF81CD31B4285C27(L_70, NULL);
+				UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA* L_72 = V_2;
+				NullCheck(L_72);
+				int32_t L_73 = 8;
+				uint32_t L_74 = (L_72)->GetAt(static_cast<il2cpp_array_size_t>(L_73));
+				float L_75;
+				L_75 = GaussianSplatRenderer_SortableUintToFloat_m7935A0E9FADE5F7372BC5437FF81CD31B4285C27(L_74, NULL);
+				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_76;
+				memset((&L_76), 0, sizeof(L_76));
+				Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_76), L_67, L_71, L_75, NULL);
+				V_4 = L_76;
 				//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:735>
 				il2cpp_codegen_initobj((&V_5), sizeof(Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3));
 				//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:736>
-				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_67 = V_3;
-				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_68 = V_4;
-				Bounds_SetMinMax_mB5F7DDF18EDB7F3F25FA6D2B36824F28978C540F_inline((&V_5), L_67, L_68, NULL);
+				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_77 = V_3;
+				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_78 = V_4;
+				Bounds_SetMinMax_mB5F7DDF18EDB7F3F25FA6D2B36824F28978C540F_inline((&V_5), L_77, L_78, NULL);
 				//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:737>
-				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_69;
-				L_69 = Bounds_get_extents_mFE6DC407FCE2341BE2C750CB554055D211281D25_inline((&V_5), NULL);
-				V_9 = L_69;
-				float L_70;
-				L_70 = Vector3_get_sqrMagnitude_m43C27DEC47C4811FB30AB474FF2131A963B66FC8_inline((&V_9), NULL);
-				if ((!(((double)((double)L_70)) < ((double)(0.01)))))
+				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_79;
+				L_79 = Bounds_get_extents_mFE6DC407FCE2341BE2C750CB554055D211281D25_inline((&V_5), NULL);
+				V_9 = L_79;
+				float L_80;
+				L_80 = Vector3_get_sqrMagnitude_m43C27DEC47C4811FB30AB474FF2131A963B66FC8_inline((&V_9), NULL);
+				if ((!(((double)((double)L_80)) < ((double)(0.01)))))
 				{
-					goto IL_0198_1;
+					goto IL_01e3_1;
 				}
 			}
 			{
 				//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:738>
-				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_71;
-				memset((&L_71), 0, sizeof(L_71));
-				Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_71), (0.100000001f), (0.100000001f), (0.100000001f), NULL);
-				Bounds_set_extents_m09496358547B86A93EFE7BE6371E7A6FE937C46F_inline((&V_5), L_71, NULL);
+				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_81;
+				memset((&L_81), 0, sizeof(L_81));
+				Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_81), (0.100000001f), (0.100000001f), (0.100000001f), NULL);
+				Bounds_set_extents_m09496358547B86A93EFE7BE6371E7A6FE937C46F_inline((&V_5), L_81, NULL);
 			}
 
-IL_0198_1:
+IL_01e3_1:
 			{
 				//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:739>
-				Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3 L_72 = V_5;
-				GaussianSplatRenderer_set_editSelectedBounds_mBD8A760C9F954F11D8620724B48AFAE4C3C0B5EB_inline(__this, L_72, NULL);
+				Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3 L_82 = V_5;
+				GaussianSplatRenderer_set_editSelectedBounds_mBD8A760C9F954F11D8620724B48AFAE4C3C0B5EB_inline(__this, L_82, NULL);
 				//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:740>
-				goto IL_01ac;
+				goto IL_01f7;
 			}
 		}
 		catch(Il2CppExceptionWrapper& e)
@@ -8375,13 +8496,13 @@ IL_0198_1:
 		}
 	}
 
-IL_01ac:
+IL_01f7:
 	{
 		//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:740>
 		return;
 	}
 }
-// Method Definition Index: 86686
+// Method Definition Index: 86902
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatRenderer_UpdateCutoutsBuffer_m8FC9290D469B823F5BBDB6C6CA85572CBE250584 (GaussianSplatRenderer_t4D745E5F7574870774C18D1B3991A1CB47891EB3* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8569,7 +8690,7 @@ IL_00a1:
 		return;
 	}
 }
-// Method Definition Index: 86687
+// Method Definition Index: 86903
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GaussianSplatRenderer_EnsureEditingBuffers_mBB31E6A948DAD0EF84FE28C54B12D29DD8D062AD (GaussianSplatRenderer_t4D745E5F7574870774C18D1B3991A1CB47891EB3* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8681,7 +8802,7 @@ IL_00b6:
 		return (bool)((!(((RuntimeObject*)(GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1*)L_22) <= ((RuntimeObject*)(RuntimeObject*)NULL)))? 1 : 0);
 	}
 }
-// Method Definition Index: 86688
+// Method Definition Index: 86904
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatRenderer_EditStoreSelectionMouseDown_m051537B42497982F144CA534F97629A3CAD0E5DA (GaussianSplatRenderer_t4D745E5F7574870774C18D1B3991A1CB47891EB3* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8715,7 +8836,7 @@ IL_0009:
 		return;
 	}
 }
-// Method Definition Index: 86689
+// Method Definition Index: 86905
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatRenderer_EditStorePosMouseDown_mB5A04D5E9DA7B77724C5CEEE23B7C15CA0D1595B (GaussianSplatRenderer_t4D745E5F7574870774C18D1B3991A1CB47891EB3* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8768,7 +8889,7 @@ IL_0041:
 		return;
 	}
 }
-// Method Definition Index: 86690
+// Method Definition Index: 86906
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatRenderer_EditStoreOtherMouseDown_m52F26CDD6C8F361F4C0062ECFB019CAF5B839CAF (GaussianSplatRenderer_t4D745E5F7574870774C18D1B3991A1CB47891EB3* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8821,7 +8942,7 @@ IL_0041:
 		return;
 	}
 }
-// Method Definition Index: 86691
+// Method Definition Index: 86907
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatRenderer_EditUpdateSelection_mE8E675B95968DACA3A67A51B6DF3CDD1A6EB963D (GaussianSplatRenderer_t4D745E5F7574870774C18D1B3991A1CB47891EB3* __this, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_rectMin, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___1_rectMax, Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* ___2_cam, bool ___3_subtract, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9078,7 +9199,7 @@ IL_015b:
 		return;
 	}
 }
-// Method Definition Index: 86692
+// Method Definition Index: 86908
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatRenderer_EditTranslateSelection_m8DE974A4490D449854614E0B918303831C454A5D (GaussianSplatRenderer_t4D745E5F7574870774C18D1B3991A1CB47891EB3* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_localSpacePosDelta, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9178,7 +9299,7 @@ IL_0062:
 		return;
 	}
 }
-// Method Definition Index: 86693
+// Method Definition Index: 86909
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatRenderer_EditRotateSelection_m2A1446170CF6D6EC6020EB7E8E2651DC41A29591 (GaussianSplatRenderer_t4D745E5F7574870774C18D1B3991A1CB47891EB3* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_localSpaceCenter, Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 ___1_localToWorld, Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 ___2_worldToLocal, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___3_rotation, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9188,6 +9309,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatRenderer_EditRotateSelectio
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralAD2F85B3781BD62638713C299017B9B5B7C06D5F);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralFF0E2D4D8603A0EBFEEBE524ACAA64A70AD13ADA);
 		s_Il2CppMethodInitialized = true;
 	}
 	CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* V_0 = NULL;
@@ -9242,13 +9364,13 @@ IL_001a:
 		auto __finallyBlock = il2cpp::utils::Finally([&]
 		{
 
-FINALLY_00f1:
+FINALLY_010d:
 			{
 				{
 					CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_5 = V_0;
 					if (!L_5)
 					{
-						goto IL_00fa;
+						goto IL_0116;
 					}
 				}
 				{
@@ -9257,7 +9379,7 @@ FINALLY_00f1:
 					InterfaceActionInvoker0::Invoke(0, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, L_6);
 				}
 
-IL_00fa:
+IL_0116:
 				{
 					return;
 				}
@@ -9271,68 +9393,76 @@ IL_00fa:
 			//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:864>
 			CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_8 = V_0;
 			ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_9 = __this->___m_CSSplatUtilities;
+			ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_10 = __this->___m_CSSplatUtilities;
+			NullCheck(L_10);
+			int32_t L_11;
+			L_11 = ComputeShader_FindKernel_m3BA5C50794FA6AF4C432E55FBBD7CB266532F659(L_10, _stringLiteralFF0E2D4D8603A0EBFEEBE524ACAA64A70AD13ADA, NULL);
 			il2cpp_codegen_runtime_class_init_inline(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var);
-			int32_t L_10 = ((Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_StaticFields*)il2cpp_codegen_static_fields_for(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var))->___SplatPosMouseDown;
-			GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_11 = __this->___m_GpuEditPosMouseDown;
+			int32_t L_12 = ((Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_StaticFields*)il2cpp_codegen_static_fields_for(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var))->___SplatPosMouseDown;
+			GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_13 = __this->___m_GpuEditPosMouseDown;
 			NullCheck(L_8);
-			CommandBuffer_SetComputeBufferParam_mF358CEC3E841ACFA0ECA0D9495B8287A842F20CA(L_8, L_9, ((int32_t)11), L_10, L_11, NULL);
+			CommandBuffer_SetComputeBufferParam_mF358CEC3E841ACFA0ECA0D9495B8287A842F20CA(L_8, L_9, L_11, L_12, L_13, NULL);
 			//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:865>
-			CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_12 = V_0;
-			ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_13 = __this->___m_CSSplatUtilities;
-			int32_t L_14 = ((Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_StaticFields*)il2cpp_codegen_static_fields_for(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var))->___SplatOtherMouseDown;
-			GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_15 = __this->___m_GpuEditOtherMouseDown;
-			NullCheck(L_12);
-			CommandBuffer_SetComputeBufferParam_mF358CEC3E841ACFA0ECA0D9495B8287A842F20CA(L_12, L_13, ((int32_t)11), L_14, L_15, NULL);
-			//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:866>
-			CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_16 = V_0;
-			ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_17 = __this->___m_CSSplatUtilities;
-			int32_t L_18 = ((Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_StaticFields*)il2cpp_codegen_static_fields_for(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var))->___SelectionCenter;
-			Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_19 = ___0_localSpaceCenter;
-			Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_20;
-			L_20 = Vector4_op_Implicit_m2ECA73F345A7AD84144133E9E51657204002B12D_inline(L_19, NULL);
+			CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_14 = V_0;
+			ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_15 = __this->___m_CSSplatUtilities;
+			ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_16 = __this->___m_CSSplatUtilities;
 			NullCheck(L_16);
-			CommandBuffer_SetComputeVectorParam_m2D4D62159DE2AD402DEDE016615D74708D499E83(L_16, L_17, L_18, L_20, NULL);
+			int32_t L_17;
+			L_17 = ComputeShader_FindKernel_m3BA5C50794FA6AF4C432E55FBBD7CB266532F659(L_16, _stringLiteralFF0E2D4D8603A0EBFEEBE524ACAA64A70AD13ADA, NULL);
+			int32_t L_18 = ((Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_StaticFields*)il2cpp_codegen_static_fields_for(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var))->___SplatOtherMouseDown;
+			GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_19 = __this->___m_GpuEditOtherMouseDown;
+			NullCheck(L_14);
+			CommandBuffer_SetComputeBufferParam_mF358CEC3E841ACFA0ECA0D9495B8287A842F20CA(L_14, L_15, L_17, L_18, L_19, NULL);
+			//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:866>
+			CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_20 = V_0;
+			ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_21 = __this->___m_CSSplatUtilities;
+			int32_t L_22 = ((Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_StaticFields*)il2cpp_codegen_static_fields_for(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var))->___SelectionCenter;
+			Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_23 = ___0_localSpaceCenter;
+			Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_24;
+			L_24 = Vector4_op_Implicit_m2ECA73F345A7AD84144133E9E51657204002B12D_inline(L_23, NULL);
+			NullCheck(L_20);
+			CommandBuffer_SetComputeVectorParam_m2D4D62159DE2AD402DEDE016615D74708D499E83(L_20, L_21, L_22, L_24, NULL);
 			//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:867>
-			CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_21 = V_0;
-			ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_22 = __this->___m_CSSplatUtilities;
-			int32_t L_23 = ((Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_StaticFields*)il2cpp_codegen_static_fields_for(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var))->___MatrixObjectToWorld;
-			Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 L_24 = ___1_localToWorld;
-			NullCheck(L_21);
-			CommandBuffer_SetComputeMatrixParam_mACD1D51DC9FF0D852A2C2F4C19F4114395E446C0(L_21, L_22, L_23, L_24, NULL);
-			//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:868>
 			CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_25 = V_0;
 			ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_26 = __this->___m_CSSplatUtilities;
-			int32_t L_27 = ((Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_StaticFields*)il2cpp_codegen_static_fields_for(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var))->___MatrixWorldToObject;
-			Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 L_28 = ___2_worldToLocal;
+			int32_t L_27 = ((Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_StaticFields*)il2cpp_codegen_static_fields_for(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var))->___MatrixObjectToWorld;
+			Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 L_28 = ___1_localToWorld;
 			NullCheck(L_25);
 			CommandBuffer_SetComputeMatrixParam_mACD1D51DC9FF0D852A2C2F4C19F4114395E446C0(L_25, L_26, L_27, L_28, NULL);
-			//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:869>
+			//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:868>
 			CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_29 = V_0;
 			ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_30 = __this->___m_CSSplatUtilities;
-			int32_t L_31 = ((Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_StaticFields*)il2cpp_codegen_static_fields_for(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var))->___SelectionDeltaRot;
-			Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_32 = ___3_rotation;
-			float L_33 = L_32.___x;
-			Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_34 = ___3_rotation;
-			float L_35 = L_34.___y;
-			Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_36 = ___3_rotation;
-			float L_37 = L_36.___z;
-			Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_38 = ___3_rotation;
-			float L_39 = L_38.___w;
-			Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_40;
-			memset((&L_40), 0, sizeof(L_40));
-			Vector4__ctor_m96B2CD8B862B271F513AF0BDC2EABD58E4DBC813_inline((&L_40), L_33, L_35, L_37, L_39, NULL);
+			int32_t L_31 = ((Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_StaticFields*)il2cpp_codegen_static_fields_for(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var))->___MatrixWorldToObject;
+			Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 L_32 = ___2_worldToLocal;
 			NullCheck(L_29);
-			CommandBuffer_SetComputeVectorParam_m2D4D62159DE2AD402DEDE016615D74708D499E83(L_29, L_30, L_31, L_40, NULL);
+			CommandBuffer_SetComputeMatrixParam_mACD1D51DC9FF0D852A2C2F4C19F4114395E446C0(L_29, L_30, L_31, L_32, NULL);
+			//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:869>
+			CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_33 = V_0;
+			ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_34 = __this->___m_CSSplatUtilities;
+			int32_t L_35 = ((Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_StaticFields*)il2cpp_codegen_static_fields_for(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var))->___SelectionDeltaRot;
+			Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_36 = ___3_rotation;
+			float L_37 = L_36.___x;
+			Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_38 = ___3_rotation;
+			float L_39 = L_38.___y;
+			Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_40 = ___3_rotation;
+			float L_41 = L_40.___z;
+			Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_42 = ___3_rotation;
+			float L_43 = L_42.___w;
+			Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_44;
+			memset((&L_44), 0, sizeof(L_44));
+			Vector4__ctor_m96B2CD8B862B271F513AF0BDC2EABD58E4DBC813_inline((&L_44), L_37, L_39, L_41, L_43, NULL);
+			NullCheck(L_33);
+			CommandBuffer_SetComputeVectorParam_m2D4D62159DE2AD402DEDE016615D74708D499E83(L_33, L_34, L_35, L_44, NULL);
 			//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:871>
-			CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_41 = V_0;
-			int32_t L_42 = __this->___m_SplatCount;
-			GaussianSplatRenderer_DispatchUtilsAndExecute_mDF3CF175B8BDAE23747D32E8C6E6EF836B54D273(__this, L_41, ((int32_t)11), L_42, NULL);
+			CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_45 = V_0;
+			int32_t L_46 = __this->___m_SplatCount;
+			GaussianSplatRenderer_DispatchUtilsAndExecute_mDF3CF175B8BDAE23747D32E8C6E6EF836B54D273(__this, L_45, ((int32_t)11), L_46, NULL);
 			//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:872>
 			GaussianSplatRenderer_UpdateEditCountsAndBounds_m790D3CC900575D55DEE169161376DA14D30B0431(__this, NULL);
 			//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:873>
 			GaussianSplatRenderer_set_editModified_m40C1413B7008906BF1C89F1F923AC9BFE35C2584_inline(__this, (bool)1, NULL);
 			//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:874>
-			goto IL_00fb;
+			goto IL_0117;
 		}
 		catch(Il2CppExceptionWrapper& e)
 		{
@@ -9340,13 +9470,13 @@ IL_00fa:
 		}
 	}
 
-IL_00fb:
+IL_0117:
 	{
 		//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:874>
 		return;
 	}
 }
-// Method Definition Index: 86694
+// Method Definition Index: 86910
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatRenderer_EditScaleSelection_mFACB65FE5C897216042A83E77A8DA47A4E119E55 (GaussianSplatRenderer_t4D745E5F7574870774C18D1B3991A1CB47891EB3* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_localSpaceCenter, Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 ___1_localToWorld, Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 ___2_worldToLocal, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___3_scale, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9355,6 +9485,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatRenderer_EditScaleSelection
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral40A3162833B32D688D9E44F5896618E9257B838E);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF786C9389DEB700ACF619EE4B8675E30645DC9F7);
 		s_Il2CppMethodInitialized = true;
 	}
@@ -9401,13 +9532,13 @@ IL_0012:
 		auto __finallyBlock = il2cpp::utils::Finally([&]
 		{
 
-FINALLY_00b6:
+FINALLY_00c4:
 			{
 				{
 					CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_4 = V_0;
 					if (!L_4)
 					{
-						goto IL_00bf;
+						goto IL_00cd;
 					}
 				}
 				{
@@ -9416,7 +9547,7 @@ FINALLY_00b6:
 					InterfaceActionInvoker0::Invoke(0, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, L_5);
 				}
 
-IL_00bf:
+IL_00cd:
 				{
 					return;
 				}
@@ -9430,53 +9561,57 @@ IL_00bf:
 			//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:885>
 			CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_7 = V_0;
 			ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_8 = __this->___m_CSSplatUtilities;
+			ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_9 = __this->___m_CSSplatUtilities;
+			NullCheck(L_9);
+			int32_t L_10;
+			L_10 = ComputeShader_FindKernel_m3BA5C50794FA6AF4C432E55FBBD7CB266532F659(L_9, _stringLiteral40A3162833B32D688D9E44F5896618E9257B838E, NULL);
 			il2cpp_codegen_runtime_class_init_inline(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var);
-			int32_t L_9 = ((Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_StaticFields*)il2cpp_codegen_static_fields_for(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var))->___SplatPosMouseDown;
-			GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_10 = __this->___m_GpuEditPosMouseDown;
+			int32_t L_11 = ((Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_StaticFields*)il2cpp_codegen_static_fields_for(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var))->___SplatPosMouseDown;
+			GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_12 = __this->___m_GpuEditPosMouseDown;
 			NullCheck(L_7);
-			CommandBuffer_SetComputeBufferParam_mF358CEC3E841ACFA0ECA0D9495B8287A842F20CA(L_7, L_8, ((int32_t)12), L_9, L_10, NULL);
+			CommandBuffer_SetComputeBufferParam_mF358CEC3E841ACFA0ECA0D9495B8287A842F20CA(L_7, L_8, L_10, L_11, L_12, NULL);
 			//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:886>
-			CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_11 = V_0;
-			ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_12 = __this->___m_CSSplatUtilities;
-			int32_t L_13 = ((Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_StaticFields*)il2cpp_codegen_static_fields_for(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var))->___SelectionCenter;
-			Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_14 = ___0_localSpaceCenter;
-			Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_15;
-			L_15 = Vector4_op_Implicit_m2ECA73F345A7AD84144133E9E51657204002B12D_inline(L_14, NULL);
-			NullCheck(L_11);
-			CommandBuffer_SetComputeVectorParam_m2D4D62159DE2AD402DEDE016615D74708D499E83(L_11, L_12, L_13, L_15, NULL);
+			CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_13 = V_0;
+			ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_14 = __this->___m_CSSplatUtilities;
+			int32_t L_15 = ((Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_StaticFields*)il2cpp_codegen_static_fields_for(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var))->___SelectionCenter;
+			Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_16 = ___0_localSpaceCenter;
+			Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_17;
+			L_17 = Vector4_op_Implicit_m2ECA73F345A7AD84144133E9E51657204002B12D_inline(L_16, NULL);
+			NullCheck(L_13);
+			CommandBuffer_SetComputeVectorParam_m2D4D62159DE2AD402DEDE016615D74708D499E83(L_13, L_14, L_15, L_17, NULL);
 			//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:887>
-			CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_16 = V_0;
-			ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_17 = __this->___m_CSSplatUtilities;
-			int32_t L_18 = ((Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_StaticFields*)il2cpp_codegen_static_fields_for(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var))->___MatrixObjectToWorld;
-			Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 L_19 = ___1_localToWorld;
-			NullCheck(L_16);
-			CommandBuffer_SetComputeMatrixParam_mACD1D51DC9FF0D852A2C2F4C19F4114395E446C0(L_16, L_17, L_18, L_19, NULL);
+			CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_18 = V_0;
+			ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_19 = __this->___m_CSSplatUtilities;
+			int32_t L_20 = ((Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_StaticFields*)il2cpp_codegen_static_fields_for(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var))->___MatrixObjectToWorld;
+			Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 L_21 = ___1_localToWorld;
+			NullCheck(L_18);
+			CommandBuffer_SetComputeMatrixParam_mACD1D51DC9FF0D852A2C2F4C19F4114395E446C0(L_18, L_19, L_20, L_21, NULL);
 			//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:888>
-			CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_20 = V_0;
-			ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_21 = __this->___m_CSSplatUtilities;
-			int32_t L_22 = ((Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_StaticFields*)il2cpp_codegen_static_fields_for(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var))->___MatrixWorldToObject;
-			Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 L_23 = ___2_worldToLocal;
-			NullCheck(L_20);
-			CommandBuffer_SetComputeMatrixParam_mACD1D51DC9FF0D852A2C2F4C19F4114395E446C0(L_20, L_21, L_22, L_23, NULL);
+			CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_22 = V_0;
+			ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_23 = __this->___m_CSSplatUtilities;
+			int32_t L_24 = ((Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_StaticFields*)il2cpp_codegen_static_fields_for(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var))->___MatrixWorldToObject;
+			Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 L_25 = ___2_worldToLocal;
+			NullCheck(L_22);
+			CommandBuffer_SetComputeMatrixParam_mACD1D51DC9FF0D852A2C2F4C19F4114395E446C0(L_22, L_23, L_24, L_25, NULL);
 			//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:889>
-			CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_24 = V_0;
-			ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_25 = __this->___m_CSSplatUtilities;
-			int32_t L_26 = ((Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_StaticFields*)il2cpp_codegen_static_fields_for(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var))->___SelectionDelta;
-			Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_27 = ___3_scale;
-			Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_28;
-			L_28 = Vector4_op_Implicit_m2ECA73F345A7AD84144133E9E51657204002B12D_inline(L_27, NULL);
-			NullCheck(L_24);
-			CommandBuffer_SetComputeVectorParam_m2D4D62159DE2AD402DEDE016615D74708D499E83(L_24, L_25, L_26, L_28, NULL);
+			CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_26 = V_0;
+			ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_27 = __this->___m_CSSplatUtilities;
+			int32_t L_28 = ((Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_StaticFields*)il2cpp_codegen_static_fields_for(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var))->___SelectionDelta;
+			Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_29 = ___3_scale;
+			Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_30;
+			L_30 = Vector4_op_Implicit_m2ECA73F345A7AD84144133E9E51657204002B12D_inline(L_29, NULL);
+			NullCheck(L_26);
+			CommandBuffer_SetComputeVectorParam_m2D4D62159DE2AD402DEDE016615D74708D499E83(L_26, L_27, L_28, L_30, NULL);
 			//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:891>
-			CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_29 = V_0;
-			int32_t L_30 = __this->___m_SplatCount;
-			GaussianSplatRenderer_DispatchUtilsAndExecute_mDF3CF175B8BDAE23747D32E8C6E6EF836B54D273(__this, L_29, ((int32_t)12), L_30, NULL);
+			CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_31 = V_0;
+			int32_t L_32 = __this->___m_SplatCount;
+			GaussianSplatRenderer_DispatchUtilsAndExecute_mDF3CF175B8BDAE23747D32E8C6E6EF836B54D273(__this, L_31, ((int32_t)12), L_32, NULL);
 			//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:892>
 			GaussianSplatRenderer_UpdateEditCountsAndBounds_m790D3CC900575D55DEE169161376DA14D30B0431(__this, NULL);
 			//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:893>
 			GaussianSplatRenderer_set_editModified_m40C1413B7008906BF1C89F1F923AC9BFE35C2584_inline(__this, (bool)1, NULL);
 			//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:894>
-			goto IL_00c0;
+			goto IL_00ce;
 		}
 		catch(Il2CppExceptionWrapper& e)
 		{
@@ -9484,13 +9619,13 @@ IL_00bf:
 		}
 	}
 
-IL_00c0:
+IL_00ce:
 	{
 		//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:894>
 		return;
 	}
 }
-// Method Definition Index: 86695
+// Method Definition Index: 86911
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatRenderer_EditDeleteSelected_m2C76252A1B362E6CC6106E25F8CD3A2DE15E14EA (GaussianSplatRenderer_t4D745E5F7574870774C18D1B3991A1CB47891EB3* __this, const RuntimeMethod* method) 
 {
 	{
@@ -9536,7 +9671,7 @@ IL_0036:
 		return;
 	}
 }
-// Method Definition Index: 86696
+// Method Definition Index: 86912
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatRenderer_EditSelectAll_m74B5D42FA103DAC50E1F2B7C250539E408B05314 (GaussianSplatRenderer_t4D745E5F7574870774C18D1B3991A1CB47891EB3* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9546,6 +9681,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatRenderer_EditSelectAll_m74B
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB12992830BE36AF15A5EF2EBF2BD499A64A62A8C);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralFFA7161D3FD8A0EAC5351C85ABF11D6A81645530);
 		s_Il2CppMethodInitialized = true;
 	}
 	CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* V_0 = NULL;
@@ -9577,13 +9713,13 @@ IL_0009:
 		auto __finallyBlock = il2cpp::utils::Finally([&]
 		{
 
-FINALLY_0071:
+FINALLY_0080:
 			{
 				{
 					CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_3 = V_0;
 					if (!L_3)
 					{
-						goto IL_007a;
+						goto IL_0089;
 					}
 				}
 				{
@@ -9592,7 +9728,7 @@ FINALLY_0071:
 					InterfaceActionInvoker0::Invoke(0, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, L_4);
 				}
 
-IL_007a:
+IL_0089:
 				{
 					return;
 				}
@@ -9606,32 +9742,36 @@ IL_007a:
 			//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:911>
 			CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_6 = V_0;
 			ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_7 = __this->___m_CSSplatUtilities;
+			ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_8 = __this->___m_CSSplatUtilities;
+			NullCheck(L_8);
+			int32_t L_9;
+			L_9 = ComputeShader_FindKernel_m3BA5C50794FA6AF4C432E55FBBD7CB266532F659(L_8, _stringLiteralFFA7161D3FD8A0EAC5351C85ABF11D6A81645530, NULL);
 			il2cpp_codegen_runtime_class_init_inline(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var);
-			int32_t L_8 = ((Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_StaticFields*)il2cpp_codegen_static_fields_for(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var))->___DstBuffer;
-			GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_9 = __this->___m_GpuEditSelected;
+			int32_t L_10 = ((Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_StaticFields*)il2cpp_codegen_static_fields_for(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var))->___DstBuffer;
+			GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_11 = __this->___m_GpuEditSelected;
 			NullCheck(L_6);
-			CommandBuffer_SetComputeBufferParam_mF358CEC3E841ACFA0ECA0D9495B8287A842F20CA(L_6, L_7, 7, L_8, L_9, NULL);
+			CommandBuffer_SetComputeBufferParam_mF358CEC3E841ACFA0ECA0D9495B8287A842F20CA(L_6, L_7, L_9, L_10, L_11, NULL);
 			//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:912>
-			CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_10 = V_0;
-			ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_11 = __this->___m_CSSplatUtilities;
-			int32_t L_12 = ((Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_StaticFields*)il2cpp_codegen_static_fields_for(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var))->___BufferSize;
-			GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_13 = __this->___m_GpuEditSelected;
-			NullCheck(L_13);
-			int32_t L_14;
-			L_14 = GraphicsBuffer_get_count_mFB2375DCEEFB459134AB0056F0ED77191E9EFB4F(L_13, NULL);
-			NullCheck(L_10);
-			CommandBuffer_SetComputeIntParam_m253E1647D4F7E5613A31E0EF4DE4A67FDDEA4CC6(L_10, L_11, L_12, L_14, NULL);
+			CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_12 = V_0;
+			ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_13 = __this->___m_CSSplatUtilities;
+			int32_t L_14 = ((Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_StaticFields*)il2cpp_codegen_static_fields_for(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var))->___BufferSize;
+			GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_15 = __this->___m_GpuEditSelected;
+			NullCheck(L_15);
+			int32_t L_16;
+			L_16 = GraphicsBuffer_get_count_mFB2375DCEEFB459134AB0056F0ED77191E9EFB4F(L_15, NULL);
+			NullCheck(L_12);
+			CommandBuffer_SetComputeIntParam_m253E1647D4F7E5613A31E0EF4DE4A67FDDEA4CC6(L_12, L_13, L_14, L_16, NULL);
 			//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:913>
-			CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_15 = V_0;
-			GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_16 = __this->___m_GpuEditSelected;
-			NullCheck(L_16);
-			int32_t L_17;
-			L_17 = GraphicsBuffer_get_count_mFB2375DCEEFB459134AB0056F0ED77191E9EFB4F(L_16, NULL);
-			GaussianSplatRenderer_DispatchUtilsAndExecute_mDF3CF175B8BDAE23747D32E8C6E6EF836B54D273(__this, L_15, 7, L_17, NULL);
+			CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_17 = V_0;
+			GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_18 = __this->___m_GpuEditSelected;
+			NullCheck(L_18);
+			int32_t L_19;
+			L_19 = GraphicsBuffer_get_count_mFB2375DCEEFB459134AB0056F0ED77191E9EFB4F(L_18, NULL);
+			GaussianSplatRenderer_DispatchUtilsAndExecute_mDF3CF175B8BDAE23747D32E8C6E6EF836B54D273(__this, L_17, 7, L_19, NULL);
 			//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:914>
 			GaussianSplatRenderer_UpdateEditCountsAndBounds_m790D3CC900575D55DEE169161376DA14D30B0431(__this, NULL);
 			//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:915>
-			goto IL_007b;
+			goto IL_008a;
 		}
 		catch(Il2CppExceptionWrapper& e)
 		{
@@ -9639,13 +9779,13 @@ IL_007a:
 		}
 	}
 
-IL_007b:
+IL_008a:
 	{
 		//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:915>
 		return;
 	}
 }
-// Method Definition Index: 86697
+// Method Definition Index: 86913
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatRenderer_EditDeselectAll_mE65BFA58EA51B8FA3750656A4E50ACEC0CB467A5 (GaussianSplatRenderer_t4D745E5F7574870774C18D1B3991A1CB47891EB3* __this, const RuntimeMethod* method) 
 {
 	{
@@ -9673,7 +9813,7 @@ IL_0009:
 		return;
 	}
 }
-// Method Definition Index: 86698
+// Method Definition Index: 86914
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatRenderer_EditInvertSelection_mA087CD58B246EEE28166156623D4A5942B855797 (GaussianSplatRenderer_t4D745E5F7574870774C18D1B3991A1CB47891EB3* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9683,6 +9823,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatRenderer_EditInvertSelectio
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral3C5BE8CBA5A398D6E135E36D7AB53DE8D7F1E17A);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF99FC1B4E52FB1847FD9602415BA6DC474FDAAE4);
 		s_Il2CppMethodInitialized = true;
 	}
 	CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* V_0 = NULL;
@@ -9714,13 +9855,13 @@ IL_0009:
 		auto __finallyBlock = il2cpp::utils::Finally([&]
 		{
 
-FINALLY_0071:
+FINALLY_0080:
 			{
 				{
 					CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_3 = V_0;
 					if (!L_3)
 					{
-						goto IL_007a;
+						goto IL_0089;
 					}
 				}
 				{
@@ -9729,7 +9870,7 @@ FINALLY_0071:
 					InterfaceActionInvoker0::Invoke(0, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, L_4);
 				}
 
-IL_007a:
+IL_0089:
 				{
 					return;
 				}
@@ -9743,32 +9884,36 @@ IL_007a:
 			//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:930>
 			CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_6 = V_0;
 			ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_7 = __this->___m_CSSplatUtilities;
+			ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_8 = __this->___m_CSSplatUtilities;
+			NullCheck(L_8);
+			int32_t L_9;
+			L_9 = ComputeShader_FindKernel_m3BA5C50794FA6AF4C432E55FBBD7CB266532F659(L_8, _stringLiteralF99FC1B4E52FB1847FD9602415BA6DC474FDAAE4, NULL);
 			il2cpp_codegen_runtime_class_init_inline(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var);
-			int32_t L_8 = ((Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_StaticFields*)il2cpp_codegen_static_fields_for(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var))->___DstBuffer;
-			GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_9 = __this->___m_GpuEditSelected;
+			int32_t L_10 = ((Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_StaticFields*)il2cpp_codegen_static_fields_for(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var))->___DstBuffer;
+			GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_11 = __this->___m_GpuEditSelected;
 			NullCheck(L_6);
-			CommandBuffer_SetComputeBufferParam_mF358CEC3E841ACFA0ECA0D9495B8287A842F20CA(L_6, L_7, 6, L_8, L_9, NULL);
+			CommandBuffer_SetComputeBufferParam_mF358CEC3E841ACFA0ECA0D9495B8287A842F20CA(L_6, L_7, L_9, L_10, L_11, NULL);
 			//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:931>
-			CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_10 = V_0;
-			ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_11 = __this->___m_CSSplatUtilities;
-			int32_t L_12 = ((Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_StaticFields*)il2cpp_codegen_static_fields_for(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var))->___BufferSize;
-			GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_13 = __this->___m_GpuEditSelected;
-			NullCheck(L_13);
-			int32_t L_14;
-			L_14 = GraphicsBuffer_get_count_mFB2375DCEEFB459134AB0056F0ED77191E9EFB4F(L_13, NULL);
-			NullCheck(L_10);
-			CommandBuffer_SetComputeIntParam_m253E1647D4F7E5613A31E0EF4DE4A67FDDEA4CC6(L_10, L_11, L_12, L_14, NULL);
+			CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_12 = V_0;
+			ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_13 = __this->___m_CSSplatUtilities;
+			int32_t L_14 = ((Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_StaticFields*)il2cpp_codegen_static_fields_for(Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var))->___BufferSize;
+			GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_15 = __this->___m_GpuEditSelected;
+			NullCheck(L_15);
+			int32_t L_16;
+			L_16 = GraphicsBuffer_get_count_mFB2375DCEEFB459134AB0056F0ED77191E9EFB4F(L_15, NULL);
+			NullCheck(L_12);
+			CommandBuffer_SetComputeIntParam_m253E1647D4F7E5613A31E0EF4DE4A67FDDEA4CC6(L_12, L_13, L_14, L_16, NULL);
 			//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:932>
-			CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_15 = V_0;
-			GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_16 = __this->___m_GpuEditSelected;
-			NullCheck(L_16);
-			int32_t L_17;
-			L_17 = GraphicsBuffer_get_count_mFB2375DCEEFB459134AB0056F0ED77191E9EFB4F(L_16, NULL);
-			GaussianSplatRenderer_DispatchUtilsAndExecute_mDF3CF175B8BDAE23747D32E8C6E6EF836B54D273(__this, L_15, 6, L_17, NULL);
+			CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_17 = V_0;
+			GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_18 = __this->___m_GpuEditSelected;
+			NullCheck(L_18);
+			int32_t L_19;
+			L_19 = GraphicsBuffer_get_count_mFB2375DCEEFB459134AB0056F0ED77191E9EFB4F(L_18, NULL);
+			GaussianSplatRenderer_DispatchUtilsAndExecute_mDF3CF175B8BDAE23747D32E8C6E6EF836B54D273(__this, L_17, 6, L_19, NULL);
 			//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:933>
 			GaussianSplatRenderer_UpdateEditCountsAndBounds_m790D3CC900575D55DEE169161376DA14D30B0431(__this, NULL);
 			//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:934>
-			goto IL_007b;
+			goto IL_008a;
 		}
 		catch(Il2CppExceptionWrapper& e)
 		{
@@ -9776,13 +9921,13 @@ IL_007a:
 		}
 	}
 
-IL_007b:
+IL_008a:
 	{
 		//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:934>
 		return;
 	}
 }
-// Method Definition Index: 86699
+// Method Definition Index: 86915
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GaussianSplatRenderer_EditExportData_mE4A6F64010C48F5E5B674A19C6496D8620D6EA75 (GaussianSplatRenderer_t4D745E5F7574870774C18D1B3991A1CB47891EB3* __this, GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* ___0_dstData, bool ___1_bakeTransform, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9793,6 +9938,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GaussianSplatRenderer_EditExportData_mE4
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Props_t8EE3F9515D4107F6E92E995A46ABDFCA4E56A511_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral1D306E9C019857EF2AF805789C821266506A9DCB);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7F8965F448C5DD999776FE4276B9870088ECA285);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral8CF36CF94F08B70CA405EC4FB54CB17AEC3DB7A4);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralC094FE4ABF9DC727B74FCB38D9E6AFA80B0E5050);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD7ECF596730138ADD4E47E4A2202A244D9AF32FA);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF8426F06799636B084107C7944C85096DEE54922);
@@ -9866,13 +10012,13 @@ IL_0026:
 		auto __finallyBlock = il2cpp::utils::Finally([&]
 		{
 
-FINALLY_00de:
+FINALLY_00ec:
 			{
 				{
 					CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_9 = V_4;
 					if (!L_9)
 					{
-						goto IL_00e9;
+						goto IL_00f7;
 					}
 				}
 				{
@@ -9881,7 +10027,7 @@ FINALLY_00de:
 					InterfaceActionInvoker0::Invoke(0, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, L_10);
 				}
 
-IL_00e9:
+IL_00f7:
 				{
 					return;
 				}
@@ -9936,16 +10082,20 @@ IL_00e9:
 			//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:954>
 			CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_35 = V_4;
 			ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_36 = __this->___m_CSSplatUtilities;
-			GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_37 = ___0_dstData;
+			ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_37 = __this->___m_CSSplatUtilities;
+			NullCheck(L_37);
+			int32_t L_38;
+			L_38 = ComputeShader_FindKernel_m3BA5C50794FA6AF4C432E55FBBD7CB266532F659(L_37, _stringLiteral8CF36CF94F08B70CA405EC4FB54CB17AEC3DB7A4, NULL);
+			GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_39 = ___0_dstData;
 			NullCheck(L_35);
-			CommandBuffer_SetComputeBufferParam_mECA6050623F14E350FAFCD655B59B6B179E49F88(L_35, L_36, ((int32_t)13), _stringLiteralD7ECF596730138ADD4E47E4A2202A244D9AF32FA, L_37, NULL);
+			CommandBuffer_SetComputeBufferParam_mECA6050623F14E350FAFCD655B59B6B179E49F88(L_35, L_36, L_38, _stringLiteralD7ECF596730138ADD4E47E4A2202A244D9AF32FA, L_39, NULL);
 			//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:956>
-			CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_38 = V_4;
-			int32_t L_39 = __this->___m_SplatCount;
-			GaussianSplatRenderer_DispatchUtilsAndExecute_mDF3CF175B8BDAE23747D32E8C6E6EF836B54D273(__this, L_38, ((int32_t)13), L_39, NULL);
+			CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_40 = V_4;
+			int32_t L_41 = __this->___m_SplatCount;
+			GaussianSplatRenderer_DispatchUtilsAndExecute_mDF3CF175B8BDAE23747D32E8C6E6EF836B54D273(__this, L_40, ((int32_t)13), L_41, NULL);
 			//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:957>
 			V_5 = (bool)1;
-			goto IL_00ea;
+			goto IL_00f8;
 		}
 		catch(Il2CppExceptionWrapper& e)
 		{
@@ -9953,14 +10103,14 @@ IL_00e9:
 		}
 	}
 
-IL_00ea:
+IL_00f8:
 	{
 		//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:958>
-		bool L_40 = V_5;
-		return L_40;
+		bool L_42 = V_5;
+		return L_42;
 	}
 }
-// Method Definition Index: 86700
+// Method Definition Index: 86916
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatRenderer_EditSetSplatCount_m6083E13AD0AA1116026F4D67CB653B26F1B2E001 (GaussianSplatRenderer_t4D745E5F7574870774C18D1B3991A1CB47891EB3* __this, int32_t ___0_newSplatCount, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10375,7 +10525,7 @@ IL_0242:
 		return;
 	}
 }
-// Method Definition Index: 86701
+// Method Definition Index: 86917
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatRenderer_EditCopySplatsInto_m3D4EF2A21F737BC5FACA5EB81DCCBF366F537B8B (GaussianSplatRenderer_t4D745E5F7574870774C18D1B3991A1CB47891EB3* __this, GaussianSplatRenderer_t4D745E5F7574870774C18D1B3991A1CB47891EB3* ___0_dst, int32_t ___1_copySrcStartIndex, int32_t ___2_copyDstStartIndex, int32_t ___3_copyCount, const RuntimeMethod* method) 
 {
 	{
@@ -10419,7 +10569,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatRenderer_EditCopySplatsInto
 		return;
 	}
 }
-// Method Definition Index: 86702
+// Method Definition Index: 86918
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatRenderer_EditCopySplats_m2CCE956C5512895CA13499AE527E978DB87FD6CF (GaussianSplatRenderer_t4D745E5F7574870774C18D1B3991A1CB47891EB3* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_dstTransform, GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* ___1_dstPos, GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* ___2_dstOther, GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* ___3_dstSH, Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* ___4_dstColor, GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* ___5_dstEditDeleted, int32_t ___6_dstSize, int32_t ___7_copySrcStartIndex, int32_t ___8_copyDstStartIndex, int32_t ___9_copyCount, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10431,6 +10581,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatRenderer_EditCopySplats_m2C
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral46739B774F29A1E6150A1F7FB57B049BA2188998);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral5EDE3F0DA2772881C5FB34A525834AF28089304B);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral6F3BF5DFD00B4B6CF5EE298BA1FDE4A2003A9180);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral8AD88FE738B9FD0CB35EC952371F989DF6663E7F);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral97BD847FB3F810604101DE067F022E44DCC81FE2);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralAB04572320B92F33108AC91C4B852624E903591F);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB0434638C8DCD85B89D612B929C2A4D853BCE9DB);
@@ -10498,13 +10649,13 @@ IL_0009:
 		auto __finallyBlock = il2cpp::utils::Finally([&]
 		{
 
-FINALLY_0166:
+FINALLY_01ac:
 			{
 				{
 					CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_10 = V_3;
 					if (!L_10)
 					{
-						goto IL_016f;
+						goto IL_01b5;
 					}
 				}
 				{
@@ -10513,7 +10664,7 @@ FINALLY_0166:
 					InterfaceActionInvoker0::Invoke(0, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, L_11);
 				}
 
-IL_016f:
+IL_01b5:
 				{
 					return;
 				}
@@ -10527,95 +10678,115 @@ IL_016f:
 			//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:1059>
 			CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_13 = V_3;
 			ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_14 = __this->___m_CSSplatUtilities;
-			GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_15 = ___1_dstPos;
+			ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_15 = __this->___m_CSSplatUtilities;
+			NullCheck(L_15);
+			int32_t L_16;
+			L_16 = ComputeShader_FindKernel_m3BA5C50794FA6AF4C432E55FBBD7CB266532F659(L_15, _stringLiteral8AD88FE738B9FD0CB35EC952371F989DF6663E7F, NULL);
+			GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_17 = ___1_dstPos;
 			NullCheck(L_13);
-			CommandBuffer_SetComputeBufferParam_mECA6050623F14E350FAFCD655B59B6B179E49F88(L_13, L_14, ((int32_t)14), _stringLiteralB0434638C8DCD85B89D612B929C2A4D853BCE9DB, L_15, NULL);
+			CommandBuffer_SetComputeBufferParam_mECA6050623F14E350FAFCD655B59B6B179E49F88(L_13, L_14, L_16, _stringLiteralB0434638C8DCD85B89D612B929C2A4D853BCE9DB, L_17, NULL);
 			//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:1060>
-			CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_16 = V_3;
-			ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_17 = __this->___m_CSSplatUtilities;
-			GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_18 = ___2_dstOther;
-			NullCheck(L_16);
-			CommandBuffer_SetComputeBufferParam_mECA6050623F14E350FAFCD655B59B6B179E49F88(L_16, L_17, ((int32_t)14), _stringLiteralB4588B4D8CEC79CEAC4A4A2A95534812EED75459, L_18, NULL);
-			//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:1061>
-			CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_19 = V_3;
+			CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_18 = V_3;
+			ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_19 = __this->___m_CSSplatUtilities;
 			ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_20 = __this->___m_CSSplatUtilities;
-			GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_21 = ___3_dstSH;
-			NullCheck(L_19);
-			CommandBuffer_SetComputeBufferParam_mECA6050623F14E350FAFCD655B59B6B179E49F88(L_19, L_20, ((int32_t)14), _stringLiteral5EDE3F0DA2772881C5FB34A525834AF28089304B, L_21, NULL);
+			NullCheck(L_20);
+			int32_t L_21;
+			L_21 = ComputeShader_FindKernel_m3BA5C50794FA6AF4C432E55FBBD7CB266532F659(L_20, _stringLiteral8AD88FE738B9FD0CB35EC952371F989DF6663E7F, NULL);
+			GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_22 = ___2_dstOther;
+			NullCheck(L_18);
+			CommandBuffer_SetComputeBufferParam_mECA6050623F14E350FAFCD655B59B6B179E49F88(L_18, L_19, L_21, _stringLiteralB4588B4D8CEC79CEAC4A4A2A95534812EED75459, L_22, NULL);
+			//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:1061>
+			CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_23 = V_3;
+			ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_24 = __this->___m_CSSplatUtilities;
+			ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_25 = __this->___m_CSSplatUtilities;
+			NullCheck(L_25);
+			int32_t L_26;
+			L_26 = ComputeShader_FindKernel_m3BA5C50794FA6AF4C432E55FBBD7CB266532F659(L_25, _stringLiteral8AD88FE738B9FD0CB35EC952371F989DF6663E7F, NULL);
+			GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_27 = ___3_dstSH;
+			NullCheck(L_23);
+			CommandBuffer_SetComputeBufferParam_mECA6050623F14E350FAFCD655B59B6B179E49F88(L_23, L_24, L_26, _stringLiteral5EDE3F0DA2772881C5FB34A525834AF28089304B, L_27, NULL);
 			//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:1062>
-			CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_22 = V_3;
-			ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_23 = __this->___m_CSSplatUtilities;
-			Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_24 = ___4_dstColor;
-			RenderTargetIdentifier_tA528663AC6EB3911D8E91AA40F7070FA5455442B L_25;
-			L_25 = RenderTargetIdentifier_op_Implicit_mBF13C6AE62DCEDDEFDC1C7305BE646FE99D2F24C(L_24, NULL);
-			NullCheck(L_22);
-			CommandBuffer_SetComputeTextureParam_m4EE2EFCF46096652EA2D3D14C0DE3D1252CD2174(L_22, L_23, ((int32_t)14), _stringLiteralAB04572320B92F33108AC91C4B852624E903591F, L_25, NULL);
-			//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:1063>
-			CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_26 = V_3;
-			ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_27 = __this->___m_CSSplatUtilities;
-			GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_28 = ___5_dstEditDeleted;
-			NullCheck(L_26);
-			CommandBuffer_SetComputeBufferParam_mECA6050623F14E350FAFCD655B59B6B179E49F88(L_26, L_27, ((int32_t)14), _stringLiteral6F3BF5DFD00B4B6CF5EE298BA1FDE4A2003A9180, L_28, NULL);
-			//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:1065>
-			CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_29 = V_3;
+			CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_28 = V_3;
+			ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_29 = __this->___m_CSSplatUtilities;
 			ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_30 = __this->___m_CSSplatUtilities;
-			int32_t L_31 = ___6_dstSize;
-			NullCheck(L_29);
-			CommandBuffer_SetComputeIntParam_mA896B6DDE449AE61522097B1530EEB35A09A6607(L_29, L_30, _stringLiteral0D79F9B48C13F4734AEA578DE28CB1375E7439A7, L_31, NULL);
-			//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:1066>
-			CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_32 = V_3;
-			ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_33 = __this->___m_CSSplatUtilities;
-			int32_t L_34 = ___7_copySrcStartIndex;
-			NullCheck(L_32);
-			CommandBuffer_SetComputeIntParam_mA896B6DDE449AE61522097B1530EEB35A09A6607(L_32, L_33, _stringLiteral97BD847FB3F810604101DE067F022E44DCC81FE2, L_34, NULL);
-			//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:1067>
-			CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_35 = V_3;
+			NullCheck(L_30);
+			int32_t L_31;
+			L_31 = ComputeShader_FindKernel_m3BA5C50794FA6AF4C432E55FBBD7CB266532F659(L_30, _stringLiteral8AD88FE738B9FD0CB35EC952371F989DF6663E7F, NULL);
+			Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_32 = ___4_dstColor;
+			RenderTargetIdentifier_tA528663AC6EB3911D8E91AA40F7070FA5455442B L_33;
+			L_33 = RenderTargetIdentifier_op_Implicit_mBF13C6AE62DCEDDEFDC1C7305BE646FE99D2F24C(L_32, NULL);
+			NullCheck(L_28);
+			CommandBuffer_SetComputeTextureParam_m4EE2EFCF46096652EA2D3D14C0DE3D1252CD2174(L_28, L_29, L_31, _stringLiteralAB04572320B92F33108AC91C4B852624E903591F, L_33, NULL);
+			//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:1063>
+			CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_34 = V_3;
+			ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_35 = __this->___m_CSSplatUtilities;
 			ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_36 = __this->___m_CSSplatUtilities;
-			int32_t L_37 = ___8_copyDstStartIndex;
-			NullCheck(L_35);
-			CommandBuffer_SetComputeIntParam_mA896B6DDE449AE61522097B1530EEB35A09A6607(L_35, L_36, _stringLiteralC60924B007D2E0B0437F7102CE36A7A8984AE2D9, L_37, NULL);
+			NullCheck(L_36);
+			int32_t L_37;
+			L_37 = ComputeShader_FindKernel_m3BA5C50794FA6AF4C432E55FBBD7CB266532F659(L_36, _stringLiteral8AD88FE738B9FD0CB35EC952371F989DF6663E7F, NULL);
+			GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* L_38 = ___5_dstEditDeleted;
+			NullCheck(L_34);
+			CommandBuffer_SetComputeBufferParam_mECA6050623F14E350FAFCD655B59B6B179E49F88(L_34, L_35, L_37, _stringLiteral6F3BF5DFD00B4B6CF5EE298BA1FDE4A2003A9180, L_38, NULL);
+			//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:1065>
+			CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_39 = V_3;
+			ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_40 = __this->___m_CSSplatUtilities;
+			int32_t L_41 = ___6_dstSize;
+			NullCheck(L_39);
+			CommandBuffer_SetComputeIntParam_mA896B6DDE449AE61522097B1530EEB35A09A6607(L_39, L_40, _stringLiteral0D79F9B48C13F4734AEA578DE28CB1375E7439A7, L_41, NULL);
+			//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:1066>
+			CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_42 = V_3;
+			ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_43 = __this->___m_CSSplatUtilities;
+			int32_t L_44 = ___7_copySrcStartIndex;
+			NullCheck(L_42);
+			CommandBuffer_SetComputeIntParam_mA896B6DDE449AE61522097B1530EEB35A09A6607(L_42, L_43, _stringLiteral97BD847FB3F810604101DE067F022E44DCC81FE2, L_44, NULL);
+			//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:1067>
+			CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_45 = V_3;
+			ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_46 = __this->___m_CSSplatUtilities;
+			int32_t L_47 = ___8_copyDstStartIndex;
+			NullCheck(L_45);
+			CommandBuffer_SetComputeIntParam_mA896B6DDE449AE61522097B1530EEB35A09A6607(L_45, L_46, _stringLiteralC60924B007D2E0B0437F7102CE36A7A8984AE2D9, L_47, NULL);
 			//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:1068>
-			CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_38 = V_3;
-			ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_39 = __this->___m_CSSplatUtilities;
-			int32_t L_40 = ___9_copyCount;
-			NullCheck(L_38);
-			CommandBuffer_SetComputeIntParam_mA896B6DDE449AE61522097B1530EEB35A09A6607(L_38, L_39, _stringLiteralE16620DCA30447CA5D42D3B28121BCC76CDE68FA, L_40, NULL);
+			CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_48 = V_3;
+			ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_49 = __this->___m_CSSplatUtilities;
+			int32_t L_50 = ___9_copyCount;
+			NullCheck(L_48);
+			CommandBuffer_SetComputeIntParam_mA896B6DDE449AE61522097B1530EEB35A09A6607(L_48, L_49, _stringLiteralE16620DCA30447CA5D42D3B28121BCC76CDE68FA, L_50, NULL);
 			//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:1070>
-			CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_41 = V_3;
-			ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_42 = __this->___m_CSSplatUtilities;
-			Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_43 = V_1;
-			float L_44 = L_43.___x;
-			Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_45 = V_1;
-			float L_46 = L_45.___y;
-			Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_47 = V_1;
-			float L_48 = L_47.___z;
-			Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_49 = V_1;
-			float L_50 = L_49.___w;
-			Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_51;
-			memset((&L_51), 0, sizeof(L_51));
-			Vector4__ctor_m96B2CD8B862B271F513AF0BDC2EABD58E4DBC813_inline((&L_51), L_44, L_46, L_48, L_50, NULL);
-			NullCheck(L_41);
-			CommandBuffer_SetComputeVectorParam_mCB04E8C59D63D6CDCA0E8EDA362BE1CB7BF49709(L_41, L_42, _stringLiteralC13DF1BA855C63CA14B4E9F64BCA653AC6A4747D, L_51, NULL);
+			CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_51 = V_3;
+			ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_52 = __this->___m_CSSplatUtilities;
+			Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_53 = V_1;
+			float L_54 = L_53.___x;
+			Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_55 = V_1;
+			float L_56 = L_55.___y;
+			Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_57 = V_1;
+			float L_58 = L_57.___z;
+			Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_59 = V_1;
+			float L_60 = L_59.___w;
+			Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_61;
+			memset((&L_61), 0, sizeof(L_61));
+			Vector4__ctor_m96B2CD8B862B271F513AF0BDC2EABD58E4DBC813_inline((&L_61), L_54, L_56, L_58, L_60, NULL);
+			NullCheck(L_51);
+			CommandBuffer_SetComputeVectorParam_mCB04E8C59D63D6CDCA0E8EDA362BE1CB7BF49709(L_51, L_52, _stringLiteralC13DF1BA855C63CA14B4E9F64BCA653AC6A4747D, L_61, NULL);
 			//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:1071>
-			CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_52 = V_3;
-			ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_53 = __this->___m_CSSplatUtilities;
-			Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_54 = V_2;
-			Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_55;
-			L_55 = Vector4_op_Implicit_m2ECA73F345A7AD84144133E9E51657204002B12D_inline(L_54, NULL);
-			NullCheck(L_52);
-			CommandBuffer_SetComputeVectorParam_mCB04E8C59D63D6CDCA0E8EDA362BE1CB7BF49709(L_52, L_53, _stringLiteralD3EC1261BE92FC4681304670166697C88BF2B535, L_55, NULL);
+			CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_62 = V_3;
+			ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_63 = __this->___m_CSSplatUtilities;
+			Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_64 = V_2;
+			Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_65;
+			L_65 = Vector4_op_Implicit_m2ECA73F345A7AD84144133E9E51657204002B12D_inline(L_64, NULL);
+			NullCheck(L_62);
+			CommandBuffer_SetComputeVectorParam_mCB04E8C59D63D6CDCA0E8EDA362BE1CB7BF49709(L_62, L_63, _stringLiteralD3EC1261BE92FC4681304670166697C88BF2B535, L_65, NULL);
 			//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:1072>
-			CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_56 = V_3;
-			ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_57 = __this->___m_CSSplatUtilities;
-			Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 L_58 = V_0;
-			NullCheck(L_56);
-			CommandBuffer_SetComputeMatrixParam_m5D9259AC509EE5473BC46C6D8E3A80467993826A(L_56, L_57, _stringLiteralB64A42CE807EBCD489C114FA14D2580F4856D652, L_58, NULL);
+			CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_66 = V_3;
+			ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_67 = __this->___m_CSSplatUtilities;
+			Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 L_68 = V_0;
+			NullCheck(L_66);
+			CommandBuffer_SetComputeMatrixParam_m5D9259AC509EE5473BC46C6D8E3A80467993826A(L_66, L_67, _stringLiteralB64A42CE807EBCD489C114FA14D2580F4856D652, L_68, NULL);
 			//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:1074>
-			CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_59 = V_3;
-			int32_t L_60 = ___9_copyCount;
-			GaussianSplatRenderer_DispatchUtilsAndExecute_mDF3CF175B8BDAE23747D32E8C6E6EF836B54D273(__this, L_59, ((int32_t)14), L_60, NULL);
+			CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_69 = V_3;
+			int32_t L_70 = ___9_copyCount;
+			GaussianSplatRenderer_DispatchUtilsAndExecute_mDF3CF175B8BDAE23747D32E8C6E6EF836B54D273(__this, L_69, ((int32_t)14), L_70, NULL);
 			//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:1075>
-			goto IL_0170;
+			goto IL_01b6;
 		}
 		catch(Il2CppExceptionWrapper& e)
 		{
@@ -10623,19 +10794,21 @@ IL_016f:
 		}
 	}
 
-IL_0170:
+IL_01b6:
 	{
 		//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:1075>
 		return;
 	}
 }
-// Method Definition Index: 86703
+// Method Definition Index: 86919
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatRenderer_DispatchUtilsAndExecute_mDF3CF175B8BDAE23747D32E8C6E6EF836B54D273 (GaussianSplatRenderer_t4D745E5F7574870774C18D1B3991A1CB47891EB3* __this, CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* ___0_cmb, int32_t ___1_kernel, int32_t ___2_count, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Graphics_t99CD970FFEA58171C70F54DF0C06D315BD452F2C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&KernelIndices_tEFD6CAEF003F62325653E92668E93399405C3C26_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral78415019B0F0C4678DF2257F57C65FCC9EE79B4A);
 		s_Il2CppMethodInitialized = true;
 	}
 	uint32_t V_0 = 0;
@@ -10644,27 +10817,43 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatRenderer_DispatchUtilsAndEx
 	{
 		//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:1079>
 		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_0 = __this->___m_CSSplatUtilities;
-		int32_t L_1 = ___1_kernel;
+		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_1 = __this->___m_CSSplatUtilities;
+		Il2CppFakeBox<int32_t> L_2(KernelIndices_tEFD6CAEF003F62325653E92668E93399405C3C26_il2cpp_TypeInfo_var, (&___1_kernel));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		String_t* L_4;
+		L_4 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral78415019B0F0C4678DF2257F57C65FCC9EE79B4A, L_3, NULL);
+		NullCheck(L_1);
+		int32_t L_5;
+		L_5 = ComputeShader_FindKernel_m3BA5C50794FA6AF4C432E55FBBD7CB266532F659(L_1, L_4, NULL);
 		NullCheck(L_0);
-		ComputeShader_GetKernelThreadGroupSizes_m693428494DB1FD3CFC69FCE4E0093A2C4AAE1CBE(L_0, L_1, (&V_0), (&V_1), (&V_2), NULL);
+		ComputeShader_GetKernelThreadGroupSizes_m693428494DB1FD3CFC69FCE4E0093A2C4AAE1CBE(L_0, L_5, (&V_0), (&V_1), (&V_2), NULL);
 		//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:1080>
-		CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_2 = ___0_cmb;
-		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_3 = __this->___m_CSSplatUtilities;
-		int32_t L_4 = ___1_kernel;
-		int32_t L_5 = ___2_count;
-		uint32_t L_6 = V_0;
-		uint32_t L_7 = V_0;
-		NullCheck(L_2);
-		CommandBuffer_DispatchCompute_mF9F5605B77F0480FD4B8C3BCAEC2FC59A24E31A2(L_2, L_3, L_4, ((int32_t)((int64_t)(((int64_t)il2cpp_codegen_subtract(((int64_t)il2cpp_codegen_add(((int64_t)L_5), ((int64_t)(uint64_t)((uint32_t)L_6)))), ((int64_t)1)))/((int64_t)(uint64_t)((uint32_t)L_7))))), 1, 1, NULL);
+		CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_6 = ___0_cmb;
+		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_7 = __this->___m_CSSplatUtilities;
+		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_8 = __this->___m_CSSplatUtilities;
+		Il2CppFakeBox<int32_t> L_9(KernelIndices_tEFD6CAEF003F62325653E92668E93399405C3C26_il2cpp_TypeInfo_var, (&___1_kernel));
+		String_t* L_10;
+		L_10 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_9), NULL);
+		String_t* L_11;
+		L_11 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral78415019B0F0C4678DF2257F57C65FCC9EE79B4A, L_10, NULL);
+		NullCheck(L_8);
+		int32_t L_12;
+		L_12 = ComputeShader_FindKernel_m3BA5C50794FA6AF4C432E55FBBD7CB266532F659(L_8, L_11, NULL);
+		int32_t L_13 = ___2_count;
+		uint32_t L_14 = V_0;
+		uint32_t L_15 = V_0;
+		NullCheck(L_6);
+		CommandBuffer_DispatchCompute_mF9F5605B77F0480FD4B8C3BCAEC2FC59A24E31A2(L_6, L_7, L_12, ((int32_t)((int64_t)(((int64_t)il2cpp_codegen_subtract(((int64_t)il2cpp_codegen_add(((int64_t)L_13), ((int64_t)(uint64_t)((uint32_t)L_14)))), ((int64_t)1)))/((int64_t)(uint64_t)((uint32_t)L_15))))), 1, 1, NULL);
 		//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:1081>
-		CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_8 = ___0_cmb;
+		CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_16 = ___0_cmb;
 		il2cpp_codegen_runtime_class_init_inline(Graphics_t99CD970FFEA58171C70F54DF0C06D315BD452F2C_il2cpp_TypeInfo_var);
-		Graphics_ExecuteCommandBuffer_mE7D922583404AB08A25C1413A3EA9F6B0D2F16B9(L_8, NULL);
+		Graphics_ExecuteCommandBuffer_mE7D922583404AB08A25C1413A3EA9F6B0D2F16B9(L_16, NULL);
 		//<source_info:./Library/PackageCache/org.nesnausk.gaussian-splatting@7113109d5e73/Runtime/GaussianSplatRenderer.cs:1082>
 		return;
 	}
 }
-// Method Definition Index: 86704
+// Method Definition Index: 86920
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* GaussianSplatRenderer_get_GpuEditDeleted_m29F631D363692CDE1DAD702A74328F53E1B64B6E (GaussianSplatRenderer_t4D745E5F7574870774C18D1B3991A1CB47891EB3* __this, const RuntimeMethod* method) 
 {
 	{
@@ -10673,7 +10862,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2
 		return L_0;
 	}
 }
-// Method Definition Index: 86705
+// Method Definition Index: 86921
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatRenderer__ctor_mE0DA827087AE578BAFC47DC2B5740D1AA1427065 (GaussianSplatRenderer_t4D745E5F7574870774C18D1B3991A1CB47891EB3* __this, const RuntimeMethod* method) 
 {
 	{
@@ -10691,7 +10880,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatRenderer__ctor_mE0DA827087A
 		return;
 	}
 }
-// Method Definition Index: 86706
+// Method Definition Index: 86922
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatRenderer__cctor_m48EDB5F06B5464E19F5B4361F78DF0DF0CBE09A0 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10728,7 +10917,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatRenderer__cctor_m48EDB5F06B
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 86707
+// Method Definition Index: 86923
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Props__cctor_m066B65A675F6BFD0AF624D61A4B9076BBB67D383 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10957,7 +11146,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Props__cctor_m066B65A675F6BFD0AF624D61A4
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 86708
+// Method Definition Index: 86924
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatURPFeature_Create_m8DAC53012F4E9338E64CFE9F6FE98F888FBCF76F (GaussianSplatURPFeature_t17D0056B32C1AD034821A2B7D25D575EF50B6185* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10982,7 +11171,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatURPFeature_Create_m8DAC5301
 		return;
 	}
 }
-// Method Definition Index: 86709
+// Method Definition Index: 86925
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatURPFeature_OnCameraPreCull_mD51317A7A7D8BE4F90A3F0DDCDF73E17DD06D928 (GaussianSplatURPFeature_t17D0056B32C1AD034821A2B7D25D575EF50B6185* __this, ScriptableRenderer_tF15B95BB85F26BE4B4719901D909831B89DC8892* ___0_renderer, CameraData_tC27AE109CD20677486A4AC19C0CF014AE0F50C3E* ___1_cameraData, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11028,7 +11217,7 @@ IL_0023:
 		return;
 	}
 }
-// Method Definition Index: 86710
+// Method Definition Index: 86926
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatURPFeature_AddRenderPasses_m7B1FA422064F80C9AB1D833B9C0825DB1B8567E8 (GaussianSplatURPFeature_t17D0056B32C1AD034821A2B7D25D575EF50B6185* __this, ScriptableRenderer_tF15B95BB85F26BE4B4719901D909831B89DC8892* ___0_renderer, RenderingData_tAAA01190551D6D5954314E3E1E85B58DD45EED71* ___1_renderingData, const RuntimeMethod* method) 
 {
 	{
@@ -11055,7 +11244,7 @@ IL_0009:
 		return;
 	}
 }
-// Method Definition Index: 86711
+// Method Definition Index: 86927
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatURPFeature_Dispose_m66A13B63B2952523384B98DB92FF595FD16E289D (GaussianSplatURPFeature_t17D0056B32C1AD034821A2B7D25D575EF50B6185* __this, bool ___0_disposing, const RuntimeMethod* method) 
 {
 	{
@@ -11066,7 +11255,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatURPFeature_Dispose_m66A13B6
 		return;
 	}
 }
-// Method Definition Index: 86712
+// Method Definition Index: 86928
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatURPFeature__ctor_m3524D5CB8BD68E6ED3A464F4B89F9ED33E1FEBEF (GaussianSplatURPFeature_t17D0056B32C1AD034821A2B7D25D575EF50B6185* __this, const RuntimeMethod* method) 
 {
 	{
@@ -11082,7 +11271,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GaussianSplatURPFeature__ctor_m3524D5CB8
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 86713
+// Method Definition Index: 86929
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GSRenderPass_RecordRenderGraph_m96570A81588037E31D0DB22CD8C383C2CC2FD7F0 (GSRenderPass_t9B9EA925E2C4A8785B790B4329E65B73A03D2DCA* __this, RenderGraph_t73ECE03B3CA3D0D17F1448D64AE020E81592AA1E* ___0_renderGraph, ContextContainer_t384E08F63FABEFF6A7F1A753F5EF02699DAD414C* ___1_frameData, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11292,7 +11481,7 @@ IL_00e0:
 		return;
 	}
 }
-// Method Definition Index: 86714
+// Method Definition Index: 86930
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GSRenderPass__ctor_mAC3B47A8D71B2CE09B10774BC07823CE43D1A95D (GSRenderPass_t9B9EA925E2C4A8785B790B4329E65B73A03D2DCA* __this, const RuntimeMethod* method) 
 {
 	{
@@ -11300,7 +11489,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GSRenderPass__ctor_mAC3B47A8D71B2CE09B10
 		return;
 	}
 }
-// Method Definition Index: 86715
+// Method Definition Index: 86931
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GSRenderPass__cctor_m26B86A8CAA68AFA730F3E5C1C6CFD469BC480946 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11333,7 +11522,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GSRenderPass__cctor_m26B86A8CAA68AFA730F
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 86716
+// Method Definition Index: 86932
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PassData__ctor_m07DB2F23554799168311128BC2DAA6A15B31A557 (PassData_tF1BC84707E133544D84393938D44F526C37207D5* __this, const RuntimeMethod* method) 
 {
 	{
@@ -11349,7 +11538,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PassData__ctor_m07DB2F23554799168311128B
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 86717
+// Method Definition Index: 86933
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__cctor_mF44915E8AFD818D3E75750C6004BAA213DB1F8D1 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11366,7 +11555,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__cctor_mF44915E8AFD818D3E75750C6
 		return;
 	}
 }
-// Method Definition Index: 86718
+// Method Definition Index: 86934
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__ctor_mD3903993D2D70A84C57ACD05A103277A5F7F81C8 (U3CU3Ec_t4368BB1A99D7A2DC36550894FB09B73D49EC0406* __this, const RuntimeMethod* method) 
 {
 	{
@@ -11374,7 +11563,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__ctor_mD3903993D2D70A84C57ACD05A
 		return;
 	}
 }
-// Method Definition Index: 86719
+// Method Definition Index: 86935
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec_U3CRecordRenderGraphU3Eb__5_0_m23DD02094BAFB7E3E0AF0BE2E1D9B3182897EC8C (U3CU3Ec_t4368BB1A99D7A2DC36550894FB09B73D49EC0406* __this, PassData_tF1BC84707E133544D84393938D44F526C37207D5* ___0_data, UnsafeGraphContext_t6E24BDE4C6B0924FCC4DE11BFA5B750FF6F03320* ___1_context, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11499,7 +11688,7 @@ IL_0099:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 86720
+// Method Definition Index: 86936
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float GaussianUtils_Sigmoid_m8263110F2C2E8E569FAB6435D6DA08D63D0C6696 (float ___0_v, const RuntimeMethod* method) 
 {
 	{
@@ -11512,7 +11701,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float GaussianUtils_Sigmoid_m8263110F2C2E8E56
 		return L_2;
 	}
 }
-// Method Definition Index: 86721
+// Method Definition Index: 86937
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E GaussianUtils_SH0ToColor_m444CB128927EE1876E9CC1FC7D8650BB0019F9D5 (float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E ___0_dc0, const RuntimeMethod* method) 
 {
 	{
@@ -11525,7 +11714,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC37
 		return L_2;
 	}
 }
-// Method Definition Index: 86722
+// Method Definition Index: 86938
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E GaussianUtils_LinearScale_m1BD873F53DBD86EE8DC29EFFC3D1C791D849B794 (float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E ___0_logScale, const RuntimeMethod* method) 
 {
 	{
@@ -11538,7 +11727,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC37
 		return L_2;
 	}
 }
-// Method Definition Index: 86723
+// Method Definition Index: 86939
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float GaussianUtils_SquareCentered01_m76AF462B5817F4623394EFCA734A5C078B4464A3 (float ___0_x, const RuntimeMethod* method) 
 {
 	{
@@ -11557,7 +11746,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float GaussianUtils_SquareCentered01_m76AF462
 		return ((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(L_5, (2.0f))), (0.5f)));
 	}
 }
-// Method Definition Index: 86724
+// Method Definition Index: 86940
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float GaussianUtils_InvSquareCentered01_m4125F9DE681B4B5EB83545789E26E688EC4CD392 (float ___0_x, const RuntimeMethod* method) 
 {
 	{
@@ -11582,7 +11771,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float GaussianUtils_InvSquareCentered01_m4125
 		return ((float)il2cpp_codegen_add(L_7, (0.5f)));
 	}
 }
-// Method Definition Index: 86725
+// Method Definition Index: 86941
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float4_t89D9A294E7A79BD81BFBDD18654508532958555E GaussianUtils_NormalizeSwizzleRotation_mE5267821B70E08A85CBB67F8997C6E263D448597 (float4_t89D9A294E7A79BD81BFBDD18654508532958555E ___0_wxyz, const RuntimeMethod* method) 
 {
 	float4_t89D9A294E7A79BD81BFBDD18654508532958555E V_0;
@@ -11598,7 +11787,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float4_t89D9A294E7A79BD81BFBDD186545085329585
 		return L_2;
 	}
 }
-// Method Definition Index: 86726
+// Method Definition Index: 86942
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float4_t89D9A294E7A79BD81BFBDD18654508532958555E GaussianUtils_PackSmallest3Rotation_m3B33A0343786EEDE6E72A9763C39C4135DEEDD74 (float4_t89D9A294E7A79BD81BFBDD18654508532958555E ___0_q, const RuntimeMethod* method) 
 {
 	float4_t89D9A294E7A79BD81BFBDD18654508532958555E V_0;
@@ -11775,7 +11964,7 @@ IL_0084:
 		return L_33;
 	}
 }
-// Method Definition Index: 86727
+// Method Definition Index: 86943
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t GaussianUtils_MortonPart1By2_mF87D4F7FB0BF80F79760C187472E15B30CE65965 (uint64_t ___0_x, const RuntimeMethod* method) 
 {
 	{
@@ -11807,7 +11996,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t GaussianUtils_MortonPart1By2_mF87D4F
 		return L_11;
 	}
 }
-// Method Definition Index: 86728
+// Method Definition Index: 86944
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t GaussianUtils_MortonEncode3_m6AA7C8419A6DCA5DECB17F395A28C7BCF172014A (uint3_tC1C1C817DB46ED2E6A6C7390716FDDD565917F7B ___0_v, const RuntimeMethod* method) 
 {
 	{
@@ -11827,7 +12016,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t GaussianUtils_MortonEncode3_m6AA7C84
 		return ((int64_t)(((int64_t)(((int64_t)((int64_t)L_2<<2))|((int64_t)((int64_t)L_5<<1))))|(int64_t)L_8));
 	}
 }
-// Method Definition Index: 86729
+// Method Definition Index: 86945
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint2_t157753816C23B82EB918C3D3AFCFDDE06A04C05F GaussianUtils_DecodeMorton2D_16x16_m9488F5CFD94A91385406889A1F7A09CE6FEB3763 (uint32_t ___0_t, const RuntimeMethod* method) 
 {
 	{
@@ -11863,7 +12052,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint2_t157753816C23B82EB918C3D3AFCFDDE06A04C0
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 86730
+// Method Definition Index: 86946
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GpuSorting_get_Valid_mE587566381F0BF55CFB318AEDBC0FF19872D0AC2 (GpuSorting_t1F8999C4F0E7BE4DCFE5D75FF50B303DFBD5781C* __this, const RuntimeMethod* method) 
 {
 	{
@@ -11872,7 +12061,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GpuSorting_get_Valid_mE587566381F0BF55CF
 		return L_0;
 	}
 }
-// Method Definition Index: 86731
+// Method Definition Index: 86947
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GpuSorting__ctor_m558D18E2C66E77A6EC9DEF0D9B0ECA423E3CA97A (GpuSorting_t1F8999C4F0E7BE4DCFE5D75FF50B303DFBD5781C* __this, ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* ___0_cs, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12144,7 +12333,7 @@ IL_0187:
 		return;
 	}
 }
-// Method Definition Index: 86732
+// Method Definition Index: 86948
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t GpuSorting_DivRoundUp_m1D9565FFD1F9BAED3BB6F1689FF08B0E30638BC1 (uint32_t ___0_x, uint32_t ___1_y, const RuntimeMethod* method) 
 {
 	{
@@ -12155,7 +12344,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t GpuSorting_DivRoundUp_m1D9565FFD1F9B
 		return ((int32_t)((uint32_t)(int32_t)((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_add((int32_t)L_0, (int32_t)L_1)), 1))/(uint32_t)(int32_t)L_2));
 	}
 }
-// Method Definition Index: 86733
+// Method Definition Index: 86949
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GpuSorting_Dispatch_m0B395600677C17C44BC42CE8F51A417EC8382BDA (GpuSorting_t1F8999C4F0E7BE4DCFE5D75FF50B303DFBD5781C* __this, CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* ___0_cmd, Args_tBAE774674039658F77D5FE64731DD4270CC56AFF ___1_args, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12519,7 +12708,7 @@ IL2CPP_EXTERN_C void SupportResources_t5AC238831D0D3573BDE0D34C7CF4228E4102A62F_
 IL2CPP_EXTERN_C void SupportResources_t5AC238831D0D3573BDE0D34C7CF4228E4102A62F_marshal_com_cleanup(SupportResources_t5AC238831D0D3573BDE0D34C7CF4228E4102A62F_marshaled_com& marshaled)
 {
 }
-// Method Definition Index: 86734
+// Method Definition Index: 86950
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR SupportResources_t5AC238831D0D3573BDE0D34C7CF4228E4102A62F SupportResources_Load_m550E9C1106C52240633EB81CE331567C5940F736 (uint32_t ___0_count, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12596,7 +12785,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR SupportResources_t5AC238831D0D3573BDE0D34C7CF
 		return L_18;
 	}
 }
-// Method Definition Index: 86735
+// Method Definition Index: 86951
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SupportResources_Dispose_m9B2AEED86B6B94C9928B0F55E8990341ACF1ACD3 (SupportResources_t5AC238831D0D3573BDE0D34C7CF4228E4102A62F* __this, const RuntimeMethod* method) 
 {
 	GraphicsBuffer_t91FACD3CD78588C25C361C453D1A2FE055EC4AF1* G_B2_0 = NULL;
@@ -12762,7 +12951,7 @@ IL2CPP_EXTERN_C  void SupportResources_Dispose_m9B2AEED86B6B94C9928B0F55E8990341
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-// Method Definition Index: 36145
+// Method Definition Index: 36189
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 Matrix4x4_op_Multiply_m75E91775655DCA8DFC8EDE0AB787285BB3935162_inline (Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 ___0_lhs, Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 ___1_rhs, const RuntimeMethod* method) 
 {
 	Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 V_0;
@@ -13045,7 +13234,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Matrix4x4_tDB70CF134A14BA38190C59
 		return L_256;
 	}
 }
-// Method Definition Index: 43460
+// Method Definition Index: 43509
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t math_max_m9083201D37A8ED0157B127B5878D9B7F3A2A40BE_inline (int32_t ___0_x, int32_t ___1_y, const RuntimeMethod* method) 
 {
 	{
@@ -13068,7 +13257,7 @@ IL_0006:
 		return L_3;
 	}
 }
-// Method Definition Index: 86664
+// Method Definition Index: 86880
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t GaussianSplatRenderer_get_splatCount_mF3D27719399D08CE6E6C6C9D08A2B78A338D2B7C_inline (GaussianSplatRenderer_t4D745E5F7574870774C18D1B3991A1CB47891EB3* __this, const RuntimeMethod* method) 
 {
 	{
@@ -13077,7 +13266,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t GaussianSplatRenderer_get
 		return L_0;
 	}
 }
-// Method Definition Index: 36029
+// Method Definition Index: 36073
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Color__ctor_m3786F0D6E510D9CFA544523A955870BD2A514C8C_inline (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F* __this, float ___0_r, float ___1_g, float ___2_b, float ___3_a, const RuntimeMethod* method) 
 {
 	{
@@ -13092,7 +13281,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Color__ctor_m3786F0D6E510D9C
 		return;
 	}
 }
-// Method Definition Index: 36160
+// Method Definition Index: 36204
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 Matrix4x4_get_identity_m6568A73831F3E2D587420D20FF423959D7D8AB56_inline (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13106,7 +13295,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Matrix4x4_tDB70CF134A14BA38190C59
 		return L_0;
 	}
 }
-// Method Definition Index: 33898
+// Method Definition Index: 33938
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ProfilerMarker__ctor_m1ABCD93A91921BC399578CA41D6DA7FEF664EA15_inline (ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD* __this, ProfilerCategory_tA55212CD512C618AF6D2147791F20319896592AC ___0_category, String_t* ___1_name, uint16_t ___2_flags, const RuntimeMethod* method) 
 {
 	{
@@ -13121,7 +13310,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ProfilerMarker__ctor_m1ABCD9
 		return;
 	}
 }
-// Method Definition Index: 86613
+// Method Definition Index: 86829
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t GaussianSplatAsset_get_splatCount_m980BF18C9B216AE0B6A9DCF42A2567163990B199_inline (GaussianSplatAsset_tA0EE79B8E6D2BC1E544889BBF56C99F9BAE3F49A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -13130,7 +13319,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t GaussianSplatAsset_get_sp
 		return L_0;
 	}
 }
-// Method Definition Index: 86612
+// Method Definition Index: 86828
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t GaussianSplatAsset_get_formatVersion_mCFE51A2C2EF5B113458033CDB1A3EE051D48C76C_inline (GaussianSplatAsset_tA0EE79B8E6D2BC1E544889BBF56C99F9BAE3F49A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -13139,7 +13328,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t GaussianSplatAsset_get_fo
 		return L_0;
 	}
 }
-// Method Definition Index: 86635
+// Method Definition Index: 86851
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR TextAsset_t2C64E93DA366D9DE5A8209E1802FA4884AC1BD69* GaussianSplatAsset_get_posData_mDD058CA3D6894E7ECAAE5020BA4920ADBC3199F2_inline (GaussianSplatAsset_tA0EE79B8E6D2BC1E544889BBF56C99F9BAE3F49A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -13148,7 +13337,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR TextAsset_t2C64E93DA366D9DE5A8209
 		return L_0;
 	}
 }
-// Method Definition Index: 86637
+// Method Definition Index: 86853
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR TextAsset_t2C64E93DA366D9DE5A8209E1802FA4884AC1BD69* GaussianSplatAsset_get_otherData_mDCBFF9F6D852C580E40D2A15D93BAFE1098D55CC_inline (GaussianSplatAsset_tA0EE79B8E6D2BC1E544889BBF56C99F9BAE3F49A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -13157,7 +13346,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR TextAsset_t2C64E93DA366D9DE5A8209
 		return L_0;
 	}
 }
-// Method Definition Index: 86638
+// Method Definition Index: 86854
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR TextAsset_t2C64E93DA366D9DE5A8209E1802FA4884AC1BD69* GaussianSplatAsset_get_shData_m87F2C90150773C15B25F44C64396DA187BC807A0_inline (GaussianSplatAsset_tA0EE79B8E6D2BC1E544889BBF56C99F9BAE3F49A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -13166,7 +13355,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR TextAsset_t2C64E93DA366D9DE5A8209
 		return L_0;
 	}
 }
-// Method Definition Index: 86636
+// Method Definition Index: 86852
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR TextAsset_t2C64E93DA366D9DE5A8209E1802FA4884AC1BD69* GaussianSplatAsset_get_colorData_mA15E50560E75CF62E19462EE737D45C4DE16BB77_inline (GaussianSplatAsset_tA0EE79B8E6D2BC1E544889BBF56C99F9BAE3F49A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -13175,7 +13364,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR TextAsset_t2C64E93DA366D9DE5A8209
 		return L_0;
 	}
 }
-// Method Definition Index: 86663
+// Method Definition Index: 86879
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR GaussianSplatAsset_tA0EE79B8E6D2BC1E544889BBF56C99F9BAE3F49A* GaussianSplatRenderer_get_asset_m9069B0FB36C90D63276DBA4757CE305BDB41D60E_inline (GaussianSplatRenderer_t4D745E5F7574870774C18D1B3991A1CB47891EB3* __this, const RuntimeMethod* method) 
 {
 	{
@@ -13184,7 +13373,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR GaussianSplatAsset_tA0EE79B8E6D2B
 		return L_0;
 	}
 }
-// Method Definition Index: 86634
+// Method Definition Index: 86850
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t GaussianSplatAsset_get_colorFormat_m8F15480090C4A981A0E9B8D02138AA3C87CCE949_inline (GaussianSplatAsset_tA0EE79B8E6D2BC1E544889BBF56C99F9BAE3F49A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -13193,7 +13382,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t GaussianSplatAsset_get_co
 		return L_0;
 	}
 }
-// Method Definition Index: 86639
+// Method Definition Index: 86855
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR TextAsset_t2C64E93DA366D9DE5A8209E1802FA4884AC1BD69* GaussianSplatAsset_get_chunkData_mD3EF1CDC2CF6591AF33C27F047743E2F145AEE5A_inline (GaussianSplatAsset_tA0EE79B8E6D2BC1E544889BBF56C99F9BAE3F49A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -13202,7 +13391,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR TextAsset_t2C64E93DA366D9DE5A8209
 		return L_0;
 	}
 }
-// Method Definition Index: 86730
+// Method Definition Index: 86946
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool GpuSorting_get_Valid_mE587566381F0BF55CFB318AEDBC0FF19872D0AC2_inline (GpuSorting_t1F8999C4F0E7BE4DCFE5D75FF50B303DFBD5781C* __this, const RuntimeMethod* method) 
 {
 	{
@@ -13211,7 +13400,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool GpuSorting_get_Valid_mE58756
 		return L_0;
 	}
 }
-// Method Definition Index: 86631
+// Method Definition Index: 86847
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t GaussianSplatAsset_get_posFormat_mB06433AD1961A13E970A9008F435714E74BBB8D2_inline (GaussianSplatAsset_tA0EE79B8E6D2BC1E544889BBF56C99F9BAE3F49A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -13220,7 +13409,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t GaussianSplatAsset_get_po
 		return L_0;
 	}
 }
-// Method Definition Index: 86632
+// Method Definition Index: 86848
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t GaussianSplatAsset_get_scaleFormat_mB618407F3DA0B920D71A318111F296996BCDE56D_inline (GaussianSplatAsset_tA0EE79B8E6D2BC1E544889BBF56C99F9BAE3F49A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -13229,7 +13418,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t GaussianSplatAsset_get_sc
 		return L_0;
 	}
 }
-// Method Definition Index: 86633
+// Method Definition Index: 86849
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t GaussianSplatAsset_get_shFormat_mE6FC49254DD383A383416349F293AC9E7B5CCBC5_inline (GaussianSplatAsset_tA0EE79B8E6D2BC1E544889BBF56C99F9BAE3F49A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -13238,7 +13427,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t GaussianSplatAsset_get_sh
 		return L_0;
 	}
 }
-// Method Definition Index: 86656
+// Method Definition Index: 86872
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GaussianSplatRenderer_set_editSelectedSplats_m5D00675B6BE6A09E8EA512E836FAC35298F7FE6B_inline (GaussianSplatRenderer_t4D745E5F7574870774C18D1B3991A1CB47891EB3* __this, uint32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -13248,7 +13437,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GaussianSplatRenderer_set_ed
 		return;
 	}
 }
-// Method Definition Index: 86658
+// Method Definition Index: 86874
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GaussianSplatRenderer_set_editDeletedSplats_mFB637AC0BF5F2AA823E9488AAE443A642FA5F0CB_inline (GaussianSplatRenderer_t4D745E5F7574870774C18D1B3991A1CB47891EB3* __this, uint32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -13258,7 +13447,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GaussianSplatRenderer_set_ed
 		return;
 	}
 }
-// Method Definition Index: 86660
+// Method Definition Index: 86876
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GaussianSplatRenderer_set_editCutSplats_mBC9EBE56557EC85EBB1DF84FA1B2C6119FAA6FB8_inline (GaussianSplatRenderer_t4D745E5F7574870774C18D1B3991A1CB47891EB3* __this, uint32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -13268,7 +13457,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GaussianSplatRenderer_set_ed
 		return;
 	}
 }
-// Method Definition Index: 86654
+// Method Definition Index: 86870
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GaussianSplatRenderer_set_editModified_m40C1413B7008906BF1C89F1F923AC9BFE35C2584_inline (GaussianSplatRenderer_t4D745E5F7574870774C18D1B3991A1CB47891EB3* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -13278,7 +13467,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GaussianSplatRenderer_set_ed
 		return;
 	}
 }
-// Method Definition Index: 86662
+// Method Definition Index: 86878
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GaussianSplatRenderer_set_editSelectedBounds_mBD8A760C9F954F11D8620724B48AFAE4C3C0B5EB_inline (GaussianSplatRenderer_t4D745E5F7574870774C18D1B3991A1CB47891EB3* __this, Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3 ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -13288,7 +13477,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GaussianSplatRenderer_set_ed
 		return;
 	}
 }
-// Method Definition Index: 36419
+// Method Definition Index: 36463
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector4__ctor_m96B2CD8B862B271F513AF0BDC2EABD58E4DBC813_inline (Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3* __this, float ___0_x, float ___1_y, float ___2_z, float ___3_w, const RuntimeMethod* method) 
 {
 	{
@@ -13303,7 +13492,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector4__ctor_m96B2CD8B862B2
 		return;
 	}
 }
-// Method Definition Index: 36451
+// Method Definition Index: 36495
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 Vector4_op_Implicit_m2ECA73F345A7AD84144133E9E51657204002B12D_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_v, const RuntimeMethod* method) 
 {
 	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 V_0;
@@ -13324,7 +13513,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector4_t58B63D32F48C0DBF50DE2C60
 		return L_6;
 	}
 }
-// Method Definition Index: 86616
+// Method Definition Index: 86832
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Hash128_t93367F504B687578F893CDBCD13FB95AC8A87A40 GaussianSplatAsset_get_dataHash_mA56C7270E0FF1465EE93A0B69A97F3923BFC0B00_inline (GaussianSplatAsset_tA0EE79B8E6D2BC1E544889BBF56C99F9BAE3F49A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -13333,7 +13522,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Hash128_t93367F504B687578F893CDBC
 		return L_0;
 	}
 }
-// Method Definition Index: 86640
+// Method Definition Index: 86856
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR CameraInfoU5BU5D_tBD71A686376499F40D4C58D8523D3384D12F6EBE* GaussianSplatAsset_get_cameras_mD4E1C1C68CD339EF6DCA0F920979BFAEEE5940E4_inline (GaussianSplatAsset_tA0EE79B8E6D2BC1E544889BBF56C99F9BAE3F49A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -13342,7 +13531,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR CameraInfoU5BU5D_tBD71A686376499F
 		return L_0;
 	}
 }
-// Method Definition Index: 36239
+// Method Definition Index: 36283
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Quaternion_LookRotation_mFB02EDC8F733774DFAC3BEA4B4BB265A228F8307_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_forward, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_upwards, const RuntimeMethod* method) 
 {
 	{
@@ -13351,7 +13540,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E
 		return L_0;
 	}
 }
-// Method Definition Index: 36208
+// Method Definition Index: 36252
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_get_one_mC9B289F1E15C42C597180C9FE6FB492495B51D02_inline (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13365,7 +13554,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D
 		return L_0;
 	}
 }
-// Method Definition Index: 43403
+// Method Definition Index: 43452
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float math_asfloat_m20D259DAAB46464B59BD8BF5678F9D59800F70A9_inline (uint32_t ___0_x, const RuntimeMethod* method) 
 {
 	{
@@ -13374,7 +13563,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float math_asfloat_m20D259DAAB464
 		return L_0;
 	}
 }
-// Method Definition Index: 36179
+// Method Definition Index: 36223
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, float ___0_x, float ___1_y, float ___2_z, const RuntimeMethod* method) 
 {
 	{
@@ -13387,7 +13576,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3__ctor_m376936E6B999E
 		return;
 	}
 }
-// Method Definition Index: 34622
+// Method Definition Index: 34662
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Bounds_SetMinMax_mB5F7DDF18EDB7F3F25FA6D2B36824F28978C540F_inline (Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_min, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_max, const RuntimeMethod* method) 
 {
 	{
@@ -13430,7 +13619,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Bounds_SetMinMax_mB5F7DDF18E
 		return;
 	}
 }
-// Method Definition Index: 34614
+// Method Definition Index: 34654
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Bounds_get_extents_mFE6DC407FCE2341BE2C750CB554055D211281D25_inline (Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3* __this, const RuntimeMethod* method) 
 {
 	{
@@ -13438,7 +13627,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D
 		return L_0;
 	}
 }
-// Method Definition Index: 36202
+// Method Definition Index: 36246
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_get_sqrMagnitude_m43C27DEC47C4811FB30AB474FF2131A963B66FC8_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, const RuntimeMethod* method) 
 {
 	{
@@ -13451,7 +13640,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_get_sqrMagnitude_m4
 		return ((float)il2cpp_codegen_add(((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(L_0, L_1)), ((float)il2cpp_codegen_multiply(L_2, L_3)))), ((float)il2cpp_codegen_multiply(L_4, L_5))));
 	}
 }
-// Method Definition Index: 34615
+// Method Definition Index: 34655
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Bounds_set_extents_m09496358547B86A93EFE7BE6371E7A6FE937C46F_inline (Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -13460,7 +13649,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Bounds_set_extents_m09496358
 		return;
 	}
 }
-// Method Definition Index: 86657
+// Method Definition Index: 86873
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR uint32_t GaussianSplatRenderer_get_editDeletedSplats_mC5DDFE00F291B4B4E881BBACC328CCD54D78CA0A_inline (GaussianSplatRenderer_t4D745E5F7574870774C18D1B3991A1CB47891EB3* __this, const RuntimeMethod* method) 
 {
 	{
@@ -13469,7 +13658,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR uint32_t GaussianSplatRenderer_ge
 		return L_0;
 	}
 }
-// Method Definition Index: 36118
+// Method Definition Index: 36162
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Matrix4x4_get_rotation_m7E2C29FCB2AAFAE4D7B4FBD3563E9EDB53F5A8BB_inline (Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6* __this, const RuntimeMethod* method) 
 {
 	{
@@ -13478,7 +13667,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E
 		return L_0;
 	}
 }
-// Method Definition Index: 36119
+// Method Definition Index: 36163
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Matrix4x4_get_lossyScale_mFB3D4CF6408D710D607CA1D2AF94B2E4E0B57EB7_inline (Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6* __this, const RuntimeMethod* method) 
 {
 	{
@@ -13487,7 +13676,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D
 		return L_0;
 	}
 }
-// Method Definition Index: 40335
+// Method Definition Index: 40384
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ScriptableRenderPass_set_renderPassEvent_m63FA581FFDE1C69C2E1358BD0B8DB30275334960_inline (ScriptableRenderPass_tEA38F6C7AD8D111A2251E4C2A7530BCEE7D6D2B0* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -13497,7 +13686,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ScriptableRenderPass_set_ren
 		return;
 	}
 }
-// Method Definition Index: 35904
+// Method Definition Index: 35947
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void RenderTextureDescriptor_set_msaaSamples_m6910E09489372746391B14FBAF59A7237539D6C4_inline (RenderTextureDescriptor_t69845881CE6437E4E61F92074F2F84079F23FA46* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -13506,7 +13695,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void RenderTextureDescriptor_set_
 		return;
 	}
 }
-// Method Definition Index: 22765
+// Method Definition Index: 22805
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* CommandBufferHelpers_GetNativeCommandBuffer_m00E0A36F7BA58959180A2CF84B882FCE474577CA_inline (UnsafeCommandBuffer_tDE6BB2FE234DC7453CA682AB275888E9E35F22F2* ___0_baseBuffer, const RuntimeMethod* method) 
 {
 	{
@@ -13517,7 +13706,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR CommandBuffer_tB56007DC84EF56296C
 		return L_1;
 	}
 }
-// Method Definition Index: 36055
+// Method Definition Index: 36099
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F Color_get_clear_m02E023A7D396B973288B3915F6F24FBF7E0DC81D_inline (const RuntimeMethod* method) 
 {
 	{
@@ -13527,7 +13716,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED02
 		return L_0;
 	}
 }
-// Method Definition Index: 43729
+// Method Definition Index: 43778
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float math_exp_mA280145AF56A9C12A64131DCD7BFD62ED722F025_inline (float ___0_x, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13545,7 +13734,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float math_exp_mA280145AF56A9C12A
 		return ((float)L_1);
 	}
 }
-// Method Definition Index: 43701
+// Method Definition Index: 43750
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float math_rcp_mED2BCEE83560EEE59CE06EBD90332CAFA9C08024_inline (float ___0_x, const RuntimeMethod* method) 
 {
 	{
@@ -13554,7 +13743,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float math_rcp_mED2BCEE83560EEE59
 		return ((float)((1.0f)/L_0));
 	}
 }
-// Method Definition Index: 47131
+// Method Definition Index: 47180
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E float3_op_Multiply_m6E5DC552C8B0F9A180298BD9197FF47B14E0EA81_inline (float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E ___0_lhs, float ___1_rhs, const RuntimeMethod* method) 
 {
 	{
@@ -13574,7 +13763,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float3_t4AB5D88249ADB24F69FFD0793
 		return L_9;
 	}
 }
-// Method Definition Index: 47134
+// Method Definition Index: 47183
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E float3_op_Addition_mABF24BC9A16C272B9F5AB21A601B9D9A831F8C43_inline (float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E ___0_lhs, float ___1_rhs, const RuntimeMethod* method) 
 {
 	{
@@ -13594,7 +13783,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float3_t4AB5D88249ADB24F69FFD0793
 		return L_9;
 	}
 }
-// Method Definition Index: 43731
+// Method Definition Index: 43780
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E math_exp_mE9C692C94ECB28626E03E31C70F78F12893AA643_inline (float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E ___0_x, const RuntimeMethod* method) 
 {
 	{
@@ -13617,7 +13806,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float3_t4AB5D88249ADB24F69FFD0793
 		return L_9;
 	}
 }
-// Method Definition Index: 43559
+// Method Definition Index: 43608
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E math_abs_mC7F2BBD861835C82A0A47A47A44B73E704D7F63B_inline (float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E ___0_x, const RuntimeMethod* method) 
 {
 	{
@@ -13632,7 +13821,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float3_t4AB5D88249ADB24F69FFD0793
 		return L_3;
 	}
 }
-// Method Definition Index: 43713
+// Method Definition Index: 43762
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float math_sign_m92C11F3549080423C5B8BD842B6672F81162352D_inline (float ___0_x, const RuntimeMethod* method) 
 {
 	float G_B3_0 = 0.0f;
@@ -13685,7 +13874,7 @@ IL_0028:
 		return ((float)il2cpp_codegen_subtract(G_B6_1, G_B6_0));
 	}
 }
-// Method Definition Index: 43557
+// Method Definition Index: 43606
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float math_abs_m3D9508B36B045BFE7B89C6C69AD34596264E4FE1_inline (float ___0_x, const RuntimeMethod* method) 
 {
 	{
@@ -13698,7 +13887,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float math_abs_m3D9508B36B045BFE7
 		return L_2;
 	}
 }
-// Method Definition Index: 43793
+// Method Definition Index: 43842
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float math_sqrt_mEF31DE7BD0179009683C5D7B0C58E6571B30CF4A_inline (float ___0_x, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13716,7 +13905,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float math_sqrt_mEF31DE7BD0179009
 		return ((float)L_1);
 	}
 }
-// Method Definition Index: 43811
+// Method Definition Index: 43860
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float4_t89D9A294E7A79BD81BFBDD18654508532958555E math_normalize_m598E318DE7A638AE5FE8A35528AC6A90B6E909D6_inline (float4_t89D9A294E7A79BD81BFBDD18654508532958555E ___0_x, const RuntimeMethod* method) 
 {
 	{
@@ -13733,7 +13922,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float4_t89D9A294E7A79BD81BFBDD186
 		return L_5;
 	}
 }
-// Method Definition Index: 47706
+// Method Definition Index: 47755
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float4_t89D9A294E7A79BD81BFBDD18654508532958555E float4_get_yzwx_m4A3FE22B5B0ECD034C12F96F4EEC64D64253ED50_inline (float4_t89D9A294E7A79BD81BFBDD18654508532958555E* __this, const RuntimeMethod* method) 
 {
 	{
@@ -13748,7 +13937,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float4_t89D9A294E7A79BD81BFBDD186
 		return L_4;
 	}
 }
-// Method Definition Index: 43560
+// Method Definition Index: 43609
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float4_t89D9A294E7A79BD81BFBDD18654508532958555E math_abs_m3520AF73CED32CCB365373E2AACD939AA8D281A7_inline (float4_t89D9A294E7A79BD81BFBDD18654508532958555E ___0_x, const RuntimeMethod* method) 
 {
 	{
@@ -13763,7 +13952,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float4_t89D9A294E7A79BD81BFBDD186
 		return L_3;
 	}
 }
-// Method Definition Index: 47637
+// Method Definition Index: 47686
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float4_t89D9A294E7A79BD81BFBDD18654508532958555E float4_get_xzwy_m907593A4BABCC34B5DB8BACC2AB01ACD60358897_inline (float4_t89D9A294E7A79BD81BFBDD18654508532958555E* __this, const RuntimeMethod* method) 
 {
 	{
@@ -13778,7 +13967,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float4_t89D9A294E7A79BD81BFBDD186
 		return L_4;
 	}
 }
-// Method Definition Index: 47620
+// Method Definition Index: 47669
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float4_t89D9A294E7A79BD81BFBDD18654508532958555E float4_get_xywz_mC8EA9B8618EAF8D0B0D239551877F01748D1D956_inline (float4_t89D9A294E7A79BD81BFBDD18654508532958555E* __this, const RuntimeMethod* method) 
 {
 	{
@@ -13793,7 +13982,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float4_t89D9A294E7A79BD81BFBDD186
 		return L_4;
 	}
 }
-// Method Definition Index: 47875
+// Method Definition Index: 47924
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E float4_get_xyz_mE6EC829F35512C7BC159047FDC134E80F3B37A06_inline (float4_t89D9A294E7A79BD81BFBDD18654508532958555E* __this, const RuntimeMethod* method) 
 {
 	{
@@ -13807,7 +13996,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float3_t4AB5D88249ADB24F69FFD0793
 		return L_3;
 	}
 }
-// Method Definition Index: 47528
+// Method Definition Index: 47577
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void float4__ctor_m2A21052EF06884F609D1CDA9A2C2ED84A7584345_inline (float4_t89D9A294E7A79BD81BFBDD18654508532958555E* __this, float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E ___0_xyz, float ___1_w, const RuntimeMethod* method) 
 {
 	{
@@ -13830,7 +14019,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void float4__ctor_m2A21052EF06884
 		return;
 	}
 }
-// Method Definition Index: 50491
+// Method Definition Index: 50540
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void uint2__ctor_mDE945EFF54FDA16335AC19E9E01A9BAE161B8D3F_inline (uint2_t157753816C23B82EB918C3D3AFCFDDE06A04C05F* __this, uint32_t ___0_x, uint32_t ___1_y, const RuntimeMethod* method) 
 {
 	{
@@ -13844,7 +14033,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void uint2__ctor_mDE945EFF54FDA16
 		return;
 	}
 }
-// Method Definition Index: 34162
+// Method Definition Index: 34202
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t UnsafeUtility_SizeOf_TisSHTableItemFloat32_t4665DB1D6F7CA5A3622972AE48ACCB3C4B090C90_m38D8EF979DDC17C043829539D1743F8797D9C037_gshared_inline (const RuntimeMethod* method) 
 {
 	{
@@ -13852,7 +14041,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t UnsafeUtility_SizeOf_TisS
 		return (int32_t)L_0;
 	}
 }
-// Method Definition Index: 34162
+// Method Definition Index: 34202
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t UnsafeUtility_SizeOf_TisSHTableItemFloat16_tB4F0ECE26C500225FCA40A0DCEB91BC6CFE564B6_m57C5AA18227F7B8B5A665DB97A8C1C78878F4B10_gshared_inline (const RuntimeMethod* method) 
 {
 	{
@@ -13860,7 +14049,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t UnsafeUtility_SizeOf_TisS
 		return (int32_t)L_0;
 	}
 }
-// Method Definition Index: 34162
+// Method Definition Index: 34202
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t UnsafeUtility_SizeOf_TisSHTableItemNorm11_t7507ADFC9ACC7A974933ECE9507AB98597E88ABA_m06B99863FCF9D0789DD19A3729C221E8B37A5E61_gshared_inline (const RuntimeMethod* method) 
 {
 	{
@@ -13868,7 +14057,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t UnsafeUtility_SizeOf_TisS
 		return (int32_t)L_0;
 	}
 }
-// Method Definition Index: 34162
+// Method Definition Index: 34202
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t UnsafeUtility_SizeOf_TisSHTableItemNorm6_t1D74DE4C5C5FB8AFACBD34B49711BFC1A53FFBF4_m5B13FDCB41CC17CA68CD73BBF8C776E39A1ECDF3_gshared_inline (const RuntimeMethod* method) 
 {
 	{
@@ -13876,7 +14065,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t UnsafeUtility_SizeOf_TisS
 		return (int32_t)L_0;
 	}
 }
-// Method Definition Index: 34162
+// Method Definition Index: 34202
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t UnsafeUtility_SizeOf_TisChunkInfo_t31E297AA69851C320C23C45A7AA9EC70B885769E_m720702296D9D23A2CD46BAA6CD484EB92ADAF6F8_gshared_inline (const RuntimeMethod* method) 
 {
 	{
@@ -13884,7 +14073,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t UnsafeUtility_SizeOf_TisC
 		return (int32_t)L_0;
 	}
 }
-// Method Definition Index: 68462
+// Method Definition Index: 68511
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_get_Current_m139A176CD271A0532D75BE08DA7831C8C45CE28F_gshared_inline (Enumerator_t72556E98D7DDBE118A973D782D523D15A96461C8* __this, const RuntimeMethod* method) 
 {
 	{
@@ -13892,7 +14081,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_get_Cur
 		return L_0;
 	}
 }
-// Method Definition Index: 9534
+// Method Definition Index: 9574
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Clear_m87D0603CF2422A2205B67381BD432C522E9584B7_gshared_inline (List_1_tFD45D9C668A7B019127FE442DDD78CF33B7DEDBF* __this, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
@@ -13922,7 +14111,7 @@ IL_003c:
 		return;
 	}
 }
-// Method Definition Index: 9425
+// Method Definition Index: 9465
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR KeyValuePair_2_tFC32D2507216293851350D29B64D79F950B55230 Enumerator_get_Current_mE3475384B761E1C7971D3639BD09117FE8363422_gshared_inline (Enumerator_tEA93FE2B778D098F590CA168BEFC4CD85D73A6B9* __this, const RuntimeMethod* method) 
 {
 	{
@@ -13930,7 +14119,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR KeyValuePair_2_tFC32D250721629385
 		return L_0;
 	}
 }
-// Method Definition Index: 9506
+// Method Definition Index: 9546
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* KeyValuePair_2_get_Key_mBD8EA7557C27E6956F2AF29DA3F7499B2F51A282_gshared_inline (KeyValuePair_2_tFC32D2507216293851350D29B64D79F950B55230* __this, const RuntimeMethod* method) 
 {
 	{
@@ -13938,7 +14127,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* KeyValuePair_2_get
 		return L_0;
 	}
 }
-// Method Definition Index: 9507
+// Method Definition Index: 9547
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* KeyValuePair_2_get_Value_mC6BD8075F9C9DDEF7B4D731E5C38EC19103988E7_gshared_inline (KeyValuePair_2_tFC32D2507216293851350D29B64D79F950B55230* __this, const RuntimeMethod* method) 
 {
 	{
@@ -13946,7 +14135,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* KeyValuePair_2_get
 		return L_0;
 	}
 }
-// Method Definition Index: 9526
+// Method Definition Index: 9566
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_m4C2118BF8009CA4F7AF89D8D9CB5586AE95C8A36_gshared_inline (List_1_tFD45D9C668A7B019127FE442DDD78CF33B7DEDBF* __this, ValueTuple_2_tC3717D4552EE1E5FC27BFBA3F5155741BC04557A ___0_item, const RuntimeMethod* method) 
 {
 	ValueTuple_2U5BU5D_tDEEAFCC1B39456246D3A0D4D92FF7592CA9EC962* V_0 = NULL;
@@ -13984,7 +14173,7 @@ IL_0034:
 		return;
 	}
 }
-// Method Definition Index: 9515
+// Method Definition Index: 9555
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m1747175525F15736BD2C9209C7B090DC8164FE7A_gshared_inline (List_1_tFD45D9C668A7B019127FE442DDD78CF33B7DEDBF* __this, const RuntimeMethod* method) 
 {
 	{
@@ -13992,7 +14181,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m1747175
 		return L_0;
 	}
 }
-// Method Definition Index: 9576
+// Method Definition Index: 9616
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ValueTuple_2_tC3717D4552EE1E5FC27BFBA3F5155741BC04557A Enumerator_get_Current_mA77AA53CCABA7EE4D5A17C1686FF33B1255ECAF6_gshared_inline (Enumerator_tC00634F69C4FDA0AB72A1D2673B713206D4B27FB* __this, const RuntimeMethod* method) 
 {
 	{
@@ -14000,7 +14189,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ValueTuple_2_tC3717D4552EE1E5FC27
 		return L_0;
 	}
 }
-// Method Definition Index: 34162
+// Method Definition Index: 34202
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t UnsafeUtility_SizeOf_TisShaderData_t3FCE749CA1640092D11B2183ADE1558972BC7182_mC2497D2EDBDE99AA3E373C2F313618459A9E5A0B_gshared_inline (const RuntimeMethod* method) 
 {
 	{
@@ -14008,7 +14197,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t UnsafeUtility_SizeOf_TisS
 		return (int32_t)L_0;
 	}
 }
-// Method Definition Index: 23683
+// Method Definition Index: 23723
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* ContextContainer_Get_TisRuntimeObject_mD332AE37F62256B78E48145FFDEADB66FEEF3A5E_gshared_inline (ContextContainer_t384E08F63FABEFF6A7F1A753F5EF02699DAD414C* __this, const RuntimeMethod* method) 
 {
 	il2cpp_rgctx_method_init(method);
@@ -14053,7 +14242,7 @@ IL_0033:
 		return ((RuntimeObject*)Castclass((RuntimeObject*)L_10, il2cpp_rgctx_data(method->rgctx_data, 3)));
 	}
 }
-// Method Definition Index: 33895
+// Method Definition Index: 33935
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR uint16_t ProfilerCategory_op_Implicit_m441AE38B56781EE2D3F0865F65C81A77BEC6D76B_inline (ProfilerCategory_tA55212CD512C618AF6D2147791F20319896592AC ___0_category, const RuntimeMethod* method) 
 {
 	{
@@ -14062,7 +14251,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR uint16_t ProfilerCategory_op_Impl
 		return L_1;
 	}
 }
-// Method Definition Index: 47104
+// Method Definition Index: 47153
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void float3__ctor_mC61002CD0EC13D7C37D846D021A78C028FB80DB9_inline (float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E* __this, float ___0_x, float ___1_y, float ___2_z, const RuntimeMethod* method) 
 {
 	{
@@ -14079,7 +14268,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void float3__ctor_mC61002CD0EC13D
 		return;
 	}
 }
-// Method Definition Index: 43393
+// Method Definition Index: 43442
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR uint3_tC1C1C817DB46ED2E6A6C7390716FDDD565917F7B math_asuint_m4AEE8C17FEDA05D4C77C427818D1C9EF5E31521E_inline (float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E ___0_x, const RuntimeMethod* method) 
 {
 	{
@@ -14088,7 +14277,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR uint3_tC1C1C817DB46ED2E6A6C739071
 		return L_0;
 	}
 }
-// Method Definition Index: 50887
+// Method Definition Index: 50936
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR uint3_tC1C1C817DB46ED2E6A6C7390716FDDD565917F7B uint3_op_BitwiseAnd_m772BFC3A60526C264937ABCA92F1CAAFC2B0D634_inline (uint3_tC1C1C817DB46ED2E6A6C7390716FDDD565917F7B ___0_lhs, uint32_t ___1_rhs, const RuntimeMethod* method) 
 {
 	{
@@ -14108,7 +14297,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR uint3_tC1C1C817DB46ED2E6A6C739071
 		return L_9;
 	}
 }
-// Method Definition Index: 43405
+// Method Definition Index: 43454
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E math_asfloat_m7A90E1FAABD250FCEC00839D01B098BB046F7933_inline (uint3_tC1C1C817DB46ED2E6A6C7390716FDDD565917F7B ___0_x, const RuntimeMethod* method) 
 {
 	{
@@ -14117,7 +14306,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float3_t4AB5D88249ADB24F69FFD0793
 		return L_0;
 	}
 }
-// Method Definition Index: 43391
+// Method Definition Index: 43440
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR uint32_t math_asuint_m503D1ABF19E4BA615FD8AE1BF1A2E103BBED6139_inline (float ___0_x, const RuntimeMethod* method) 
 {
 	{
@@ -14126,7 +14315,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR uint32_t math_asuint_m503D1ABF19E
 		return L_0;
 	}
 }
-// Method Definition Index: 43576
+// Method Definition Index: 43625
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float math_dot_m20F2285F7227DC308D9CF2DCB8EAAD3E774501D4_inline (float4_t89D9A294E7A79BD81BFBDD18654508532958555E ___0_x, float4_t89D9A294E7A79BD81BFBDD18654508532958555E ___1_y, const RuntimeMethod* method) 
 {
 	{
@@ -14150,7 +14339,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float math_dot_m20F2285F7227DC308
 		return ((float)il2cpp_codegen_add(((float)il2cpp_codegen_add(((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(L_1, L_3)), ((float)il2cpp_codegen_multiply(L_5, L_7)))), ((float)il2cpp_codegen_multiply(L_9, L_11)))), ((float)il2cpp_codegen_multiply(L_13, L_15))));
 	}
 }
-// Method Definition Index: 43801
+// Method Definition Index: 43850
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float math_rsqrt_mC67B3430EAADA7C5347E87B23859C569BC010E72_inline (float ___0_x, const RuntimeMethod* method) 
 {
 	{
@@ -14161,7 +14350,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float math_rsqrt_mC67B3430EAADA7C
 		return ((float)((1.0f)/L_1));
 	}
 }
-// Method Definition Index: 47554
+// Method Definition Index: 47603
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float4_t89D9A294E7A79BD81BFBDD18654508532958555E float4_op_Multiply_m94C65B5751B7969CD82F15DADB8A6F182BFBD581_inline (float ___0_lhs, float4_t89D9A294E7A79BD81BFBDD18654508532958555E ___1_rhs, const RuntimeMethod* method) 
 {
 	{
@@ -14184,7 +14373,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float4_t89D9A294E7A79BD81BFBDD186
 		return L_12;
 	}
 }
-// Method Definition Index: 47522
+// Method Definition Index: 47571
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void float4__ctor_mB2F7F2D8BCE8159BEF5A0D6400499E211858ED2D_inline (float4_t89D9A294E7A79BD81BFBDD18654508532958555E* __this, float ___0_x, float ___1_y, float ___2_z, float ___3_w, const RuntimeMethod* method) 
 {
 	{
@@ -14204,7 +14393,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void float4__ctor_mB2F7F2D8BCE815
 		return;
 	}
 }
-// Method Definition Index: 43394
+// Method Definition Index: 43443
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR uint4_t6C69CBFAE9BF0F727D52B68779D4A3F0DBA8D5C9 math_asuint_mDF3C61EF6F9D9D10A1D3EB9D0075149707B461B9_inline (float4_t89D9A294E7A79BD81BFBDD18654508532958555E ___0_x, const RuntimeMethod* method) 
 {
 	{
@@ -14213,7 +14402,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR uint4_t6C69CBFAE9BF0F727D52B68779
 		return L_0;
 	}
 }
-// Method Definition Index: 51325
+// Method Definition Index: 51374
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR uint4_t6C69CBFAE9BF0F727D52B68779D4A3F0DBA8D5C9 uint4_op_BitwiseAnd_mEF924757B2BE1F41834950F7880B93C25B812044_inline (uint4_t6C69CBFAE9BF0F727D52B68779D4A3F0DBA8D5C9 ___0_lhs, uint32_t ___1_rhs, const RuntimeMethod* method) 
 {
 	{
@@ -14236,7 +14425,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR uint4_t6C69CBFAE9BF0F727D52B68779
 		return L_12;
 	}
 }
-// Method Definition Index: 43406
+// Method Definition Index: 43455
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float4_t89D9A294E7A79BD81BFBDD18654508532958555E math_asfloat_m12607D976A0CF76E07E41340262CAEC45A9CB537_inline (uint4_t6C69CBFAE9BF0F727D52B68779D4A3F0DBA8D5C9 ___0_x, const RuntimeMethod* method) 
 {
 	{
@@ -14245,7 +14434,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float4_t89D9A294E7A79BD81BFBDD186
 		return L_0;
 	}
 }
-// Method Definition Index: 23687
+// Method Definition Index: 23727
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool ContextContainer_Contains_mD38FBF0FAC84169E395802CBF880BD0980490AF3_inline (ContextContainer_t384E08F63FABEFF6A7F1A753F5EF02699DAD414C* __this, uint32_t ___0_typeId, const RuntimeMethod* method) 
 {
 	{
@@ -14271,7 +14460,7 @@ IL_001f:
 		return (bool)0;
 	}
 }
-// Method Definition Index: 50824
+// Method Definition Index: 50873
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void uint3__ctor_mEFEA14BBA36F53111474B0C3C3B729061F1ACCAF_inline (uint3_tC1C1C817DB46ED2E6A6C7390716FDDD565917F7B* __this, uint32_t ___0_x, uint32_t ___1_y, uint32_t ___2_z, const RuntimeMethod* method) 
 {
 	{
@@ -14288,7 +14477,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void uint3__ctor_mEFEA14BBA36F531
 		return;
 	}
 }
-// Method Definition Index: 51258
+// Method Definition Index: 51307
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void uint4__ctor_m59B6A219A0285C60FCF2977679BF89C72B502008_inline (uint4_t6C69CBFAE9BF0F727D52B68779D4A3F0DBA8D5C9* __this, uint32_t ___0_x, uint32_t ___1_y, uint32_t ___2_z, uint32_t ___3_w, const RuntimeMethod* method) 
 {
 	{

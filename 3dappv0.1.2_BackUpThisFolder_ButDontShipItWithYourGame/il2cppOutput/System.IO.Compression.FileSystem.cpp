@@ -657,7 +657,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Stream_CopyTo_m61DC54FF3708C2B8AB5C5D63D
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 88982
+// Method Definition Index: 89131
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ZipArchive_t6469B8DB5F18FB4C7E24F625D0E53EA635D31C41* ZipFile_Open_m6F83ACFED32799E052503C5CEAE6DD0D145FCC8D (String_t* ___0_archiveFileName, int32_t ___1_mode, Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___2_entryNameEncoding, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -771,7 +771,7 @@ IL_005d:
 		return L_13;
 	}
 }
-// Method Definition Index: 88983
+// Method Definition Index: 89132
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ZipFile_CreateFromDirectory_m80565C16FD9FCBE1C421B8A8E3E315EB74B23877 (String_t* ___0_sourceDirectoryName, String_t* ___1_destinationArchiveFileName, const RuntimeMethod* method) 
 {
 	Nullable_1_tAC8899D7718BEF36A8590184EFBCA842A1BC9AB1 V_0;
@@ -785,7 +785,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ZipFile_CreateFromDirectory_m80565C16FD9
 		return;
 	}
 }
-// Method Definition Index: 88984
+// Method Definition Index: 89133
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ZipFile_DoCreateFromDirectory_m3225FCB59A0EDA74A3FED3858155FC2923DBD863 (String_t* ___0_sourceDirectoryName, String_t* ___1_destinationArchiveFileName, Nullable_1_tAC8899D7718BEF36A8590184EFBCA842A1BC9AB1 ___2_compressionLevel, bool ___3_includeBaseDirectory, Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___4_entryNameEncoding, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1125,7 +1125,7 @@ IL_0151:
 		return;
 	}
 }
-// Method Definition Index: 88985
+// Method Definition Index: 89134
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ZipFile_EntryFromPath_m86DD579B0B7191BD2C961B8E47BC3832A82FCE7A (String_t* ___0_entry, int32_t ___1_offset, int32_t ___2_length, CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB** ___3_buffer, bool ___4_appendPathSeparator, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1330,7 +1330,7 @@ IL_0092:
 		return L_47;
 	}
 }
-// Method Definition Index: 88986
+// Method Definition Index: 89135
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ZipFile_EnsureCapacity_m61A3D212DC6CBACFE57140BF095A849607493604 (CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB** ___0_buffer, int32_t ___1_min, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1393,7 +1393,7 @@ IL_002e:
 		return;
 	}
 }
-// Method Definition Index: 88987
+// Method Definition Index: 89136
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ZipFile_IsDirEmpty_m047A2732228B0C7A9CCEC311958381DCB264635C (DirectoryInfo_tEAEEC018EB49B4A71907FFEAFE935FAA8F9C1FE2* ___0_possiblyEmptyDir, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1472,7 +1472,7 @@ IL_0027:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 88988
+// Method Definition Index: 89137
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ZipArchiveEntry_tEFD75A0570102F8A3DF70A038302146B46071DD4* ZipFileExtensions_DoCreateEntryFromFile_m0B0768102927FBBB004A43ECE057BE6680B91F26 (ZipArchive_t6469B8DB5F18FB4C7E24F625D0E53EA635D31C41* ___0_destination, String_t* ___1_sourceFileName, String_t* ___2_entryName, Nullable_1_tAC8899D7718BEF36A8590184EFBCA842A1BC9AB1 ___3_compressionLevel, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1705,7 +1705,7 @@ IL_00c4:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-// Method Definition Index: 443
+// Method Definition Index: 446
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline (String_t* __this, const RuntimeMethod* method) 
 {
 	{
@@ -1713,7 +1713,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t String_get_Length_m42625D
 		return L_0;
 	}
 }
-// Method Definition Index: 9811
+// Method Definition Index: 9851
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ArrayPool_1_t3CE8332C9DFE03FF160AB0CE0FF17DF7792E0E4B* ArrayPool_1_get_Shared_m8EB88B4EDF81135B55DB0F33A749B8087FE4646F_gshared_inline (const RuntimeMethod* method) 
 {
 	{
@@ -1722,7 +1722,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ArrayPool_1_t3CE8332C9DFE03FF160A
 		return L_0;
 	}
 }
-// Method Definition Index: 1771
+// Method Definition Index: 1775
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Nullable_1_get_HasValue_mB1F55188CDD50D6D725D41F55D2F2540CD15FB20_gshared_inline (Nullable_1_t163D49A1147F217B7BD43BE8ACC8A5CC6B846D14* __this, const RuntimeMethod* method) 
 {
 	{
