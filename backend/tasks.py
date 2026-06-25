@@ -391,7 +391,7 @@ def run_pipeline(job_id: str, video_path: Path, session_dir: Path, jobs: dict):
         run_step([
             "ffmpeg", "-i", str(video_path),
             "-qscale:v", "1",
-            "-vf", "fps=6,scale=800:800:force_original_aspect_ratio=decrease",
+            "-vf", "fps=3,scale=800:800:force_original_aspect_ratio=decrease",
             str(images_dir / "%04d.jpg")
         ], session_dir)
 
@@ -403,7 +403,7 @@ def run_pipeline(job_id: str, video_path: Path, session_dir: Path, jobs: dict):
             "--SiftExtraction.max_num_features", "16384"
         ], session_dir)
 
-        run_step(["colmap", "exhaustive_matcher",
+        run_step(["colmap", "sequential_matcher",
             "--database_path", str(db_path)
         ], session_dir)
 
@@ -475,7 +475,7 @@ def run_pipeline_from_images(job_id: str, session_dir: Path, jobs: dict):
             "--SiftExtraction.max_num_features", "16384"
         ], session_dir)
 
-        run_step(["colmap", "exhaustive_matcher",
+        run_step(["colmap", "sequential_matcher",
             "--database_path", str(db_path)
         ], session_dir)
 
