@@ -9,3 +9,14 @@ build/
 *.apk
 3dappv0.1.2_BackUpThisFolder_ButDontShipItWithYourGame/
 subcheck.py
+3dappv0/Library/
+3dappv0/Temp/
+3dappv0/Obj/
+3dappv0/Build/
+3dappv0/Builds/
+3dappv0/Logs/
+3dappv0/UserSettings/
+*_BackUpThisFolder_*/
+*.apk
+*.ply
+*.mp4
