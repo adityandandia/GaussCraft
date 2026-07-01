@@ -20,3 +20,7 @@ subcheck.py
 *.apk
 *.ply
 *.mp4
+*_BackUpThisFolder_*/
+*.apk
+*.ply
+*.mp4
