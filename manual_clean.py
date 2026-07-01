@@ -3,7 +3,7 @@ import open3d as o3d
 import numpy as np
 from plyfile import PlyData, PlyElement
 
-input_file = "/home/cave/3dapp/workspace/1ca53e1e-9f70-438a-b8af-832235c57810/output/point_cloud/iteration_30000/point_cloud.py"
+input_file = "/home/cave/3dapp_workspace_data/1ca53e1e-9f70-438a-b8af-832235c57810/output/point_cloud/iteration_30000/point_cloud.py"
 output_file = "/home/cave/3dapp/outputs/cleaned.splat"
 
 print(f"Reading {input_file}...")

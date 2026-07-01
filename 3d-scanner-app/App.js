@@ -3,7 +3,7 @@ import { StyleSheet, Text, View, TouchableOpacity, Alert, ActivityIndicator } fr
 import { CameraView, useCameraPermissions, useMicrophonePermissions } from 'expo-camera';
 
 // ⚠️ REPLACE WITH YOUR CURRENT NGROK URL (NO SLASH AT THE END)
-const NGROK_URL = "https://upset-eyes-roll.loca.lt";
+const NGROK_URL = "https://glazing-chaperone-bazooka.ngrok-free.dev";
 
 export default function App() {
   const [cameraPermission, requestCameraPermission] = useCameraPermissions();

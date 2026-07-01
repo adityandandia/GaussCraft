@@ -1,8 +1,8 @@
 import numpy as np
 import struct
 
-input_path = "/home/cave/3dapp/workspace/7f8bf6d6-d3e5-4c74-b265-76117db625ac/output/point_cloud/iteration_7000/point_cloud.ply"
-output_path = "/home/cave/3dapp/workspace/cleaned_splat.ply"
+input_path = "/home/cave/3dapp_workspace_data/7f8bf6d6-d3e5-4c74-b265-76117db625ac/output/point_cloud/iteration_7000/point_cloud.ply"
+output_path = "/home/cave/3dapp_workspace_data/cleaned_splat.ply"
 
 # Step 1 — read header
 with open(input_path, "rb") as f:

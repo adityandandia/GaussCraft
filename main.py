@@ -23,8 +23,8 @@ app.add_middleware(
     expose_headers=["*"] 
 )
 
-BASE_WORKSPACE = Path("/home/cave/3dapp/workspace")
-PLY_PATH = "/home/cave/3dapp/workspace" 
+BASE_WORKSPACE = Path("/home/cave/3dapp_workspace_data")
+PLY_PATH = "/home/cave/3dapp_workspace_data" 
 
 # Include routes from api_routes.py
 app.include_router(router)

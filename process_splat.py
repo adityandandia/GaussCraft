@@ -1,8 +1,8 @@
 import open3d as o3d
 import numpy as np
 
-input_path = "/home/cave/3dapp/workspace/7f8bf6d6-d3e5-4c74-b265-76117db625ac/output/point_cloud/iteration_7000/point_cloud.ply"
-output_path = "/home/cave/3dapp/workspace/cleaned_point_cloud.ply"
+input_path = "/home/cave/3dapp_workspace_data/7f8bf6d6-d3e5-4c74-b265-76117db625ac/output/point_cloud/iteration_7000/point_cloud.ply"
+output_path = "/home/cave/3dapp_workspace_data/cleaned_point_cloud.ply"
 
 print("Loading...")
 pcd = o3d.io.read_point_cloud(input_path)
