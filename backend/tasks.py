@@ -425,7 +425,7 @@ def run_pipeline(job_id: str, video_path: Path, session_dir: Path, jobs: dict):
             print(f"Optimization failed: {e}")
 
         _set(jobs, job_id, status="done", progress=100)
-        jobs[job_id]["modelUrl"] = f"/view/{job_id}"
+        jobs[job_id]["modelUrl"] = f"/api/view/{job_id}"
         return cleaned_ply
 
     except Exception:
@@ -520,7 +520,7 @@ def run_pipeline_from_images(job_id: str, session_dir: Path, jobs: dict):
             print(f"Optimization failed: {e}")
 
         _set(jobs, job_id, status="done", progress=100)
-        jobs[job_id]["modelUrl"] = f"/view/{job_id}"
+        jobs[job_id]["modelUrl"] = f"/api/view/{job_id}"
         return cleaned_ply
 
     except Exception:

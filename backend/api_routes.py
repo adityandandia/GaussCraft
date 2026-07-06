@@ -1,5 +1,6 @@
-from fastapi import APIRouter, UploadFile, File, Form, BackgroundTasks, HTTPException
+from fastapi import FastAPI,APIRouter, UploadFile, File, Form, BackgroundTasks, HTTPException
 from fastapi.responses import FileResponse, HTMLResponse
+from fastapi.middleware.cors import CORSMiddleware
 import uuid
 import shutil
 import os
@@ -78,18 +79,13 @@ async def upload(
 
 @router.get("/jobs/{job_id}")
 async def get_job(job_id: str):
-    """
-    Polled every 3s by the Android client.
-    Returns id, title, status, progress, modelUrl exactly as expected.
-    """
     if job_id not in jobs:
         raise HTTPException(status_code=404, detail="Job not found")
 
     job = jobs[job_id]
 
-    # Auto-populate modelUrl once the pipeline finishes, if tasks.py hasn't already
     if job.get("status") == "done" and not job.get("modelUrl"):
-        job["modelUrl"] = f"/view/{job_id}"
+        job["modelUrl"] = f"/api/view/{job_id}"
 
     return job
 
@@ -114,7 +110,7 @@ def download_ply(job_id: str):
     return FileResponse(
         path=str(ply_path),
         media_type="application/octet-stream",
-        filename="point_cloud.ply"
+        headers={"Content-Disposition": "inline"}
     )
 
 
@@ -122,7 +118,6 @@ def download_ply(job_id: str):
 # This is what gets exposed as `modelUrl` once a job is done.
 @router.get("/view/{job_id}", response_class=HTMLResponse)
 def view_splat(job_id: str):
-    # We use double braces {{ }} for CSS and JS to escape Python's f-string formatting
     html_content = f"""
     <!DOCTYPE html>
     <html lang="en">
@@ -131,8 +126,8 @@ def view_splat(job_id: str):
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
         <title>3D Splat Viewer</title>
         <style>
-            body {{ margin: 0; overflow: hidden; background-color: #111; font-family: sans-serif; }}
-            #loading {{ position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; font-size: 18px; }}
+            body {{ margin: 0; overflow: hidden; background-color: #111; font-family: monospace; }}
+            #loading {{ position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; font-size: 14px; max-width: 90%; word-break: break-all; text-align: center; }}
         </style>
 
         <script async src="https://unpkg.com/es-module-shims@1.8.0/dist/es-module-shims.js"></script>
@@ -150,33 +145,51 @@ def view_splat(job_id: str):
         <div id="loading">Loading 3D Splat...</div>
 
         <script type="module">
-            import * as GaussianSplats3D from '@mkkellogg/gaussian-splats-3d';
-
-            // 1. Initialize the viewer
-            const viewer = new GaussianSplats3D.Viewer({{
-                'initialCameraPosition': [0, 0, 5],
-                'initialCameraLookAt': [0, 0, 0],
-                'ignoreDevicePixelRatio': false,
-                'sharedMemoryForWorkers': false // <--- SECURITY BYPASS ADDED HERE
-            }});
-
-            // 2. Fetch the specific PLY file using the injected job_id
             const jobId = "{job_id}";
-            const plyUrl = `/download/${{jobId}}/point_cloud.ply`;
+            const plyUrl = `/api/download/${{jobId}}/point_cloud.ply?ngrok-skip-browser-warning=true`;
+            const loadingEl = document.getElementById('loading');
 
-            // 3. Load the data using the correct API and start the renderer
-            viewer.addSplatScene(plyUrl, {{
-                'splatAlphaRemovalThreshold': 5 // Cleans up light fog
-            }})
-            .then(() => {{
-                // Hide loading text when rendering begins
-                document.getElementById('loading').style.display = 'none';
-                viewer.start();
-            }})
-            .catch((err) => {{
-                document.getElementById('loading').innerText = "Error loading 3D model.";
-                console.error(err);
-            }});
+            function showError(label, err) {{
+                loadingEl.innerText = label + ": " + (err && err.message ? err.message : String(err));
+                loadingEl.style.color = "#ff6b6b";
+            }}
+
+            // Step 1: manually verify the fetch works and inspect the response
+            fetch(plyUrl)
+                .then(res => {{
+                    loadingEl.innerText = "Fetch status: " + res.status + " | Content-Type: " + res.headers.get("content-type") + " | Content-Length: " + res.headers.get("content-length");
+                    if (!res.ok) {{
+                        throw new Error("HTTP " + res.status);
+                    }}
+                    return res.arrayBuffer();
+                }})
+                .then(buffer => {{
+                    loadingEl.innerText += " | Bytes received: " + buffer.byteLength;
+
+                    // Step 2: now try loading the actual viewer
+                    import('@mkkellogg/gaussian-splats-3d').then(GaussianSplats3D => {{
+                        try {{
+                            const viewer = new GaussianSplats3D.Viewer({{
+                                'initialCameraPosition': [0, 0, 5],
+                                'initialCameraLookAt': [0, 0, 0],
+                                'ignoreDevicePixelRatio': false,
+                                'sharedMemoryForWorkers': false
+                            }});
+
+                            viewer.addSplatScene(plyUrl, {{
+                                'splatAlphaRemovalThreshold': 5
+                            }})
+                            .then(() => {{
+                                loadingEl.style.display = 'none';
+                                viewer.start();
+                            }})
+                            .catch(err => showError("Viewer load error", err));
+                        }} catch (err) {{
+                            showError("Viewer init error", err);
+                        }}
+                    }}).catch(err => showError("Module import error", err));
+                }})
+                .catch(err => showError("Fetch error", err));
         </script>
     </body>
     </html>
