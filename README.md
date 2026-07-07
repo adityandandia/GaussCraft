@@ -97,6 +97,8 @@ The post-processing step is implemented from scratch rather than via Open3D:
 - numpy, scipy, scikit-learn (used for cleanup — Open3D is **not** required)
 - `numpy<2` (required by FastGS)
 
+- Run setup_and_run.sh, one all-in-one script that does compatibility checking, dependency install, environment setup, and finally runs the server as a receive→process → send loop.
+
 ### Backend
 
 ```bash
