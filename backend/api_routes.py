@@ -85,7 +85,7 @@ async def get_job(job_id: str):
     job = jobs[job_id]
 
     if job.get("status") == "done" and not job.get("modelUrl"):
-        job["modelUrl"] = f"/api/view/{job_id}"
+        job["modelUrl"] = f"/api/download/{job_id}/point_cloud.ply"
 
     return job
 
