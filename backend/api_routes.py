@@ -120,78 +120,106 @@ def download_ply(job_id: str):
 def view_splat(job_id: str):
     html_content = f"""
     <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-        <title>3D Splat Viewer</title>
-        <style>
-            body {{ margin: 0; overflow: hidden; background-color: #111; font-family: monospace; }}
-            #loading {{ position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; font-size: 14px; max-width: 90%; word-break: break-all; text-align: center; }}
-        </style>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>3D Splat Viewer</title>
+    <style>
+        body, html { 
+            margin: 0; 
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden; 
+            background-color: #111; 
+            font-family: monospace; 
+        }
+        #canvas-container {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+        #loading { 
+            position: absolute; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            color: white; 
+            font-size: 14px; 
+            max-width: 90%; 
+            word-break: break-all; 
+            text-align: center; 
+            z-index: 10;
+        }
+    </style>
 
-        <script async src="https://unpkg.com/es-module-shims@1.8.0/dist/es-module-shims.js"></script>
+    <script async src="https://unpkg.com/es-module-shims@1.8.0/dist/es-module-shims.js"></script>
 
-        <script type="importmap">
-        {{
-            "imports": {{
-                "three": "https://unpkg.com/three@0.157.0/build/three.module.js",
-                "@mkkellogg/gaussian-splats-3d": "https://unpkg.com/@mkkellogg/gaussian-splats-3d@0.4.7/build/gaussian-splats-3d.module.js"
-            }}
-        }}
-        </script>
-    </head>
-    <body>
-        <div id="loading">Loading 3D Splat...</div>
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://unpkg.com/three@0.157.0/build/three.module.js",
+            "@mkkellogg/gaussian-splats-3d": "https://unpkg.com/@mkkellogg/gaussian-splats-3d@0.4.7/build/gaussian-splats-3d.module.js"
+        }
+    }
+    </script>
+</head>
+<body>
+    <div id="loading">Initializing 3D Splat Engine...</div>
+    <div id="canvas-container"></div>
 
-        <script type="module">
-            const jobId = "{job_id}";
-            const plyUrl = `/api/download/${{jobId}}/point_cloud.ply?ngrok-skip-browser-warning=true`;
-            const loadingEl = document.getElementById('loading');
+    <script type="module">
+        // Injected by your server template engine
+        const jobId = "{job_id}";
+        const plyUrl = `/api/download/${jobId}/point_cloud.ply?ngrok-skip-browser-warning=true`;
+        const loadingEl = document.getElementById('loading');
 
-            function showError(label, err) {{
-                loadingEl.innerText = label + ": " + (err && err.message ? err.message : String(err));
-                loadingEl.style.color = "#ff6b6b";
-            }}
+        function showError(label, err) {
+            loadingEl.innerText = label + ": " + (err && err.message ? err.message : String(err));
+            loadingEl.style.color = "#ff6b6b";
+        }
 
-            // Step 1: manually verify the fetch works and inspect the response
-            fetch(plyUrl)
-                .then(res => {{
-                    loadingEl.innerText = "Fetch status: " + res.status + " | Content-Type: " + res.headers.get("content-type") + " | Content-Length: " + res.headers.get("content-length");
-                    if (!res.ok) {{
-                        throw new Error("HTTP " + res.status);
-                    }}
-                    return res.arrayBuffer();
-                }})
-                .then(buffer => {{
-                    loadingEl.innerText += " | Bytes received: " + buffer.byteLength;
+        // Dynamically load the library and initialize immediately to avoid double fetching files
+        import('@mkkellogg/gaussian-splats-3d')
+            .then(GaussianSplats3D => {
+                try {
+                    const viewer = new GaussianSplats3D.Viewer({
+                        'container': document.getElementById('canvas-container'),
+                        'initialCameraPosition': [0, 0, 5],
+                        'initialCameraLookAt': [0, 0, 0],
+                        'ignoreDevicePixelRatio': false,
+                        'sharedMemoryForWorkers': false, // Vital for Android WebView compatibility
+                        'selfClosed': true
+                    });
 
-                    // Step 2: now try loading the actual viewer
-                    import('@mkkellogg/gaussian-splats-3d').then(GaussianSplats3D => {{
-                        try {{
-                            const viewer = new GaussianSplats3D.Viewer({{
-                                'initialCameraPosition': [0, 0, 5],
-                                'initialCameraLookAt': [0, 0, 0],
-                                'ignoreDevicePixelRatio': false,
-                                'sharedMemoryForWorkers': false
-                            }});
+                    loadingEl.innerText = "Downloading and processing 3D data...";
 
-                            viewer.addSplatScene(plyUrl, {{
-                                'splatAlphaRemovalThreshold': 5
-                            }})
-                            .then(() => {{
-                                loadingEl.style.display = 'none';
-                                viewer.start();
-                            }})
-                            .catch(err => showError("Viewer load error", err));
-                        }} catch (err) {{
-                            showError("Viewer init error", err);
-                        }}
-                    }}).catch(err => showError("Module import error", err));
-                }})
-                .catch(err => showError("Fetch error", err));
-        </script>
-    </body>
-    </html>
+                    // The library handles fetching natively in a single continuous stream
+                    viewer.addSplatScene(plyUrl, {
+                        'splatAlphaRemovalThreshold': 5,
+                        'showLoadingUI': false
+                    })
+                    .then(() => {
+                        loadingEl.style.display = 'none';
+                        viewer.start();
+                    })
+                    .catch(err => showError("Viewer load error", err));
+
+                    window.addEventListener('resize', () => {
+                        viewer.resize();
+                    });
+
+                } catch (err) {
+                    showError("Viewer init error", err);
+                }
+            })
+            .catch(err => showError("Module import error", err));
+    </script>
+</body>
+</html>
     """
     return html_content
