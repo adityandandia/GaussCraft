@@ -437,11 +437,12 @@ def run_pipeline(job_id: str, video_path: Path, session_dir: Path, jobs: dict):
 
         copy_sparse_txt(dense_dir)
 
-        fastgs_dir = Path("/home/cave/3dapp/FastGS")
+        fastgs_dir = Path(os.environ.get("FASTGS_DIR", "/home/cave/3dapp/FastGS"))
+        fastgs_python = os.environ.get("FASTGS_PYTHON", "/home/cave/miniconda3/envs/fastgs/bin/python")
         os.makedirs(output_dir, exist_ok=True)
 
         run_step([
-            "/home/cave/miniconda3/envs/fastgs/bin/python", "train.py",
+            fastgs_python, "train.py",
             "-s", str(dense_dir),
             "-m", str(output_dir),
             "--iterations", "10000"
@@ -509,11 +510,12 @@ def run_pipeline_from_images(job_id: str, session_dir: Path, jobs: dict):
 
         copy_sparse_txt(dense_dir)
 
-        fastgs_dir = Path("/home/cave/3dapp/FastGS")
+        fastgs_dir = Path(os.environ.get("FASTGS_DIR", "/home/cave/3dapp/FastGS"))
+        fastgs_python = os.environ.get("FASTGS_PYTHON", "/home/cave/miniconda3/envs/fastgs/bin/python")
         os.makedirs(output_dir, exist_ok=True)
 
         run_step([
-            "/home/cave/miniconda3/envs/fastgs/bin/python", "train.py",
+            fastgs_python, "train.py",
             "-s", str(dense_dir),
             "-m", str(output_dir),
             "--iterations", "10000"
