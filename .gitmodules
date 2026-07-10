@@ -1,0 +1,3 @@
+[submodule "FastGS"]
+	path = FastGS
+	url = git@github.com:adityandandia/FastGS.git
