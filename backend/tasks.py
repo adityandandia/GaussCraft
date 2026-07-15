@@ -5,12 +5,21 @@ import struct
 import numpy as np
 from pathlib import Path
 import sys
+<<<<<<< Updated upstream
+=======
+from backend import metrics as m
+from backend.cleanup import audit_log
+from backend.cleanup.statistical_filters import filter_opacity_mad
+from backend.segmentation import segment_object
+from backend.colmap_utils import get_reliable_colmap_points, filter_gaussians_by_reliability, get_camera_centers
+>>>>>>> Stashed changes
 
 # ── scikit-learn: DBSCAN (density-based floater removal)
 from sklearn.cluster import DBSCAN
 
 # ── scipy: RANSAC plane fitting (geometry-inconsistent point removal)
 from scipy.spatial import cKDTree
+SEGMENT_OBJECT = True
 
 # NOTE: Open3D removed entirely. No more sys.modules hack needed.
 
@@ -24,10 +33,18 @@ def run_step(command, cwd):
 
     # 1. Copy the current environment variables
     custom_env = os.environ.copy()
+<<<<<<< Updated upstream
 
     # 2. Add the fix for the MKL/OpenMP conflict
     custom_env["MKL_THREADING_LAYER"] = "GNU"
 
+=======
+    
+    # 2. Fix threading and display conflicts
+    custom_env["MKL_THREADING_LAYER"] = "GNU"
+    custom_env["QT_QPA_PLATFORM"] = "offscreen"  # Prevents headless COLMAP crash
+    
+>>>>>>> Stashed changes
     result = subprocess.run(
         command,
         cwd=cwd,
@@ -186,14 +203,49 @@ def _ransac_plane_inlier_mask(
 
     return consistent_mask
 
+# ───────────────────────────────────────────────────────────
+# ADAPTIVE EPS  (k-distance elbow method for DBSCAN)
+# ───────────────────────────────────────────────────────────
 
+def _estimate_eps_via_kdistance(xyz: np.ndarray, k: int = 15) -> float:
+    """
+    Estimates a good DBSCAN eps by finding the 'elbow' in the sorted
+    k-th nearest neighbour distance curve, instead of a fixed fraction
+    of scene extent (which breaks across differing point densities).
+    """
+    tree = cKDTree(xyz)
+    dists, _ = tree.query(xyz, k=k + 1)  # +1 because the point itself is included
+    k_dists = np.sort(dists[:, -1])
+
+    # Elbow = point of maximum curvature on the sorted k-distance curve
+    n = len(k_dists)
+    x = np.arange(n)
+    # normalize both axes to [0,1] so curvature isn't scale-dependent
+    x_norm = x / (n - 1)
+    y_norm = (k_dists - k_dists.min()) / (k_dists.max() - k_dists.min() + 1e-12)
+
+    # distance from each point to the line connecting first and last point
+    p1 = np.array([x_norm[0], y_norm[0]])
+    p2 = np.array([x_norm[-1], y_norm[-1]])
+    line_vec = p2 - p1
+    line_vec_norm = line_vec / np.linalg.norm(line_vec)
+    pts = np.stack([x_norm, y_norm], axis=1) - p1
+    proj_len = pts @ line_vec_norm
+    proj_pts = np.outer(proj_len, line_vec_norm)
+    perp_dist = np.linalg.norm(pts - proj_pts, axis=1)
+
+    elbow_idx = np.argmax(perp_dist)
+    return float(k_dists[elbow_idx])
+   
+  
 # ───────────────────────────────────────────────────────────
 # MAIN CLEANER
 # ───────────────────────────────────────────────────────────
 
 def clean_splat(input_path: Path, output_path: Path):
     print(f"\n[CLEANING SPLAT]: {input_path}")
-
+    audit_log.start_audit_log(output_path.parent, input_path)
+            
     header_lines, data, properties, num_vertices = _read_ply(input_path)
     num_props = len(properties)
 
@@ -235,10 +287,14 @@ def clean_splat(input_path: Path, output_path: Path):
         print(f"    -> Removed {np.sum(~scale_mask)} scale-degenerate Gaussians "
               f"({np.sum(~bloat_mask)} bloated, {np.sum(~aspect_mask)} needle, "
               f"{np.sum(~dust_mask)} dust).")
+        audit_log.log_removal(output_path.parent, "Stage 1 - Scale Filter", "bloated (max axis over threshold)", int(np.sum(~bloat_mask)), threshold=float(bloat_threshold))
+        audit_log.log_removal(output_path.parent, "Stage 1 - Scale Filter", "needle (aspect ratio over threshold)", int(np.sum(~aspect_mask)), threshold=50.0)
+        audit_log.log_removal(output_path.parent, "Stage 1 - Scale Filter", "dust (max axis under threshold)", int(np.sum(~dust_mask)), threshold=float(dust_threshold))
     else:
         print("  [Stage 1] Scale properties not found — skipping scale filter.")
         cleaned_data = data.copy()
 
+<<<<<<< Updated upstream
     # STAGE 2 — OPACITY FILTER
     print("  [Stage 2] Opacity Filter...")
     raw_opacity = cleaned_data[:, o_i]
@@ -247,6 +303,16 @@ def clean_splat(input_path: Path, output_path: Path):
     op_mask = opacity_sigmoid > op_threshold
     cleaned_data = cleaned_data[op_mask]
     print(f"    -> Removed {np.sum(~op_mask)} transparent Gaussians (threshold={op_threshold:.4f}).")
+=======
+    # ════════════════════════════════════════════════════════
+    # STAGE 2 — OPACITY FILTER (MAD-based adaptive threshold)
+    # Remove near-transparent fog / unoptimized Gaussians using a
+    # robust Median Absolute Deviation cut instead of a fixed
+    # percentile (which drops a constant 5% regardless of how much
+    # of the scene is actually contaminated).
+    # ════════════════════════════════════════════════════════
+    cleaned_data = filter_opacity_mad(cleaned_data, o_i, output_path)
+>>>>>>> Stashed changes
 
     # STAGE 3 — RADIAL CROP
     print("  [Stage 3] Radial Crop...")
@@ -258,12 +324,21 @@ def clean_splat(input_path: Path, output_path: Path):
     cleaned_data = cleaned_data[radial_mask]
     print(f"    -> Removed {np.sum(~radial_mask)} outer-explosion points "
           f"(radius limit={radius_limit:.4f}).")
+    audit_log.log_removal(output_path.parent, "Stage 3 - Radial Crop", "distance beyond 80th percentile radius", int(np.sum(~radial_mask)), threshold=float(radius_limit))
 
     # STAGE 4 — DBSCAN
     print("  [Stage 4] DBSCAN Cluster Isolation...")
     xyz_s4 = cleaned_data[:, [x_i, y_i, z_i]]
+<<<<<<< Updated upstream
     eps = 0.02 * scene_extent
     min_samples = 15
+=======
+
+    # eps: neighbourhood radius. We use 1% of scene extent as a reasonable
+    # adaptive default. Tune upward if real geometry gets fragmented.
+    min_samples = 15  # minimum neighbours to be a core point
+    eps = _estimate_eps_via_kdistance(xyz_s4, k=min_samples)
+>>>>>>> Stashed changes
 
     db = DBSCAN(eps=eps, min_samples=min_samples, algorithm="ball_tree", n_jobs=-1).fit(xyz_s4)
     labels = db.labels_
@@ -277,7 +352,12 @@ def clean_splat(input_path: Path, output_path: Path):
         unique_labels = unique_labels[sorted_idx]
         counts = counts[sorted_idx]
 
+<<<<<<< Updated upstream
         size_threshold = 0.005 * counts[0]
+=======
+        # Keep clusters that are > 1% of the largest cluster's population
+        size_threshold = 0.0015 * counts[0]
+>>>>>>> Stashed changes
         kept_labels = set(unique_labels[counts >= size_threshold].tolist())
 
         dbscan_mask = np.array([lbl in kept_labels for lbl in labels])
@@ -287,9 +367,20 @@ def clean_splat(input_path: Path, output_path: Path):
               f"removed {noise_removed} noise points + {cluster_removed} small-cluster floaters.")
 
     cleaned_data = cleaned_data[dbscan_mask]
+<<<<<<< Updated upstream
 
     # STAGE 5 — RANSAC (optional)
+=======
+    if len(counts) > 0:
+        audit_log.log_removal(output_path.parent, "Stage 4 - DBSCAN", "noise points (no cluster)", int(noise_removed), threshold=float(eps))
+        audit_log.log_removal(output_path.parent, "Stage 4 - DBSCAN", "small floater clusters below size threshold", int(cluster_removed), threshold=float(size_threshold))
+        
+    # ════════════════════════════════════════════════════════
+    # STAGE 5 — RANSAC PLANE CONSISTENCY CHECK  (optional)
+    # ════════════════════════════════════════════════════════
+>>>>>>> Stashed changes
     USE_RANSAC = False
+    USE_COLOR_FILTER = False
 
     if USE_RANSAC:
         print("  [Stage 5] RANSAC Plane Consistency...")
@@ -314,8 +405,13 @@ def clean_splat(input_path: Path, output_path: Path):
         cleaned_data = cleaned_data[~ransac_remove]
         print(f"    -> RANSAC: removed {np.sum(ransac_remove)} geometry-inconsistent "
               f"isolated points.")
+        audit_log.log_removal(output_path.parent, "Stage 5 - RANSAC Plane Consistency", "plane-inconsistent and spatially isolated", int(np.sum(ransac_remove)), threshold=None)
     else:
         print("  [Stage 5] RANSAC skipped (USE_RANSAC=False).")
+    
+    if USE_COLOR_FILTER:
+        from backend.cleanup.appearance_filters import filter_color_consistency
+        cleaned_data = filter_color_consistency(cleaned_data, properties, [x_i, y_i, z_i], output_path)
 
     removed_total = num_vertices - len(cleaned_data)
     kept_pct = 100 * len(cleaned_data) / num_vertices
@@ -325,13 +421,21 @@ def clean_splat(input_path: Path, output_path: Path):
     _write_ply(output_path, header_lines, cleaned_data, num_props)
     print(f"  Saved cleaned splat → {output_path}")
 
-
 # ───────────────────────────────────────────────────────────
 # PIPELINE EXECUTION
 # ───────────────────────────────────────────────────────────
 
 def run_pipeline(job_id: str, video_path: Path, session_dir: Path, jobs: dict):
+    jobs[job_id] = "processing"
+    images_dir = session_dir / "images"
+    db_path    = session_dir / "database.db"
+    sparse_dir = session_dir / "sparse"
+    dense_dir  = session_dir / "dense"
+    output_dir = session_dir / "output"
+
+    # --- STAGE 1: Video Extraction (FFmpeg) ---
     try:
+<<<<<<< Updated upstream
         images_dir = session_dir / "images"
         db_path    = session_dir / "database.db"
         sparse_dir = session_dir / "sparse"
@@ -340,14 +444,26 @@ def run_pipeline(job_id: str, video_path: Path, session_dir: Path, jobs: dict):
 
         _set(jobs, job_id, status="colmap", progress=5)
 
+=======
+>>>>>>> Stashed changes
         run_step([
             "ffmpeg", "-i", str(video_path),
             "-qscale:v", "1",
             "-vf", "fps=3,scale=800:800:force_original_aspect_ratio=decrease",
             str(images_dir / "%04d.jpg")
         ], session_dir)
+<<<<<<< Updated upstream
         _set(jobs, job_id, progress=10)
+=======
+    except Exception as e:
+        print(f"\n[ERROR] FFmpeg extraction failed for job {job_id}: {e}")
+        jobs[job_id] = "failed_ffmpeg"
+        raise RuntimeError(f"FFmpeg extraction stage failed: {e}") from e
+>>>>>>> Stashed changes
 
+    # --- STAGE 2: Structure from Motion (COLMAP) ---
+    jobs[job_id] = "colmap"
+    try:
         run_step(["colmap", "feature_extractor",
             "--database_path", str(db_path),
             "--image_path", str(images_dir),
@@ -393,8 +509,18 @@ def run_pipeline(job_id: str, video_path: Path, session_dir: Path, jobs: dict):
         ], session_dir)
 
         copy_sparse_txt(dense_dir)
+<<<<<<< Updated upstream
         _set(jobs, job_id, status="fastgs", progress=50)
+=======
+    except Exception as e:
+        print(f"\n[ERROR] COLMAP reconstruction failed for job {job_id}: {e}")
+        jobs[job_id] = "failed_colmap"
+        raise RuntimeError(f"COLMAP stage failed: {e}") from e
+>>>>>>> Stashed changes
 
+    # --- STAGE 3: 3D Gaussian Splatting (FastGS) ---
+    jobs[job_id] = "fastgs"
+    try:
         fastgs_dir = Path(os.environ.get("FASTGS_DIR", "/home/cave/3dapp/FastGS"))
         fastgs_python = os.environ.get("FASTGS_PYTHON", "/home/cave/miniconda3/envs/fastgs/bin/python")
         os.makedirs(output_dir, exist_ok=True)
@@ -405,6 +531,7 @@ def run_pipeline(job_id: str, video_path: Path, session_dir: Path, jobs: dict):
             "-m", str(output_dir),
             "--iterations", "10000"
         ], fastgs_dir)
+<<<<<<< Updated upstream
         _set(jobs, job_id, status="post_processing", progress=80)
 
         raw_ply     = output_dir / "point_cloud" / "iteration_10000" / "point_cloud.ply"
@@ -432,10 +559,73 @@ def run_pipeline(job_id: str, video_path: Path, session_dir: Path, jobs: dict):
     except Exception:
         _set(jobs, job_id, status="failed")
         raise
+=======
+    except Exception as e:
+        print(f"\n[ERROR] FastGS training failed for job {job_id}: {e}")
+        jobs[job_id] = "failed_fastgs"
+        raise RuntimeError(f"FastGS training stage failed: {e}") from e
+
+    # --- STAGE 4: Semantic Whitelist & Post-Processing ---
+    jobs[job_id] = "post_processing"
+    try:
+        raw_ply       = output_dir / "point_cloud" / "iteration_10000" / "point_cloud.ply"
+        segmented_ply = session_dir / "segmented_point_cloud.ply"
+        cleaned_ply   = session_dir / "point_cloud.ply"
+        
+        # 1. --- Semantic Object Whitelisting ---
+        colmap_sparse_dir = dense_dir / "sparse"
+        if SEGMENT_OBJECT:
+            camera_centers = get_camera_centers(colmap_sparse_dir / "images.txt")
+            segment_object(raw_ply, camera_centers, segmented_ply)
+        else:
+            shutil.copy(raw_ply, segmented_ply)
+        # 2. Run the cleanup ON THE SEGMENTED PLY
+        clean_splat(segmented_ply, cleaned_ply)
+        
+        # 3. --- Forensic Observation Constraint ---
+        points3d_txt = dense_dir / "sparse" / "points3D.txt"
+        
+        # Extract points seen by at least 3 cameras
+        reliable_xyz = get_reliable_colmap_points(points3d_txt, min_observations=3)
+        
+        # Open the cleaned splat
+        header_lines, data, properties, num_vertices = _read_ply(cleaned_ply)
+        x_i, y_i, z_i = properties.index("x"), properties.index("y"), properties.index("z")
+        gaussian_xyz = data[:, [x_i, y_i, z_i]]
+        
+        scene_extent = np.percentile(np.linalg.norm(gaussian_xyz - np.median(gaussian_xyz, axis=0), axis=1), 90)
+        threshold = 0.03 * scene_extent 
+        
+        # Generate the reliability mask and filter
+        reliability_mask = filter_gaussians_by_reliability(gaussian_xyz, reliable_xyz, threshold)
+        defensible_data = data[reliability_mask]
+        
+        # Save the finalized, defensible PLY
+        _write_ply(cleaned_ply, header_lines, defensible_data, len(properties))
+        print(f"\n[FORENSIC AUDIT] Removed {len(data) - len(defensible_data)} uncorroborated points failing the 3-camera observation rule.")
+
+    except Exception as e:
+        print(f"\n[ERROR] Splat cleanup failed for job {job_id}: {e}")
+        jobs[job_id] = "failed_cleanup"
+        raise RuntimeError(f"Post-processing stage failed: {e}") from e
+
+    jobs[job_id] = "done"
+    return cleaned_ply
+>>>>>>> Stashed changes
 
 
 def run_pipeline_from_images(job_id: str, session_dir: Path, jobs: dict):
+    jobs[job_id] = "processing"
+    images_dir = session_dir / "images"
+    db_path    = session_dir / "database.db"
+    sparse_dir = session_dir / "sparse"
+    dense_dir  = session_dir / "dense"
+    output_dir = session_dir / "output"
+    
+    # --- STAGE 1: Structure from Motion (COLMAP) ---
+    jobs[job_id] = "colmap"
     try:
+<<<<<<< Updated upstream
         images_dir = session_dir / "images"
         db_path    = session_dir / "database.db"
         sparse_dir = session_dir / "sparse"
@@ -444,6 +634,8 @@ def run_pipeline_from_images(job_id: str, session_dir: Path, jobs: dict):
 
         _set(jobs, job_id, status="colmap", progress=10)
 
+=======
+>>>>>>> Stashed changes
         run_step(["colmap", "feature_extractor",
             "--database_path", str(db_path),
             "--image_path", str(images_dir),
@@ -489,8 +681,18 @@ def run_pipeline_from_images(job_id: str, session_dir: Path, jobs: dict):
         ], session_dir)
 
         copy_sparse_txt(dense_dir)
+<<<<<<< Updated upstream
         _set(jobs, job_id, status="fastgs", progress=50)
+=======
+    except Exception as e:
+        print(f"\n[ERROR] COLMAP reconstruction failed for job {job_id}: {e}")
+        jobs[job_id] = "failed_colmap"
+        raise RuntimeError(f"COLMAP stage failed: {e}") from e
+>>>>>>> Stashed changes
 
+    # --- STAGE 2: 3D Gaussian Splatting (FastGS) ---
+    jobs[job_id] = "fastgs"
+    try:
         fastgs_dir = Path(os.environ.get("FASTGS_DIR", "/home/cave/3dapp/FastGS"))
         fastgs_python = os.environ.get("FASTGS_PYTHON", "/home/cave/miniconda3/envs/fastgs/bin/python")
         os.makedirs(output_dir, exist_ok=True)
@@ -501,6 +703,7 @@ def run_pipeline_from_images(job_id: str, session_dir: Path, jobs: dict):
             "-m", str(output_dir),
             "--iterations", "10000"
         ], fastgs_dir)
+<<<<<<< Updated upstream
         _set(jobs, job_id, status="post_processing", progress=80)
 
         raw_ply     = output_dir / "point_cloud" / "iteration_10000" / "point_cloud.ply"
@@ -528,3 +731,52 @@ def run_pipeline_from_images(job_id: str, session_dir: Path, jobs: dict):
     except Exception:
         _set(jobs, job_id, status="failed")
         raise
+=======
+    except Exception as e:
+        print(f"\n[ERROR] FastGS training failed for job {job_id}: {e}")
+        jobs[job_id] = "failed_fastgs"
+        raise RuntimeError(f"FastGS training stage failed: {e}") from e
+
+    # --- STAGE 3: Semantic Whitelist & Post-Processing ---
+    jobs[job_id] = "post_processing"
+    try:
+        raw_ply       = output_dir / "point_cloud" / "iteration_10000" / "point_cloud.ply"
+        segmented_ply = session_dir / "segmented_point_cloud.ply"
+        cleaned_ply   = session_dir / "point_cloud.ply"
+        
+        # 1. --- Semantic Object Whitelisting ---
+        colmap_sparse_dir = dense_dir / "sparse"
+        if SEGMENT_OBJECT:
+            camera_centers = get_camera_centers(colmap_sparse_dir / "images.txt")
+            segment_object(raw_ply, camera_centers, segmented_ply)
+        else:
+            shutil.copy(raw_ply, segmented_ply)
+        
+        # 2. Run the cleanup ON THE SEGMENTED PLY
+        clean_splat(segmented_ply, cleaned_ply)
+        
+        # 3. --- Forensic Observation Constraint ---
+        points3d_txt = dense_dir / "sparse" / "points3D.txt"
+        reliable_xyz = get_reliable_colmap_points(points3d_txt, min_observations=3)
+        
+        header_lines, data, properties, num_vertices = _read_ply(cleaned_ply)
+        x_i, y_i, z_i = properties.index("x"), properties.index("y"), properties.index("z")
+        gaussian_xyz = data[:, [x_i, y_i, z_i]]
+        
+        scene_extent = np.percentile(np.linalg.norm(gaussian_xyz - np.median(gaussian_xyz, axis=0), axis=1), 90)
+        threshold = 0.03 * scene_extent 
+        
+        reliability_mask = filter_gaussians_by_reliability(gaussian_xyz, reliable_xyz, threshold)
+        defensible_data = data[reliability_mask]
+        
+        _write_ply(cleaned_ply, header_lines, defensible_data, len(properties))
+        print(f"\n[FORENSIC AUDIT] Removed {len(data) - len(defensible_data)} uncorroborated points failing the 3-camera observation rule.")
+
+    except Exception as e:
+        print(f"\n[ERROR] Splat cleanup failed for job {job_id}: {e}")
+        jobs[job_id] = "failed_cleanup"
+        raise RuntimeError(f"Post-processing stage failed: {e}") from e
+
+    jobs[job_id] = "done"
+    return cleaned_ply
+>>>>>>> Stashed changes
