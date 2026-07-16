@@ -71,7 +71,7 @@ The post-processing step is implemented from scratch rather than via Open3D:
 
 ```
 3dReConstruct/
-├── 3d-scanner-app/     # Unity Android app
+
 ├── backend/            # FastAPI reconstruction pipeline
 ├── FastGS/             # Gaussian Splatting submodule
 ├── outputs/            # generated .ply files (gitignored)
@@ -107,10 +107,6 @@ uvicorn main:app --reload
 > **Note (Windows/MSVC):** build FastGS with `-allow-unsupported-compiler`, and ensure the COLMAP source path points to the `dense/` reconstruction folder before training.
 
 > **Note (paths):** `backend/tasks.py` currently hardcodes the FastGS location (`/home/cave/3dapp/FastGS`) and the training interpreter (`/home/cave/miniconda3/envs/fastgs/bin/python`). Update these to match your environment, or parameterize them via config/env vars before running elsewhere.
-
-### Mobile app
-
-Open `3d-scanner-app/` in Unity 2022 LTS, build for Android, and point the app at your backend's endpoint.
 
 ## Pipeline notes
 
