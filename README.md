@@ -128,9 +128,7 @@ chmod +x setup_and_run.sh
 - FastGS training runs for 10,000 iterations with `--eval`, followed by a `render.py` pass for quality metrics (PSNR/SSIM), reported per job via `backend/metrics.py`.
 - `run_pipeline_from_images` provides an alternate entry point that skips video/ffmpeg and starts directly from a folder of images, reusing the same COLMAP → FastGS → cleanup chain.
 
-## Status
-
-🚧 Actively in development. Recent work: modularized cleanup into `backend/cleanup/`, added per-job audit logging, MAD-adaptive opacity filtering, adaptive DBSCAN `eps`, quality/reliability metrics, and per-stage pipeline error handling.
+Frontend Repo : [SplatStudio](https://github.com/adityandandia/SplatStudio)
 
 **Open items:**
 - Wire `backend/segmentation.py` and COLMAP-reliability filtering into `backend/tasks.py` — both are implemented and tested standalone but not yet called from the live pipeline.
