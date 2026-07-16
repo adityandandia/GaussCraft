@@ -42,11 +42,7 @@ Android capture → ffmpeg (frame extraction) → COLMAP (SfM) → FastGS (3D Ga
 
 ## App in action
 
-| Capture | Processing | Result |
-|---|---|---|
-| ![Capture screenshot placeholder](docs/images/capture-placeholder.png) | ![Processing screenshot placeholder](docs/images/processing-placeholder.png) | ![Rendered splat screenshot placeholder](docs/images/result-placeholder.png) |
-
-> Replace the placeholder images above with actual screenshots — add them to `docs/images/` as `capture-placeholder.png`, `processing-placeholder.png`, and `result-placeholder.png` (or update the paths/filenames to match).
+Checkout the app at [SplatStudio](https://github.com/adityandandia/SplatStudio). :))
 
 ## Architecture
 
