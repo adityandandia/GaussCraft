@@ -1,10 +1,9 @@
 import os
-<<<<<<< Updated upstream
-=======
+
 import shutil
 from fastapi import FastAPI, UploadFile, File, BackgroundTasks, Form
 from fastapi.middleware.cors import CORSMiddleware
->>>>>>> Stashed changes
+
 from pathlib import Path
 from fastapi import FastAPI, HTTPException
 from fastapi.responses import FileResponse
@@ -13,11 +12,10 @@ import uvicorn
 from backend.api_routes import router
 
 app = FastAPI()
-<<<<<<< Updated upstream
+
 
 # CORS Middleware (Correctly configured)
-=======
->>>>>>> Stashed changes
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -27,7 +25,7 @@ app.add_middleware(
     expose_headers=["*"]
 )
 
-<<<<<<< Updated upstream
+
 BASE_WORKSPACE = Path("/home/cave/3dapp_workspace_data")
 
 # Mount all routes from api_routes.py under /api, so they resolve at
@@ -68,7 +66,6 @@ def serve_ply():
 
 
 # --- Startup ---
-=======
 BASE_WORKSPACE = Path("/home/cave/3dapp/workspace")
 
 app.include_router(router)  # router already carries the /api prefix
@@ -84,6 +81,6 @@ async def upload_video(background_tasks: BackgroundTasks, file: UploadFile = Fil
     background_tasks.add_task(run_pipeline, job_id, video_path, session_dir)
     return {"job_id": job_id, "status": "started"}
 
->>>>>>> Stashed changes
+
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8000)
