@@ -1,4 +1,4 @@
-# 3dReConstruct
+# GaussCraft
 
 An end-to-end 3D scene reconstruction pipeline that turns a phone video into a viewable Gaussian Splat, rendered natively inside an Android app.
 
@@ -31,7 +31,7 @@ Android capture → ffmpeg (frame extraction) → COLMAP (SfM) → FastGS (3D Ga
 | 5. Post-processing | Custom cleanup (numpy, scipy, scikit-learn) | — | Filters degenerate/bloated Gaussians by scale, removes floating debris via DBSCAN clustering, and optionally checks geometric consistency against dominant scene planes (RANSAC) |
 | 6. Export | Custom exporter | — | Serializes the cleaned scene to `.ply`; optional `.ply → .splat` conversion for external viewers |
 | 7. Serving | [FastAPI](https://fastapi.tiangolo.com/) | 0.110+ | Orchestrates steps 2–6 and serves the final `.ply` to the client |
-| 8. Rendering | Unity (custom renderer) | Unity 2022 LTS | `GaussianSplatRenderer` loads and displays the `.ply` on-device |
+| 8. Rendering |
 
 **Runtime environment (tested):**
 - CUDA 12.6
