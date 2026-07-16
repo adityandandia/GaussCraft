@@ -9,7 +9,7 @@ import torch
 from pathlib import Path
 from backend.tasks import run_pipeline, run_pipeline_from_images
 
-router = APIRouter()
+router = APIRouter(prefix="/api")
 
 WORKSPACE = Path("/home/cave/3dapp_workspace_data")
 BACKEND_URL = "https://glazing-chaperone-bazooka.ngrok-free.dev"
