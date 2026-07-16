@@ -1,6 +1,6 @@
 # GaussCraft
 
-An end-to-end 3D scene reconstruction pipeline that turns a phone video into a viewable Gaussian Splat, rendered natively inside an Android app.
+An end-to-end 3D scene reconstruction pipeline that turns a phone video into a viewable Gaussian Splat.
 
 Built as part of ongoing AR/VR + spatial computing work, with an applied use case in 3D crime scene reconstruction.
 
@@ -9,74 +9,77 @@ Built as part of ongoing AR/VR + spatial computing work, with an applied use cas
 ## What this enables
 
 - **Crime scene digitization** — a single phone walkthrough of a scene produces a to-scale 3D reconstruction that investigators can revisit, measure, and view from angles never physically photographed — instead of being limited to a fixed set of 2D photos.
-- **Property walkthroughs without dedicated 3D scanning hardware** — a listing agent or homeowner records one video and gets a splat viewable in-app, skipping LiDAR rigs or DSLR photogrammetry rigs.
+- **Property walkthroughs without dedicated 3D scanning hardware** — record one video and get a splat, skipping LiDAR rigs or DSLR photogrammetry rigs.
 - **Physical evidence/damage capture for claims** — an accident site or damaged property can be captured once in the field and reviewed later in 3D, rather than relying on adjuster notes and flat photos.
 - **Archiving physical installations or artifacts** — a museum exhibit, heritage site, or one-off physical setup can be recorded and preserved as a 3D asset before it's dismantled or degrades.
 - **Sourcing real-world 3D assets for AR scenes** — instead of manually modeling an object or room for an AR experience, scan the real one and reconstruct it directly.
 
 ## Pipeline
 
-The system takes a single monocular video captured on an Android device and reconstructs it into a viewable 3D Gaussian Splat, rendered natively in-app.
+The system takes a single monocular video and reconstructs it into a viewable 3D Gaussian Splat.
 
 ```
-Android capture → ffmpeg (frame extraction) → COLMAP (SfM) → FastGS (3D Gaussian Splatting) → custom cleanup (scale/opacity filter + DBSCAN + optional RANSAC) → .ply → Unity GaussianSplatRenderer
+Capture (mobile app) → ffmpeg (frame extraction) → COLMAP (SfM) → FastGS (3D Gaussian Splatting + eval render)
+  → cleanup (scale/opacity/radial/DBSCAN filters, audited) → SplatTransform (.sog compression) → served via FastAPI
 ```
 
-| Stage | Tool / Library | Version | Purpose |
-|---|---|---|---|
-| 1. Capture | Android (Unity) | Unity 2022 LTS | Records a short handheld video of the target scene |
-| 2. Frame extraction | ffmpeg | — | Extracts frames at `fps=6`, scaled to 800×800 (aspect-preserving) |
-| 3. Structure-from-Motion | [COLMAP](https://colmap.github.io/) | 3.9+ | `feature_extractor` → `exhaustive_matcher` → `mapper` → `image_undistorter` to estimate camera poses and build a dense reconstruction from extracted frames |
-| 4. Gaussian Splatting | [FastGS](https://github.com/adityandandia/FastGS) (fork, submodule) | pinned commit, CUDA-accelerated | Trains a 3D Gaussian Splat (10,000 iterations) from the COLMAP dense reconstruction |
-| 5. Post-processing | Custom cleanup (numpy, scipy, scikit-learn) | — | Filters degenerate/bloated Gaussians by scale, removes floating debris via DBSCAN clustering, and optionally checks geometric consistency against dominant scene planes (RANSAC) |
-| 6. Export | Custom exporter | — | Serializes the cleaned scene to `.ply`; optional `.ply → .splat` conversion for external viewers |
-| 7. Serving | [FastAPI](https://fastapi.tiangolo.com/) | 0.110+ | Orchestrates steps 2–6 and serves the final `.ply` to the client |
-| 8. Rendering |
-
-**Runtime environment (tested):**
-- CUDA 12.6
-- PyTorch (cu121 build)
-- Python 3.10
-- MSVC 14.39 (Windows build of FastGS)
-- GPU: NVIDIA RTX 3050, 4GB VRAM
-
-## App in action
-
-Checkout the app at [SplatStudio](https://github.com/adityandandia/SplatStudio). :))
+| Stage | Tool / Library | Purpose |
+|---|---|---|
+| 1. Capture | Mobile app (`mobile/`, React Native) | Records a handheld video of the target scene and uploads it to the backend |
+| 2. Frame extraction | ffmpeg | Extracts frames at `fps=3`, scaled to 800×800 (aspect-preserving) |
+| 3. Structure-from-Motion | [COLMAP](https://colmap.github.io/) | `feature_extractor` → `sequential_matcher` → `mapper` → `image_undistorter` — camera poses + dense reconstruction. Uses `sequential_matcher` (not exhaustive) since frames come from a continuous video sequence, which is faster on longer captures |
+| 4. Gaussian Splatting | [FastGS](https://github.com/adityandandia/FastGS) (fork, submodule) | Trains a 3D Gaussian Splat (10,000 iterations, `--eval`), then runs `render.py` against held-out views to produce PSNR/SSIM quality metrics |
+| 5. Post-processing | Custom cleanup (`backend/cleanup/`) | Scale/anisotropy filtering, MAD-adaptive opacity filtering, radial crop, DBSCAN clustering with adaptive (k-distance elbow) `eps`, optional RANSAC plane consistency and color-consistency checks — every removal is written to a per-job audit log |
+| 6. Compression | [splat-transform](https://github.com/playcanvas/splat-transform) | Compresses the cleaned `.ply` into the `.sog` format for lighter-weight delivery |
+| 7. Serving | [FastAPI](https://fastapi.tiangolo.com/) | Orchestrates steps 2–6, tracks structured per-job status (`colmap` / `fastgs` / `post_processing` / `done` / `failed_colmap` / `failed_fastgs`), and serves the final `.ply` |
+| 8. Rendering | SplatStudio (`SplatStudio.apk`) — our own Android viewer app, built in-house | Loads and displays the `.ply`/`.sog` splat on-device |
 
 ## Architecture
 
-- **Frontend:** Android app built in Unity
-  - Custom PLY loader and point cloud renderer (`PLYLoader.cs`, `PointCloudRenderer.cs`)
-  - Custom unlit shader for splat rendering (`PointCloudUnlit.shader`)
-  - AR session handling for on-device capture and viewing
-- **Backend:** FastAPI service orchestrating the reconstruction pipeline
-  - Runs `ffmpeg` for frame extraction
-  - Runs COLMAP for SfM
-  - Runs FastGS (Gaussian Splatting) for scene training
-  - Runs a custom numpy/scipy/scikit-learn cleanup pass on the raw `.ply` (no Open3D dependency)
-  - Serves the final `.ply` back to the app
-- **FastGS:** vendored/forked as a submodule, used for the Gaussian Splatting training step
+- **Capture app:** `mobile/` — a React Native app that records video and talks to the backend.
+- **Viewer app:** SplatStudio — our own Android app for rendering the resulting splat; its built APK is committed here as `SplatStudio.apk`.
+- **Backend:** FastAPI service (`backend/`) orchestrating the reconstruction pipeline:
+  - `backend/tasks.py` — pipeline orchestration (ffmpeg → COLMAP → FastGS → cleanup → compression), with per-stage error handling that reports which stage failed (`failed_colmap`, `failed_fastgs`) rather than a single generic failure state.
+  - `backend/cleanup/` — modular cleanup package:
+    - `statistical_filters.py` — MAD-adaptive opacity filtering (replaces fixed-percentile drops).
+    - `appearance_filters.py` — color-consistency filtering using local neighborhood comparison (opt-in via `USE_COLOR_FILTER`).
+    - `audit_log.py` — writes a `removed_points.json` per job recording exactly what was removed at each stage and why, alongside the output `.ply`.
+  - `backend/colmap_utils.py` — parses COLMAP's `points3D.txt`/`images.txt` for per-point observation/track-length reliability and camera positions.
+  - `backend/segmentation.py` — ground-plane removal + DBSCAN-based object isolation, scoring clusters by proximity to the camera path's median position (see note below).
+  - `backend/metrics.py` — quality/calibration/reliability metrics: COLMAP reprojection error and track-length reliability, physical scale calibration, PSNR/SSIM/LPIPS against held-out views.
+- **FastGS:** vendored/forked as a submodule, used for the Gaussian Splatting training step.
+
+### On segmentation: DBSCAN-based, not SAM
+
+Object isolation in this project uses classical, dependency-light techniques — RANSAC ground-plane removal + DBSCAN spatial clustering, with clusters selected by proximity to the camera path — rather than a semantic segmentation model (SAM). This avoids the added GPU/dependency footprint and camera-pose/resolution-matching fragility of a learned segmentation approach, at the cost of being a spatial heuristic rather than a semantic one.
+
+> **Status:** `backend/segmentation.py` and the COLMAP-reliability filtering in `backend/colmap_utils.py` are implemented and tested in isolation, but not yet called from `backend/tasks.py`'s pipeline — they're present as modules ready to be wired in, not yet part of a live run. See open items below.
 
 ### Cleanup pass detail (`backend/tasks.py::clean_splat`)
 
-The post-processing step is implemented from scratch rather than via Open3D:
+1. **Scale + anisotropy filter** — drops Gaussians with degenerate or bloated `scale_0/1/2` values.
+2. **Opacity filter (MAD-adaptive)** — drops near-transparent Gaussians using a robust Median Absolute Deviation cutoff rather than a fixed percentage, so the amount removed adapts to how contaminated a given scan actually is.
+3. **Radial crop** — trims points beyond the 80th-percentile distance from the scene's median center.
+4. **DBSCAN clustering** — adaptive `eps` via the k-distance elbow method (rather than a fixed fraction of scene extent), keeping clusters ≥0.15% of the largest cluster's size.
+5. **RANSAC plane consistency** (optional, off by default) and **color-consistency filtering** (optional, off by default) — both available as opt-in stages.
 
-1. **Scale filter** — drops Gaussians with degenerate or bloated `scale_0/1/2` values (cheapest check, run first to shrink the working set).
-2. **Opacity / intermediate filtering** — additional property-level filtering ahead of the spatial checks.
-3. **DBSCAN clustering** — clusters the remaining points spatially and keeps clusters that are at least 0.5% of the largest cluster's size, removing noise points and small floating-debris clusters while preserving legitimate secondary objects in a scene.
-4. **RANSAC plane consistency (optional, off by default)** — fits up to 4 dominant planes (floor/wall/table) and can remove points that are both plane-inconsistent and spatially isolated; useful for indoor/planar scenes, skippable for organic ones via `USE_RANSAC = False`.
+Every removal at every stage is recorded to a per-job `removed_points.json` via `backend/cleanup/audit_log.py`.
 
 ## Repo structure
 
 ```
-3dReConstruct/
-
+GaussCraft/
 ├── backend/            # FastAPI reconstruction pipeline
-├── FastGS/             # Gaussian Splatting submodule
-├── outputs/            # generated .ply files (gitignored)
-├── uploads/            # incoming capture videos (gitignored)
-└── main.py             # pipeline entry point
+│   ├── cleanup/         # modular post-processing filters + audit log
+│   ├── colmap_utils.py  # COLMAP reliability/camera-pose parsing
+│   ├── segmentation.py  # DBSCAN-based object isolation
+│   ├── metrics.py       # quality/calibration/reliability metrics
+│   └── tasks.py         # pipeline orchestration
+├── mobile/              # Expo/React Native capture app
+├── FastGS/              # Gaussian Splatting submodule
+├── outputs/, uploads/    # generated/incoming data
+├── SplatStudio.apk       # viewer app build
+└── main.py               # pipeline entry point
 ```
 
 ## Setup
@@ -86,32 +89,41 @@ The post-processing step is implemented from scratch rather than via Open3D:
 - Python 3.10
 - CUDA 12.6 + compatible NVIDIA driver
 - PyTorch (cu121 build)
-- MSVC 14.39 (Windows only, required to build FastGS)
-- Unity 2022 LTS (for the Android app)
 - COLMAP 3.9+
 - ffmpeg
-- numpy, scipy, scikit-learn (used for cleanup — Open3D is **not** required)
+- numpy, scipy, scikit-learn (cleanup — Open3D is **not** required)
 - `numpy<2` (required by FastGS)
-
-- Run setup_and_run.sh, one all-in-one script that does compatibility checking, dependency install, environment setup, and finally runs the server as a receive→process → send loop.
+- [`splat-transform`](https://github.com/playcanvas/splat-transform) (for `.sog` compression)
 
 ### Backend
 
 ```bash
-git clone --recurse-submodules https://github.com/adityandandia/3dReConstruct.git
-cd 3dReConstruct/backend
-pip install -r requirements.txt
-uvicorn main:app --reload
+git clone --recurse-submodules https://github.com/adityandandia/GaussCraft.git
+cd GaussCraft
+chmod +x setup_and_run.sh
+./setup_and_run.sh
 ```
 
-> **Note (Windows/MSVC):** build FastGS with `-allow-unsupported-compiler`, and ensure the COLMAP source path points to the `dense/` reconstruction folder before training.
+`setup_and_run.sh` handles compatibility checking, dependency installation, and launching the server — see the script itself for details.
 
-> **Note (paths):** `backend/tasks.py` currently hardcodes the FastGS location (`/home/cave/3dapp/FastGS`) and the training interpreter (`/home/cave/miniconda3/envs/fastgs/bin/python`). Update these to match your environment, or parameterize them via config/env vars before running elsewhere.
+> **Note (paths):** `backend/tasks.py` reads `FASTGS_DIR` and `FASTGS_PYTHON` from environment variables (falling back to a default path if unset), so the FastGS location and interpreter are portable across machines rather than hardcoded.
+
+### Mobile app
+
+`mobile/` is an Expo/React Native project — run it with the standard Expo tooling and point it at your backend's endpoint.
 
 ## Pipeline notes
 
-- Frames are extracted with `ffmpeg` at `fps=6`, scaled to 800×800 (aspect-preserving), to keep COLMAP within budget on consumer GPUs (tested on 4GB VRAM).
-- COLMAP is run with `SiftExtraction.estimate_affine_shape=1` and up to 16,384 features per image, using the `OPENCV` camera model.
-- FastGS training runs for 10,000 iterations by default.
-- A `.ply` → `.splat` converter is included for compatibility with external splat viewers.
+- Frames are extracted with `ffmpeg` at `fps=3`, scaled to 800×800 (aspect-preserving).
+- COLMAP uses `sequential_matcher` (frames are a continuous video sequence, not unordered photos), with `SiftExtraction.estimate_affine_shape=1` and up to 16,384 features per image on the `OPENCV` camera model.
+- FastGS training runs for 10,000 iterations with `--eval`, followed by a `render.py` pass for quality metrics (PSNR/SSIM), reported per job via `backend/metrics.py`.
 - `run_pipeline_from_images` provides an alternate entry point that skips video/ffmpeg and starts directly from a folder of images, reusing the same COLMAP → FastGS → cleanup chain.
+
+## Status
+
+🚧 Actively in development. Recent work: modularized cleanup into `backend/cleanup/`, added per-job audit logging, MAD-adaptive opacity filtering, adaptive DBSCAN `eps`, quality/reliability metrics, and per-stage pipeline error handling.
+
+**Open items:**
+- Wire `backend/segmentation.py` and COLMAP-reliability filtering into `backend/tasks.py` — both are implemented and tested standalone but not yet called from the live pipeline.
+- `outputs/`, `uploads/`, and `mobile/node_modules` are currently tracked in git; these should be gitignored (generated/regenerable content).
+- A stale duplicate `tasks.py` exists at the repo root alongside the real `backend/tasks.py` and should be removed.
