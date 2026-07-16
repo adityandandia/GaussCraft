@@ -121,10 +121,6 @@ chmod +x setup_and_run.sh
 
 > **Note (paths):** `backend/tasks.py` reads `FASTGS_DIR` and `FASTGS_PYTHON` from environment variables (falling back to a default path if unset), so the FastGS location and interpreter are portable across machines rather than hardcoded.
 
-### Mobile app
-
-`mobile/` is an Expo/React Native project — run it with the standard Expo tooling and point it at your backend's endpoint.
-
 ## Pipeline notes
 
 - Frames are extracted with `ffmpeg` at `fps=3`, scaled to 800×800 (aspect-preserving).
