@@ -88,7 +88,6 @@ SplatStudio/
 │   ├── segmentation.py  # DBSCAN-based object isolation
 │   ├── metrics.py       # quality/calibration/reliability metrics
 │   └── tasks.py         # pipeline orchestration
-├── mobile/              # Expo/React Native capture app
 ├── FastGS/              # Gaussian Splatting submodule
 ├── outputs/, uploads/    # generated/incoming data
 ├── SplatStudio.apk       # viewer app build
