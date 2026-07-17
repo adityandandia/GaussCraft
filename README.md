@@ -56,8 +56,8 @@ Capture (mobile app) → ffmpeg (frame extraction) → COLMAP (SfM) → FastGS (
   alt="Server page" width="200"/>
   <img alt="recording page" src="https://github.com/user-attachments/assets/885e4b71-de88-4d10-aecb-e0fa1264622a" 
  alt="Recording page" width="200"/>
-  <img alt="job card" src="https://github.com/user-attachments/assets/6212ea24-ecc0-499b-aca5-29aeb1826373" 
- alt="Job card / status view" width="200"/>
+  <img alt="job card" src="https://github.com/user-attachments/assets/58321a52-0266-46c2-b2f4-3d2f6ea3cf06" 
+    alt="Job card / status view" width="200"/>
 <img alt="in app splat" src="https://github.com/user-attachments/assets/2a43e1f1-8758-48e9-a674-ad6364b4ca06" 
  alt="In-app splat viewer" width="200"/>
 </p>
