@@ -1,4 +1,4 @@
-# GaussCraft
+# SplatStudio
 
 An end-to-end 3D scene reconstruction pipeline that turns a phone video into a viewable Gaussian Splat.
 
@@ -81,7 +81,7 @@ Every removal at every stage is recorded to a per-job `removed_points.json` via 
 ## Repo structure
 
 ```
-GaussCraft/
+SplatStudio/
 ├── backend/            # FastAPI reconstruction pipeline
 │   ├── cleanup/         # modular post-processing filters + audit log
 │   ├── colmap_utils.py  # COLMAP reliability/camera-pose parsing
@@ -111,8 +111,8 @@ GaussCraft/
 ### Backend
 
 ```bash
-git clone --recurse-submodules https://github.com/adityandandia/GaussCraft.git
-cd GaussCraft
+git clone --recurse-submodules https://github.com/adityandandia/SplatStudio.git
+cd SplatStudio
 chmod +x setup_and_run.sh
 ./setup_and_run.sh
 ```
@@ -128,7 +128,7 @@ chmod +x setup_and_run.sh
 - FastGS training runs for 10,000 iterations with `--eval`, followed by a `render.py` pass for quality metrics (PSNR/SSIM), reported per job via `backend/metrics.py`.
 - `run_pipeline_from_images` provides an alternate entry point that skips video/ffmpeg and starts directly from a folder of images, reusing the same COLMAP → FastGS → cleanup chain.
 
-Frontend Repo : [SplatStudio](https://github.com/adityandandia/SplatStudio)
+Frontend Repo : [SplatStudioApp](https://github.com/adityandandia/SplatStudioApp)
 
 **Open items:**
 - Wire `backend/segmentation.py` and COLMAP-reliability filtering into `backend/tasks.py` — both are implemented and tested standalone but not yet called from the live pipeline.
