@@ -1,6 +1,6 @@
 # SplatStudio
 
-An end-to-end 3D scene reconstruction pipeline that turns a phone video into a viewable Gaussian Splat.
+An end-to-end 3D Evidence reconstruction pipeline that turns a phone video into a viewable Gaussian Splat.
 
 Built as part of ongoing AR/VR + spatial computing work, with an applied use case in 3D crime scene reconstruction.
 
@@ -94,7 +94,7 @@ SplatStudio/
 └── main.py               # pipeline entry point
 ```
 
-## Setup
+## Server Setup
 
 ### Prerequisites
 
@@ -119,6 +119,23 @@ chmod +x setup_and_run.sh
 `setup_and_run.sh` handles compatibility checking, dependency installation, and launching the server — see the script itself for details.
 
 > **Note (paths):** `backend/tasks.py` reads `FASTGS_DIR` and `FASTGS_PYTHON` from environment variables (falling back to a default path if unset), so the FastGS location and interpreter are portable across machines rather than hardcoded.
+
+## Device Requirements
+
+- Android device with **ARCore support** (required for stable, tracked
+  camera capture during recording) — check your device against Google's
+  [ARCore supported devices list](https://developers.google.com/ar/devices).
+- Android 8.0 (API 26) or higher.
+- Rear camera capable of 1080p video capture.
+- A GPU capable of rendering WebGL content smoothly — splat rendering is
+  GPU-intensive, so low-end or older devices may show dropped frames or
+  stutter in the viewer.
+- At least a few hundred MB of free storage per capture (raw video +
+  downloaded `.ply` output).
+- Wi-Fi connectivity to reach your SplatStudio backend (see
+  [Configuration](#configuration)).
+
+---
 
 ## Pipeline notes
 
