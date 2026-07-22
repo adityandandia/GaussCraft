@@ -7,3 +7,6 @@ dist/
 build/
 .DS_Store
 3d-scanner-app/node_modules/
+outputs/
+uploads/
+mobile/node_modules/
